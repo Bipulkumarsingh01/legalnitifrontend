@@ -1,0 +1,9 @@
+.lnai-landing-page-parent-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.lnai-landing-page-add-sub-button-parent-container .MuiIconButton-root {
+  /* color: red; */
+}
