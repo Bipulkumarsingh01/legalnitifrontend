@@ -10,13 +10,15 @@ Currently, two official plugins are available:
 ## Installing
 
 ```sh
-      npm install --legacy-peer-deps
+npm install --legacy-peer-deps
 ```
 
 ### Libraries used :
 
+- [React Router](https://reactrouter.com/en/main) for routing.
+
+- [Redux](https://redux.js.org/) for global state management.
+
+- [Axios](https://axios-http.com/docs/intro) for creating http requests.
+
 - [Material UI](https://mui.com/material-ui/) for styled components.
-
-- [Redux](https://redux.js.org/) for global state management
-
-- [React Router](https://reactrouter.com/en/main) for routing
