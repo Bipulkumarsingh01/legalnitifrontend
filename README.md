@@ -15,6 +15,8 @@ npm install --legacy-peer-deps
 
 ### Libraries used :
 
+- [Vite](https://vitejs.dev/) for module bundling.
+
 - [React Router](https://reactrouter.com/en/main) for routing.
 
 - [Redux](https://redux.js.org/) for global state management.
@@ -22,3 +24,5 @@ npm install --legacy-peer-deps
 - [Axios](https://axios-http.com/docs/intro) for creating http requests.
 
 - [Material UI](https://mui.com/material-ui/) for styled components.
+
+- [React Icons](https://react-icons.github.io/react-icons/) for icons collection.

@@ -23,7 +23,7 @@ const LNAILandingPage = () => {
     dispatch(incrementCount());
   };
   const decrementCountHandler = () => {
-    // setCount(count + 1);
+    // setCount(count - 1);
     dispatch(decrementCount());
   };
 
