@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
@@ -17,9 +18,8 @@ import { LNAILogoTp } from "../../assets";
 import { CascadedMenuLarge, CascadedMenuSmall } from "../../utils";
 
 import "./LNAINavBar.css";
-import { NavLink } from "react-router-dom";
 
-const settings = ["Login", "SignIn"];
+const settings = ["Login", "Sign In"];
 
 const LNAINavBar = () => {
   const [navbarRouteMenuState, setNavbarRouteMenuState] =
@@ -170,6 +170,7 @@ const LNAINavBar = () => {
               }}
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
+              className="lnai-navbar-user-settings-menu-parent-container"
             >
               {settings.map((setting) => (
                 <MenuItem key={setting} onClick={handleCloseUserMenu}>
