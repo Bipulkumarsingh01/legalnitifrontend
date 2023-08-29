@@ -4,6 +4,7 @@ import { Box, Button, Menu, MenuItem } from "@mui/material";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 
 import { CascadedMenuLargePropType } from "..";
+import { Fragment } from "react";
 
 const CascadedMenuLarge = ({
   handleCloseNavMenu,
@@ -15,10 +16,11 @@ const CascadedMenuLarge = ({
 }: CascadedMenuLargePropType) => {
   return (
     <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-      {navbarRoutes.map((pageItem) => (
-        <>
+      {navbarRoutes.map((pageItem, index) => (
+        <Fragment key={index}>
           {!pageItem.hasChildren ? (
             <NavLink
+              key={index}
               to={pageItem.to}
               className={(isActive) =>
                 isActive
@@ -60,30 +62,28 @@ const CascadedMenuLarge = ({
                 }}
                 className="lnai-navbar-routes-children-menu-parent-container"
               >
-                {pageItem?.children && (
-                  <>
-                    {pageItem?.children.map((childItem) => (
-                      <MenuItem
-                        onClick={navbarChildRoutesLargeMenuCloseHandler}
+                {pageItem?.children &&
+                  pageItem?.children.map((childItem, index) => (
+                    <MenuItem
+                      key={index}
+                      onClick={navbarChildRoutesLargeMenuCloseHandler}
+                    >
+                      <NavLink
+                        to={childItem.to}
+                        className={(isActive) =>
+                          isActive
+                            ? "lnai-navbar-active-route"
+                            : "lnai-navbar-non-active-route"
+                        }
                       >
-                        <NavLink
-                          to={childItem.to}
-                          className={(isActive) =>
-                            isActive
-                              ? "lnai-navbar-active-route"
-                              : "lnai-navbar-non-active-route"
-                          }
-                        >
-                          {childItem.label}
-                        </NavLink>
-                      </MenuItem>
-                    ))}
-                  </>
-                )}
+                        {childItem.label}
+                      </NavLink>
+                    </MenuItem>
+                  ))}
               </Menu>
             </>
           )}
-        </>
+        </Fragment>
       ))}
     </Box>
   );

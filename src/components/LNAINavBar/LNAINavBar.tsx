@@ -14,14 +14,20 @@ import Typography from "@mui/material/Typography";
 import { RxAvatar } from "react-icons/rx";
 
 import navbarRoutes from "./navbarRoutes";
-import { LNAILogoTp } from "../../assets";
 import { CascadedMenuLarge, CascadedMenuSmall } from "../../utils";
 
 import "./LNAINavBar.css";
+import { LNAILogoTp } from "../../assets";
+import { ThemeProvider } from "@emotion/react";
+import { createTheme } from "@mui/material";
 
 const settings = ["Login", "Sign In"];
 
-const LNAINavBar = () => {
+interface navBarComponentPropType {
+  color?: string;
+}
+
+const LNAINavBar = ({ color }: navBarComponentPropType) => {
   const [navbarRouteMenuState, setNavbarRouteMenuState] =
     useState<null | HTMLElement>(null);
 
@@ -69,9 +75,17 @@ const LNAINavBar = () => {
     setChildRoutesLargeMenuState(null);
   };
 
+  const theme = createTheme({
+    palette: {
+      primary: {
+        main: color?.length ? color : "rgba(0,0,0,0.9)",
+      },
+    },
+  });
+
   return (
-    <AppBar position="sticky">
-      <Container maxWidth="xl" className="lnai-navbar-parent-container">
+    <ThemeProvider theme={theme}>
+      <AppBar position="sticky">
         <Toolbar disableGutters>
           <Typography
             variant="h6"
@@ -180,8 +194,8 @@ const LNAINavBar = () => {
             </Menu>
           </Box>
         </Toolbar>
-      </Container>
-    </AppBar>
+      </AppBar>
+    </ThemeProvider>
   );
 };
 export default LNAINavBar;

@@ -79,26 +79,24 @@ const CascadedMenuSmall = ({
                   }}
                   className="lnai-navbar-routes-children-menu-parent-container"
                 >
-                  {pageItem?.children && (
-                    <>
-                      {pageItem?.children.map((childItem) => (
-                        <MenuItem
-                          onClick={navbarChildRoutesSmallMenuCloseHandler}
+                  {pageItem?.children &&
+                    pageItem?.children.map((childItem, index) => (
+                      <MenuItem
+                        key={index}
+                        onClick={navbarChildRoutesSmallMenuCloseHandler}
+                      >
+                        <NavLink
+                          to={childItem.to}
+                          className={(isActive) =>
+                            isActive
+                              ? "lnai-navbar-active-route lnai-navbar-child-route-menu-small"
+                              : "lnai-navbar-non-active-route lnai-navbar-child-route-menu-small"
+                          }
                         >
-                          <NavLink
-                            to={childItem.to}
-                            className={(isActive) =>
-                              isActive
-                                ? "lnai-navbar-active-route lnai-navbar-child-route-menu-small"
-                                : "lnai-navbar-non-active-route lnai-navbar-child-route-menu-small"
-                            }
-                          >
-                            {childItem.label}
-                          </NavLink>
-                        </MenuItem>
-                      ))}
-                    </>
-                  )}
+                          {childItem.label}
+                        </NavLink>
+                      </MenuItem>
+                    ))}
                 </Menu>
               </>
             )}
