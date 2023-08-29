@@ -39,6 +39,10 @@
   .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root:hover {
   background-color: rgba(0, 0, 0, 0.5);
 }
+.lnai-navbar-user-settings-menu-parent-container .MuiPaper-root {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.9);
+}
 
 @media screen and (max-width: 768px) {
   .lnai-navbar-legalniti-logo {
