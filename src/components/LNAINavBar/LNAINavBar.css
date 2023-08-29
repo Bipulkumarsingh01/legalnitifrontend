@@ -1,0 +1,60 @@
+.lnai-navbar-parent-container {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.lnai-navbar-legalniti-logo {
+  width: 5.5rem;
+  height: 3rem;
+}
+
+.lnai-navbar-avatar-outlined-icon {
+  width: 4rem;
+  height: 3rem;
+  color: white;
+}
+
+.lnai-navbar-active-route {
+  color: white;
+  text-decoration: none;
+}
+
+.lnai-navbar-non-active-route {
+  color: white;
+  text-decoration: none;
+}
+
+.lnai-navbar-routes-children-menu-parent-container .MuiPaper-root {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.lnai-navbar-right-arrow-icon {
+  position: absolute;
+  top: 1rem;
+  font-size: 1.1rem;
+}
+.lnai-navbar-down-arrow-icon {
+  font-size: 1.1rem;
+}
+.lnai-navbar-routes-children-menu-parent-container
+  .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 768px) {
+  .lnai-navbar-legalniti-logo {
+    width: 5rem;
+    height: 2.5rem;
+  }
+
+  .lnai-navbar-avatar-outlined-icon {
+    width: 3rem;
+    height: 2rem;
+  }
+
+  .lnai-navbar-child-route-menu-small {
+    font-size: 0.7rem;
+  }
+  .lnai-navbar-child-route-menu-large {
+    font-size: 0.8rem;
+  }
+}

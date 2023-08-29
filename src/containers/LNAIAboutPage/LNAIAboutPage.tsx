@@ -1,12 +1,13 @@
 import { LNAINavBar } from "../../components";
+import "./LNAIAboutPage.css";
 
-const LNAILandingPage = () => {
+const LNAIAboutPage = () => {
   return (
     <div>
       <LNAINavBar />
-      LNAILandingPage
+      LNAIAboutPage
     </div>
   );
 };
 
-export default LNAILandingPage;
+export default LNAIAboutPage;
