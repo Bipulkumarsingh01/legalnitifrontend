@@ -3,7 +3,6 @@ import { createBrowserRouter } from "react-router-dom";
 import {
   LNAIAboutPage,
   LNAIContactPage,
-  LNAIHomePage,
   LNAILandingPage,
   LNAIServicePage,
   LNAITeamPage,
@@ -14,10 +13,6 @@ const router = createBrowserRouter([
   {
     path: "",
     element: <LNAILandingPage />,
-  },
-  {
-    path: "home",
-    element: <LNAIHomePage />,
   },
   {
     path: "about",
