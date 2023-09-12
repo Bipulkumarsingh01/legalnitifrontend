@@ -4,6 +4,7 @@ import {
   LNAIAboutPage,
   LNAIContactPage,
   LNAILandingPage,
+  LNAILoginPage,
   LNAIServicePage,
   LNAITeamPage,
   LNAIToolsPage,
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
   {
     path: "contact",
     element: <LNAIContactPage />,
+  },
+  {
+    path: "login",
+    element: <LNAILoginPage />,
   },
 ]);
 

@@ -1,0 +1,12 @@
+.lnai-contact-form-component-phone-number-input-field
+  .MuiInputBase-input::-webkit-outer-spin-button,
+.lnai-contact-form-component-phone-number-input-field
+  .MuiInputBase-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.lnai-contact-form-component-phone-number-input-field .MuiInputBase-input {
+  -moz-appearance: textfield;
+}

@@ -4,3 +4,4 @@ import CascadedMenuSmall from "./CascadedMenu/CascadedMenuSmall";
 export { CascadedMenuLarge, CascadedMenuSmall };
 
 export * from "./interface";
+export * from "./stateAndCities";

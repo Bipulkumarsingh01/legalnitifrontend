@@ -1,14 +1,20 @@
-import { someAPI } from "./axios";
+import { baseUrlApi, googleUserInfoApi } from "./axios";
 
-export const getSomeData = () => {
+export const getGoogleUserInfo = (accessToken: string) => {
   const config = {
     headers: {
-      "X-CSCAPI-KEY": "API_KEY",
+      Authorization: `Bearer ${accessToken}`,
+      Accept: "application/json",
     },
   };
 
-  return someAPI
-    .get(``, config)
-    .then((response: any) => response)
-    .catch((error: any) => error);
+  return googleUserInfoApi.get(`access_token=${accessToken}`, config);
+};
+
+export const postUserSignup = (userSignupPayload: any) => {
+  return baseUrlApi.post("signup", JSON.stringify(userSignupPayload));
+};
+
+export const postUserLogin = (userLoginPayload: any) => {
+  return baseUrlApi.post("login", JSON.stringify(userLoginPayload));
 };
