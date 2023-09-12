@@ -1,6 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
-import addAndSubCountReducer from "./reducers/addAndSubCountReducer";
+import allReducers from "./reducers";
 
-const store = configureStore({ reducer: addAndSubCountReducer });
+const store = configureStore({ reducer: allReducers });
 
 export default store;

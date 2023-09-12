@@ -1,9 +1,8 @@
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
-import Container from "@mui/material/Container";
 import IconButton from "@mui/material/IconButton";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
@@ -16,18 +15,27 @@ import { RxAvatar } from "react-icons/rx";
 import navbarRoutes from "./navbarRoutes";
 import { CascadedMenuLarge, CascadedMenuSmall } from "../../utils";
 
-import "./LNAINavBar.css";
 import { LNAILogoTp } from "../../assets";
 import { ThemeProvider } from "@emotion/react";
 import { createTheme } from "@mui/material";
 
-const settings = ["Login", "Sign In"];
+import "./LNAINavBar.css";
+import { useDispatch, useSelector } from "react-redux";
+import { removeUserDetails, removeUserLoginCred } from "../../actions";
+import { googleLogout } from "@react-oauth/google";
 
 interface navBarComponentPropType {
   color?: string;
 }
 
 const LNAINavBar = ({ color }: navBarComponentPropType) => {
+  const userState: any = useSelector((state) => state);
+  const dispatch = useDispatch();
+  const userToken = userState["userToken"];
+  const userDetails = userState["userDetails"];
+  console.log(userState);
+
+  const navigate = useNavigate();
   const [navbarRouteMenuState, setNavbarRouteMenuState] =
     useState<null | HTMLElement>(null);
 
@@ -40,6 +48,27 @@ const LNAINavBar = ({ color }: navBarComponentPropType) => {
   const openChildRouteSmall = Boolean(childRoutesSmallMenuState);
   const openChildRouteLarge = Boolean(childRoutesLargeMenuState);
 
+  const signUpUserHandler = () => {
+    navigate("/contact");
+  };
+  const loginUserHandler = () => {
+    navigate("/login");
+  };
+
+  const logoutUserHandler = () => {
+    localStorage.clear();
+    dispatch(removeUserLoginCred());
+    dispatch(removeUserDetails());
+    googleLogout();
+  };
+
+  const settings =
+    Object.keys(userToken)?.length > 0 && userToken?.["x-users-token"]
+      ? [{ label: "Logout", value: "logout", handler: logoutUserHandler }]
+      : [
+          { label: "Sign Up", value: "Sign Up", handler: signUpUserHandler },
+          { label: "Login", value: "Login", handler: loginUserHandler },
+        ];
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     setNavbarRouteMenuState(event.currentTarget);
   };
@@ -187,8 +216,8 @@ const LNAINavBar = ({ color }: navBarComponentPropType) => {
               className="lnai-navbar-user-settings-menu-parent-container"
             >
               {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
+                <MenuItem key={setting.value} onClick={setting.handler}>
+                  <Typography textAlign="center">{setting.label}</Typography>
                 </MenuItem>
               ))}
             </Menu>

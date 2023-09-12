@@ -5,11 +5,17 @@ import App from "./App.tsx";
 import store from "./store.ts";
 
 import "./globals.css";
+import { GoogleOAuthProvider } from "@react-oauth/google";
+
+const clientID =
+  "597813127821-vnk8gjr9hpds4p2pmmclargiq2vngsjj.apps.googleusercontent.com";
 
 const root = ReactDOM.createRoot(document.getElementById("root")!);
 
 root.render(
-  <Provider store={store}>
-    <App />
-  </Provider>
+  <GoogleOAuthProvider clientId={clientID}>
+    <Provider store={store}>
+      <App />
+    </Provider>
+  </GoogleOAuthProvider>
 );

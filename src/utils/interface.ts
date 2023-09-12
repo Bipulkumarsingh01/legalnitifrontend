@@ -31,3 +31,13 @@ export interface CascadedMenuLargePropType {
   childRoutesLargeMenuState: null | HTMLElement;
   navbarChildRoutesLargeMenuCloseHandler: () => void;
 }
+
+export interface statesAndCityListIndiaDataType {
+  key: number;
+  value: string;
+  label: string;
+}
+
+export interface citiesListIndiaDataType {
+  string: Array<statesAndCityListIndiaDataType>;
+}

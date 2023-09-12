@@ -1,0 +1,43 @@
+.lnai-thank-you-contact-form-main-heading-grid-item {
+  font-size: 1.8rem;
+  margin-top: 4rem !important;
+}
+.lnai-thank-you-contact-form-secondary-container-grid-item {
+  font-size: 1.3rem;
+  width: 50%;
+  margin-top: 4rem !important;
+  text-align: center;
+}
+
+.lnai-thank-you-contact-form-get-back-grid-item {
+  font-size: 1.1rem;
+  margin-top: 4rem !important;
+}
+
+.lnai-thank-you-contact-form-contact-us-grid-item {
+  font-size: 0, 9rem;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 3.5rem !important;
+}
+
+@media screen and (max-width: 768px) {
+  .lnai-thank-you-contact-form-main-heading-grid-item {
+    font-size: 1.3rem;
+    margin-top: 2rem !important;
+  }
+  .lnai-thank-you-contact-form-secondary-container-grid-item {
+    font-size: 0.9rem;
+    width: 75%;
+    margin-top: 2rem !important;
+  }
+
+  .lnai-thank-you-contact-form-get-back-grid-item {
+    font-size: 0.88rem;
+    margin-top: 2rem !important;
+  }
+
+  .lnai-thank-you-contact-form-contact-us-grid-item {
+    font-size: 0.8rem;
+  }
+}

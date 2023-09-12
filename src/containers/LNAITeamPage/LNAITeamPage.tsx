@@ -1,4 +1,5 @@
 import { LNAINavBar } from "../../components";
+
 import "./LNAITeamPage.css";
 
 const LNAITeamPage = () => {
