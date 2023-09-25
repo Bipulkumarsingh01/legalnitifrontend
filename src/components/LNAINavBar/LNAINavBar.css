@@ -49,6 +49,12 @@
     height: 2.5rem;
   }
 
+  .lnai-navbar-right-arrow-icon {
+    position: absolute;
+    top: auto;
+    font-size: 1rem;
+  }
+
   .lnai-navbar-avatar-outlined-icon {
     width: 3rem;
     height: 2rem;

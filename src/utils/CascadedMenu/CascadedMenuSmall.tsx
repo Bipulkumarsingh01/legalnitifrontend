@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-import { Box, IconButton, Menu, MenuItem, Typography } from "@mui/material";
+import { Box, IconButton, Menu, MenuItem } from "@mui/material";
 import { MdMenu, MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 import { CascadedMenuSmallPropType } from "..";
@@ -63,7 +63,7 @@ const CascadedMenuSmall = ({
               <>
                 <p
                   onClick={navbarChildRoutesSmallMenuOpenHandler}
-                  className="lnai-navbar-non-active-route lnai-navbar-non-active-route lnai-navbar-child-route-menu-large"
+                  className="lnai-navbar-non-active-route lnai-navbar-child-route-menu-large"
                 >
                   {pageItem.label}
                   <MdOutlineKeyboardArrowRight className="lnai-navbar-right-arrow-icon" />

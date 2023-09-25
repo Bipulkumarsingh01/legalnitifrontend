@@ -21,7 +21,11 @@ import { createTheme } from "@mui/material";
 
 import "./LNAINavBar.css";
 import { useDispatch, useSelector } from "react-redux";
-import { removeUserDetails, removeUserLoginCred } from "../../actions";
+import {
+  removeUserDetails,
+  removeUserLoginCred,
+  removeUserToken,
+} from "../../actions";
 import { googleLogout } from "@react-oauth/google";
 
 interface navBarComponentPropType {
@@ -29,11 +33,14 @@ interface navBarComponentPropType {
 }
 
 const LNAINavBar = ({ color }: navBarComponentPropType) => {
-  const userState: any = useSelector((state) => state);
+  const store: any = useSelector((state) => state);
   const dispatch = useDispatch();
-  const userToken = userState["userToken"];
-  const userDetails = userState["userDetails"];
-  console.log(userState);
+
+  const userToken = store["userToken"];
+  const accessToken = userToken?.["access_token"];
+  const refreshToken = userToken?.["refresh_token"];
+
+  const userDetails = store["userDetails"];
 
   const navigate = useNavigate();
   const [navbarRouteMenuState, setNavbarRouteMenuState] =
@@ -57,18 +64,17 @@ const LNAINavBar = ({ color }: navBarComponentPropType) => {
 
   const logoutUserHandler = () => {
     localStorage.clear();
-    dispatch(removeUserLoginCred());
+    dispatch(removeUserToken());
     dispatch(removeUserDetails());
     googleLogout();
   };
 
-  const settings =
-    Object.keys(userToken)?.length > 0 && userToken?.["x-users-token"]
-      ? [{ label: "Logout", value: "logout", handler: logoutUserHandler }]
-      : [
-          { label: "Sign Up", value: "Sign Up", handler: signUpUserHandler },
-          { label: "Login", value: "Login", handler: loginUserHandler },
-        ];
+  const settings = accessToken
+    ? [{ label: "Logout", value: "logout", handler: logoutUserHandler }]
+    : [
+        { label: "Sign Up", value: "Sign Up", handler: signUpUserHandler },
+        { label: "Login", value: "Login", handler: loginUserHandler },
+      ];
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     setNavbarRouteMenuState(event.currentTarget);
   };

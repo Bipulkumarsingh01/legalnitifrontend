@@ -1,5 +1,5 @@
 import { useSearchParams } from "react-router-dom";
-import { LNAINavBar } from "../../components";
+import { LNAINameGenerator, LNAINavBar } from "../../components";
 import "./LNAIToolsPage.css";
 
 const LNAIToolsPage = () => {
@@ -11,6 +11,7 @@ const LNAIToolsPage = () => {
       LNAIToolsPage
       <br />
       <div>Selected Service: {searchParams.get("service")}</div>
+      <LNAINameGenerator />
     </div>
   );
 };
