@@ -18,18 +18,16 @@ function SlideTransition(props: SlideProps) {
 }
 
 const LNAIContactPage = () => {
-  const userCredState: any = useSelector((state) => state);
+  const store: any = useSelector((state) => state);
   const dispatch = useDispatch();
 
-  const userToken = userCredState["userToken"]
-    ? userCredState["userToken"]
-    : {};
+  const userToken = store["userToken"] ? store["userToken"] : {};
 
   if (userToken?.access_token) {
     let decoded: any = jwt(userToken?.access_token);
     console.log(userToken);
 
-    console.log(decoded.exp * 1000 < Date.now());
+    console.log(decoded.exp * 1000 - 1000 < Date.now());
     if (decoded.exp * 1000 < Date.now()) {
       localStorage.clear();
       dispatch(removeUserDetails());

@@ -1,0 +1,25 @@
+.lnai-name-generator-generated-names-parent-container {
+  margin: 2.5rem;
+}
+
+.lnai-name-generator-generated-names-paper-wrapper-container {
+  text-align: center;
+  margin: auto !important;
+  width: fit-content;
+}
+
+.lnai-name-generator-generated-names-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+
+  border-radius: 5px;
+  /* background: #d1ffe6 !important; */
+  border-color: #f2d3d8 !important;
+}
+
+.lnai-name-generator-generated-names-element-list-item {
+  width: fit-content !important;
+}
