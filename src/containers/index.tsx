@@ -5,6 +5,7 @@ import LNAIServicePage from "./LNAIServicePage/LNAIServicePage";
 import LNAITeamPage from "./LNAITeamPage/LNAITeamPage";
 import LNAIToolsPage from "./LNAIToolsPage/LNAIToolsPage";
 import LNAILoginPage from "./LNAILoginPage/LNAILoginPage";
+import LNAIFillipFormPage from "./LNAIFillipFormPage/LNAIFillipFormPage";
 
 export {
   LNAIAboutPage,
@@ -14,4 +15,5 @@ export {
   LNAITeamPage,
   LNAIToolsPage,
   LNAILoginPage,
+  LNAIFillipFormPage,
 };

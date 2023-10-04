@@ -8,6 +8,7 @@ import {
   LNAIServicePage,
   LNAITeamPage,
   LNAIToolsPage,
+  LNAIFillipFormPage,
 } from "../containers";
 
 const router = createBrowserRouter([
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
   {
     path: "login",
     element: <LNAILoginPage />,
+  },
+  {
+    path: "fillipform",
+    element: <LNAIFillipFormPage />,
   },
 ]);
 

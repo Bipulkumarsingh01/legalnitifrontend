@@ -30,3 +30,7 @@ export const postGenerateNames = (companyType: any, companyDesc: any) => {
     JSON.stringify(nameGenPayload)
   );
 };
+
+export const getPincodeDetails = (pincode: any) => {
+  return baseUrlApi.get(`documentation/pincode/${pincode}`);
+};
