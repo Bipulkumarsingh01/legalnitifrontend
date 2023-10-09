@@ -10,9 +10,9 @@ import {
 
 import { removeUserDetails, removeUserToken } from "../../actions";
 
-import "./LNAIContactPage.css";
+import "./LNAISignupPage.css";
 
-const LNAIContactPage = () => {
+const LNAISignupPage = () => {
   const store: any = useSelector((state) => state);
   const dispatch = useDispatch();
 
@@ -34,9 +34,15 @@ const LNAIContactPage = () => {
   return (
     <div>
       <LNAINavBar />
-      Contact Us Page
+      {Object.keys(userToken)?.length <= 0 ? (
+        <LNAIMainForm />
+      ) : !userToken?.google ? (
+        <LNAIThankYou />
+      ) : (
+        <LNAIGoogleContactForm />
+      )}
     </div>
   );
 };
 
-export default LNAIContactPage;
+export default LNAISignupPage;

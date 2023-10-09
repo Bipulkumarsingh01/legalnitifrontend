@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
 import jwt from "jwt-decode";
@@ -15,21 +15,26 @@ import { postUserLogin } from "../../axiosActions";
 
 import "./LNAILoginPage.css";
 import { LNAINavBar } from "../../components";
+import { useNavigate } from "react-router-dom";
 
 const initialLoginFormValues = {
   email: "",
-  phNum: undefined,
+  phone_number: -1,
 };
 
 const LNAILoginPage = () => {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
   const userCredState: any = useSelector((state) => state);
   const [loginFormValues, setLoginFormValues] = useState(
     initialLoginFormValues
   );
 
   const checkRequiredFields = () => {
-    if (loginFormValues.phNum !== null && loginFormValues.email.length > 0) {
+    if (
+      loginFormValues.phone_number !== null &&
+      loginFormValues.email.length > 0
+    ) {
       return false;
     }
     return true;
@@ -55,12 +60,18 @@ const LNAILoginPage = () => {
       );
       dispatch(saveUserToken(userLoginResponse.data["x-users-tokens"]));
       dispatch(saveUserDetails(loginFormValues));
+      navigate("/");
     }
   };
 
   const userToken = userCredState["userToken"]
     ? userCredState["userToken"]
     : {};
+
+  useEffect(() => {
+    if (userToken?.access_token) navigate("/");
+  }, []);
+
   if (userToken?.access_token) {
     const decoded: any = jwt(userToken?.access_token);
     console.log(decoded.exp * 1000);
@@ -100,11 +111,15 @@ const LNAILoginPage = () => {
           </Grid>
           <Grid item>
             <TextField
-              id="phNum-input"
-              name="phNum"
+              id="phone_number-input"
+              name="phone_number"
               label="Phone Number"
               type="number"
-              value={loginFormValues.phNum}
+              value={
+                loginFormValues.phone_number !== -1
+                  ? loginFormValues.phone_number
+                  : ""
+              }
               onChange={loginInputFieldHandler}
               className="lnai-contact-form-component-phone-number-input-field"
               required

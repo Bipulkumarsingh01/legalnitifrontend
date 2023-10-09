@@ -1,6 +1,11 @@
 import { useEffect, useState } from "react";
-import { LNAIFillipMainForm } from "../../components";
+
 import { Button } from "@mui/material";
+
+import { LNAIFillipMainForm } from "../../components";
+import { useDispatch, useSelector } from "react-redux";
+import { addFormObjectStoreHandler } from "../../actions";
+import { postFormData } from "../../axiosActions";
 
 const initialFillipFormData = {
   extra: {
@@ -80,7 +85,11 @@ const initialFillipFormData = {
 };
 
 const LNAIFillipFormPage = () => {
+  const store: any = useSelector((state) => state);
+  const dispatch = useDispatch();
   const [fillipFormData, setFillipFormData] = useState(initialFillipFormData);
+
+  const formData = store?.["formData"];
 
   const numberOfDesignatedPartners =
     +fillipFormData.extra.numberOfDesignatedPartners;
@@ -106,6 +115,12 @@ const LNAIFillipFormPage = () => {
     }
   }, [numberOfDesignatedPartners, numberOfPartnersOtherThanDesignatedPartners]);
 
+  const submitFillipFormHandler = () => {
+    dispatch(addFormObjectStoreHandler("fillip", fillipFormData));
+    console.log(fillipFormData);
+    postFormData("fillip", fillipFormData);
+  };
+
   return (
     <div>
       <LNAIFillipMainForm
@@ -115,7 +130,7 @@ const LNAIFillipFormPage = () => {
       <Button
         variant="contained"
         color="secondary"
-        onClick={() => console.log(fillipFormData)}
+        onClick={submitFillipFormHandler}
       >
         Submit
       </Button>
