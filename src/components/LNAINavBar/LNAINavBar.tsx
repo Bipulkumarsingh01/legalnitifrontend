@@ -56,7 +56,7 @@ const LNAINavBar = ({ color }: navBarComponentPropType) => {
   const openChildRouteLarge = Boolean(childRoutesLargeMenuState);
 
   const signUpUserHandler = () => {
-    navigate("/contact");
+    navigate("/signup");
   };
   const loginUserHandler = () => {
     navigate("/login");

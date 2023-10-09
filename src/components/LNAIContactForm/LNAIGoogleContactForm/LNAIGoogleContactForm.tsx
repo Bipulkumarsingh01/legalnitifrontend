@@ -13,7 +13,7 @@ import {
 import { getGoogleUserInfo, postUserSignup } from "../../../axiosActions";
 
 const initialFormValues = {
-  phNum: undefined,
+  phone_number: undefined,
   details: "",
   // state: {
   //   key: undefined,
@@ -43,7 +43,7 @@ const LNAIGoogleContactForm = () => {
   }, [usersAccessTokens]);
 
   const checkRequiredFields = () => {
-    if (formValues.phNum !== null) {
+    if (formValues.phone_number !== null) {
       return false;
     }
     return true;
@@ -81,11 +81,11 @@ const LNAIGoogleContactForm = () => {
       >
         <Grid item>
           <TextField
-            id="phNum-input"
-            name="phNum"
+            id="phone_number-input"
+            name="phone_number"
             label="Phone Number"
             type="number"
-            value={formValues.phNum}
+            value={formValues.phone_number}
             onChange={handleInputChange}
             className="lnai-contact-form-component-phone-number-input-field"
             required

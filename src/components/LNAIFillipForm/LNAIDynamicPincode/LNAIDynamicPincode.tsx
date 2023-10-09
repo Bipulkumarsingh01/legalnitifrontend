@@ -14,30 +14,6 @@ const LNAIDynamicPincode = ({ fillipFormData, setFillipFormData }: any) => {
     event: React.ChangeEvent<HTMLInputElement>
   ) => {
     if (event.target.value?.length === 6) {
-      //       Gandinagar Tumkur	TUMKUR	Karnataka
-      // Melekote	TUMKUR	Karnataka
-      // S G Extn Tumkur	TUMKUR	Karnataka
-      // S.G.Extension Tumkur	TUMKUR	Karnataka
-      // Settihalli	TUMKUR	Karnataka
-      // Sit Campus	TUMKUR	Karnataka
-      // Someswarapuram	TUMKUR	Karnataka
-
-      // const responseJSON = {
-      //   area: [
-      //     "Gandinagar Tumkur",
-      //     "Settihalli",
-      //     "Jayanagar Extn Tumkur",
-      //     "S G Extn Tumkur",
-      //     "Sit Campus",
-      //     "Someswarapuram",
-      //   ],
-      //   country: "India",
-      //   city: "Tumkur",
-      //   district: "Tumkur",
-      //   state: "Karnataka",
-      //   error: "",
-      //   message: "Data fetched Successfully",
-      // };
       const response: any = await getPincodeDetails(event.target.value);
       if (response.status == 200) {
         console.log(response.data);

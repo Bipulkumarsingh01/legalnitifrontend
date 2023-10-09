@@ -10,12 +10,12 @@ import { postUserSignup } from "../../../axiosActions";
 import "./LNAIMainForm.css";
 
 const initialFormValues = {
-  fstName: "",
-  midName: "",
-  lstName: "",
+  first_name: "",
+  middle_name: "",
+  last_name: "",
   email: "",
   details: "",
-  phNum: undefined,
+  phone_number: -1,
 };
 
 const LNAIMainForm = () => {
@@ -24,9 +24,9 @@ const LNAIMainForm = () => {
 
   const checkRequiredFields = () => {
     if (
-      formValues.phNum !== null &&
-      formValues.fstName.length > 0 &&
-      formValues.lstName.length > 0 &&
+      formValues.phone_number !== -1 &&
+      formValues.first_name.length > 0 &&
+      formValues.last_name.length > 0 &&
       formValues.email.length > 0
     ) {
       return false;
@@ -65,32 +65,32 @@ const LNAIMainForm = () => {
         spacing={2}
       >
         <Grid item>
-          <h1>Contact Us</h1>
+          <h1>Sign Up</h1>
         </Grid>
         <Grid item>
           <TextField
             id="name-input"
-            name="fstName"
+            name="first_name"
             label="First Name"
             type="text"
-            value={formValues.fstName}
+            value={formValues.first_name}
             onChange={handleInputChange}
             required
           />
           <TextField
             id="name-input"
-            name="midName"
+            name="middle_name"
             label="Middle Name"
             type="text"
-            value={formValues.midName}
+            value={formValues.middle_name}
             onChange={handleInputChange}
           />
           <TextField
             id="name-input"
-            name="lstName"
+            name="last_name"
             label="Last Name"
             type="text"
-            value={formValues.lstName}
+            value={formValues.last_name}
             onChange={handleInputChange}
             required
           />
@@ -108,11 +108,13 @@ const LNAIMainForm = () => {
         </Grid>
         <Grid item>
           <TextField
-            id="phNum-input"
-            name="phNum"
+            id="phone_number-input"
+            name="phone_number"
             label="Phone Number"
             type="number"
-            value={formValues.phNum}
+            value={
+              formValues.phone_number !== -1 ? formValues.phone_number : ""
+            }
             onChange={handleInputChange}
             className="lnai-contact-form-component-phone-number-input-field"
             required
@@ -150,4 +152,5 @@ const LNAIMainForm = () => {
     </form>
   );
 };
+
 export default LNAIMainForm;
