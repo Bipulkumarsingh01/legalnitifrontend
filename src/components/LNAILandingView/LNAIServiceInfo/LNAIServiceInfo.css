@@ -1,0 +1,44 @@
+.lnai-service-info-container {
+  margin-top: 5rem;
+}
+
+.lnai-service-info-cards-main-container-1 {
+  display: flex;
+  gap: 2rem;
+  margin-top: 4.5rem;
+  justify-content: center;
+}
+
+.lnai-service-info-cards-main-container-2 {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  justify-content: center;
+}
+
+.lnai-service-info-container-heading-highlight-text {
+  background: -webkit-linear-gradient(
+    rgba(147, 64, 238, 1) 0%,
+    rgba(163, 19, 171, 1) 63%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.lnai-service-info-container-heading {
+  text-align: center;
+}
+
+.lnai-service-info-card {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 200px;
+  border-radius: var(--lnai-primary-border-radius);
+  border: 1px solid var(--lnai-light-purple);
+  box-shadow: 0px 3.18498px 42.32px rgba(0, 0, 0, 0.25);
+}

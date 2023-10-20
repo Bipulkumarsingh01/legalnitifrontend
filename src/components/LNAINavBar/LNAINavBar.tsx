@@ -15,7 +15,7 @@ import { RxAvatar } from "react-icons/rx";
 import navbarRoutes from "./navbarRoutes";
 import { CascadedMenuLarge, CascadedMenuSmall } from "../../utils";
 
-import { LNAILogoTp } from "../../assets";
+import { LNAICart, LNAIFavourates, LNAILogoTp } from "../../assets";
 import { ThemeProvider } from "@emotion/react";
 import { createTheme } from "@mui/material";
 
@@ -113,14 +113,14 @@ const LNAINavBar = ({ color }: navBarComponentPropType) => {
   const theme = createTheme({
     palette: {
       primary: {
-        main: color?.length ? color : "rgba(0,0,0,0.9)",
+        main: "rgba(0,0,0,0.9)",
       },
     },
   });
 
   return (
     <ThemeProvider theme={theme}>
-      <AppBar position="sticky">
+      <AppBar position="sticky" className="lnai-navbar-accessibility-container">
         <Toolbar disableGutters>
           <Typography
             variant="h6"
@@ -197,8 +197,25 @@ const LNAINavBar = ({ color }: navBarComponentPropType) => {
               navbarChildRoutesLargeMenuCloseHandler
             }
           />
-
           <Box sx={{ flexGrow: 0 }}>
+            <IconButton sx={{ p: 0 }}>
+              <img
+                src={LNAIFavourates}
+                alt=""
+                width={30}
+                height={30}
+                style={{ margin: "0.5rem" }}
+              />
+            </IconButton>
+            <IconButton sx={{ p: 0 }}>
+              <img
+                src={LNAICart}
+                alt=""
+                width={30}
+                height={30}
+                style={{ margin: "0.5rem" }}
+              />
+            </IconButton>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <RxAvatar className="lnai-navbar-avatar-outlined-icon" />

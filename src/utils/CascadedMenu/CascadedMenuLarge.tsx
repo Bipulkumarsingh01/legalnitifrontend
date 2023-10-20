@@ -15,7 +15,13 @@ const CascadedMenuLarge = ({
   navbarChildRoutesLargeMenuCloseHandler,
 }: CascadedMenuLargePropType) => {
   return (
-    <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+    <Box
+      sx={{
+        flexGrow: 1,
+        display: { xs: "none", md: "flex" },
+        justifyContent: "center",
+      }}
+    >
       {navbarRoutes.map((pageItem, index) => (
         <Fragment key={index}>
           {!pageItem.hasChildren ? (

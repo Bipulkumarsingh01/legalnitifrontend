@@ -1,8 +1,8 @@
 import { Button } from "@mui/material";
-import "./LNAIDashboardView.css";
-import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { getFormData, getRunScript } from "../../axiosActions";
+import "./LNAIDashboardView.css";
 
 const LNAIDashboardView = ({ decodedToken }: any) => {
   const navigate = useNavigate();
@@ -22,7 +22,7 @@ const LNAIDashboardView = ({ decodedToken }: any) => {
   }, [decodedToken]);
 
   const runScriptHandler = async () => {
-    const scriptResponse = await getRunScript();
+    const scriptResponse: any = await getRunScript();
     console.log(scriptResponse.data);
   };
 

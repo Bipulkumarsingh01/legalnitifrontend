@@ -1,0 +1,24 @@
+@import "../../globals.css";
+
+.lnai-landing-page-about-ai-main-container {
+  /* height: 810px; */
+  background: linear-gradient(
+    180deg,
+    rgba(45, 13, 57, 0.21) 27.34%,
+    rgba(141, 4, 193, 0) 100%
+  );
+}
+
+.lnai-landing-page-info-graph-main-container {
+  margin-top: 5rem;
+}
+
+.lnai-landing-page-why-legalniti-main-container {
+  /* height: 1047px; */
+  background: linear-gradient(
+    180deg,
+    rgba(45, 13, 57, 0) 0%,
+    rgba(45, 13, 57, 0.19) 39.06%,
+    rgba(141, 4, 193, 0) 100%
+  );
+}
