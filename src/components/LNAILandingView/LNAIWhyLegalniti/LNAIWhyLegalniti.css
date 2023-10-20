@@ -1,0 +1,51 @@
+.lnai-landing-view-why-legalniti-container {
+  text-align: center;
+  padding-top: 5rem;
+  position: relative;
+}
+
+.lnai-landing-view-why-legalniti-ai-animation-gif {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 2rem;
+  margin-right: -3rem;
+}
+
+.lnai-landing-view-why-legalniti-heading {
+  font-size: 2.5rem;
+}
+
+.lnai-landing-view-why-legalniti-heading-highlight {
+  background: var(--lnai-purple-gradient-background);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.lnai-landing-view-why-legalniti-grid-container {
+  display: grid;
+
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 0px;
+  height: 100%;
+}
+
+.lnai-landing-view-why-legalniti-grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: 1rem; */
+  /* width: 12rem; */
+}
+
+.lnai-landing-view-why-legalniti-image-item {
+  width: 25%;
+}
+
+.lnai-landing-view-why-legalniti-grid-item-text {
+  /* margin-left: 1rem; */
+  width: 5rem;
+  /* width: 10rem; */
+}

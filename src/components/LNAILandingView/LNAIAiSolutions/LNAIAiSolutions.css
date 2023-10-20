@@ -1,0 +1,47 @@
+.lnai-landing-page-ai-solutions-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.lnai-landing-page-ai-solutions-heading-span {
+  font-size: 2rem;
+  background: var(--lnai-purple-gradient-background);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.lnai-landing-page-ai-solutions-details-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lnai-landing-page-ai-solutions-details-text-container {
+  margin: 2rem;
+}
+
+.lnai-landing-page-ai-solutions-details-heading {
+  position: relative;
+}
+
+.lnai-landing-page-ai-solutions-details-heading::after {
+  content: " ";
+  height: 2px;
+  width: 100px;
+  background: rgba(0, 0, 0, 0.767);
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 45%;
+}
+
+.lnai-landing-page-ai-solutions-details-text {
+  width: 25rem;
+}
+
+.lnai-landing-page-ai-solutions-details-know-more-button {
+  padding-top: 2rem;
+}
