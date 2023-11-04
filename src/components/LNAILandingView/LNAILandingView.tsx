@@ -41,7 +41,7 @@ const LNAILandingView = () => {
           <LNAITrustedClients />
         </div>
         <div className="lnai-landing-page-footer-main-container">
-          <LNAIFooter />
+          <LNAIFooter getStarted={true} />
         </div>
       </div>
     </ThemeProvider>

@@ -14,56 +14,65 @@ import {
 
 import "./LNAIFooter.css";
 
-const LNAIFooter = () => {
+const LNAIFooter = ({ getStarted }: { getStarted: boolean }) => {
   return (
-    <div className="lnai-landing-view-footer-container">
+    <div
+      className="lnai-landing-view-footer-container"
+      style={{ marginTop: getStarted ? "10rem" : "10rem" }}
+    >
       <div className="lnai-landing-view-get-started-container">
-        <div className="lnai-landing-view-get-started-content">
-          <div className="lnai-landing-view-get-started-content-text-items">
-            <div className="lnai-landing-view-get-started-content-text">
-              <h3>Get started Today</h3>
-              <p>
-                Leganiti always helps you to stay on top of your compliance
-                requirements and avoid any potential penalties and fines.
-              </p>
+        {getStarted && (
+          <div className="lnai-landing-view-get-started-content">
+            <div className="lnai-landing-view-get-started-content-text-items">
+              <div className="lnai-landing-view-get-started-content-text">
+                <h3>Get started Today</h3>
+                <p>
+                  Leganiti always helps you to stay on top of your compliance
+                  requirements and avoid any potential penalties and fines.
+                </p>
+              </div>
+              <div className="lnai-landing-view-get-started-content-input-fields">
+                <ThemeProvider theme={LNAIThemeConfig}>
+                  <TextField
+                    id="email-address"
+                    color="primary"
+                    placeholder="Email Address"
+                    variant="outlined"
+                    type="text"
+                    required
+                    className="lnai-footer-input-field"
+                    size="small"
+                  />
+                  <TextField
+                    id="contact-number"
+                    color="primary"
+                    type="text"
+                    required
+                    placeholder="Contact Number"
+                    variant="outlined"
+                    className="lnai-footer-input-field"
+                    size="small"
+                  />
+                  <Button size="small" variant="LNAIDarkPurpleGradientLight">
+                    Send Message
+                  </Button>
+                </ThemeProvider>
+              </div>
             </div>
-            <div className="lnai-landing-view-get-started-content-input-fields">
-              <ThemeProvider theme={LNAIThemeConfig}>
-                <TextField
-                  id="email-address"
-                  color="primary"
-                  placeholder="Email Address"
-                  variant="outlined"
-                  type="text"
-                  required
-                  className="lnai-footer-input-field"
-                  size="small"
-                />
-                <TextField
-                  id="contact-number"
-                  color="primary"
-                  type="text"
-                  required
-                  placeholder="Contact Number"
-                  variant="outlined"
-                  className="lnai-footer-input-field"
-                  size="small"
-                />
-                <Button size="small" variant="LNAIDarkPurpleGradientLight">
-                  Send Message
-                </Button>
-              </ThemeProvider>
-            </div>
+            <img
+              src={GetStarted}
+              alt="GetStarted"
+              height={250}
+              width={175}
+              className="lnai-landing-view-get-started-content-image"
+            />
           </div>
-          <img
-            src={GetStarted}
-            alt="GetStarted"
-            height={250}
-            width={175}
-            className="lnai-landing-view-get-started-content-image"
-          />
-        </div>
-        <div className="lnai-landing-view-about-us-container">
+        )}
+
+        <div
+          className="lnai-landing-view-about-us-container"
+          style={{ padding: getStarted ? "120px 20px 20px 20px" : "10px" }}
+        >
           <div className="lnai-landing-view-about-us-content-container">
             <div className="lnai-landing-view-about-us-content-address-item">
               <img src={LNAILogoTp} alt="LNAI LOGO" height={75} width={100} />

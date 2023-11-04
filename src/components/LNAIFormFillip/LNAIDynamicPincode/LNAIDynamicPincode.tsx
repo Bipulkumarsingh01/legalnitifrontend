@@ -9,6 +9,8 @@ import {
 } from "@mui/material";
 import { getPincodeDetails } from "../../../axiosActions";
 
+import "./LNAIDynamicPincode.css";
+
 const LNAIDynamicPincode = ({ fillipFormData, setFillipFormData }: any) => {
   const pincodeChangeHandler = async (
     event: React.ChangeEvent<HTMLInputElement>
@@ -33,7 +35,7 @@ const LNAIDynamicPincode = ({ fillipFormData, setFillipFormData }: any) => {
     }
   };
   return (
-    <div>
+    <div className="lnai-dynamic-pincode-form-main-container">
       {/* <FormControl variant="standard"> */}
       <TextField
         id="outlined-controlled"
@@ -46,6 +48,7 @@ const LNAIDynamicPincode = ({ fillipFormData, setFillipFormData }: any) => {
           updatedFillipFormData.registeredAddress.addressI = event.target.value;
           setFillipFormData(updatedFillipFormData);
         }}
+        className="lnai-primary-form-input-field"
       />
       <TextField
         id="outlined-controlled"
@@ -59,6 +62,7 @@ const LNAIDynamicPincode = ({ fillipFormData, setFillipFormData }: any) => {
             event.target.value;
           setFillipFormData(updatedFillipFormData);
         }}
+        className="lnai-primary-form-input-field"
       />
       <TextField
         id="outlined-controlled"
@@ -69,9 +73,10 @@ const LNAIDynamicPincode = ({ fillipFormData, setFillipFormData }: any) => {
             : null
         }
         onChange={pincodeChangeHandler}
+        className="lnai-primary-form-input-field"
       />
-      <FormControl style={{ width: "12rem" }}>
-        <InputLabel id="fillipfrom-area-select">Area</InputLabel>
+      <FormControl style={{ width: "12rem" }} size="small">
+        {/* <InputLabel id="fillipfrom-area-select">Area</InputLabel> */}
         <Select
           disabled={fillipFormData.extra.area?.length > 0 ? false : true}
           labelId="fillipfrom-area-select"
@@ -79,9 +84,9 @@ const LNAIDynamicPincode = ({ fillipFormData, setFillipFormData }: any) => {
           value={
             fillipFormData.registeredAddress.area
               ? fillipFormData.registeredAddress.area
-              : ""
+              : "select"
           }
-          label="Area"
+          // label="Area"
           onChange={(event: SelectChangeEvent<any>) => {
             const updateFillipFormData = {
               ...fillipFormData,
@@ -89,7 +94,11 @@ const LNAIDynamicPincode = ({ fillipFormData, setFillipFormData }: any) => {
             updateFillipFormData.registeredAddress.area = event.target.value;
             setFillipFormData(updateFillipFormData);
           }}
+          className="lnai-primary-form-select-field lnai-dynamic-form-area-select-field"
         >
+          <MenuItem disabled value="select">
+            Area
+          </MenuItem>
           {fillipFormData.extra.area?.map((fetchedAreas: any, index: any) => (
             <MenuItem key={index} value={fetchedAreas}>
               {fetchedAreas}
@@ -109,6 +118,7 @@ const LNAIDynamicPincode = ({ fillipFormData, setFillipFormData }: any) => {
           updatedFillipFormData.registeredAddress.country = event.target.value;
           setFillipFormData(updatedFillipFormData);
         }}
+        className="lnai-primary-form-input-field"
       />
       <TextField
         disabled
@@ -122,6 +132,7 @@ const LNAIDynamicPincode = ({ fillipFormData, setFillipFormData }: any) => {
           updatedFillipFormData.registeredAddress.state = event.target.value;
           setFillipFormData(updatedFillipFormData);
         }}
+        className="lnai-primary-form-input-field"
       />
       <TextField
         disabled
@@ -135,6 +146,7 @@ const LNAIDynamicPincode = ({ fillipFormData, setFillipFormData }: any) => {
           updatedFillipFormData.registeredAddress.district = event.target.value;
           setFillipFormData(updatedFillipFormData);
         }}
+        className="lnai-primary-form-input-field"
       />
       <TextField
         disabled
@@ -148,6 +160,7 @@ const LNAIDynamicPincode = ({ fillipFormData, setFillipFormData }: any) => {
           updatedFillipFormData.registeredAddress.city = event.target.value;
           setFillipFormData(updatedFillipFormData);
         }}
+        className="lnai-primary-form-input-field"
       />
       <TextField
         id="outlined-controlled"
@@ -167,6 +180,7 @@ const LNAIDynamicPincode = ({ fillipFormData, setFillipFormData }: any) => {
         InputProps={{
           startAdornment: <InputAdornment position="start">+91</InputAdornment>,
         }}
+        className="lnai-primary-form-input-field lnai-dynamic-form-phone-number-input-field"
       />
       <TextField
         id="outlined-controlled"
@@ -183,6 +197,7 @@ const LNAIDynamicPincode = ({ fillipFormData, setFillipFormData }: any) => {
           updatedFillipFormData.registeredAddress.mobile = event.target.value;
           setFillipFormData(updatedFillipFormData);
         }}
+        className="lnai-primary-form-input-field"
       />
       <TextField
         id="outlined-controlled"
@@ -195,6 +210,7 @@ const LNAIDynamicPincode = ({ fillipFormData, setFillipFormData }: any) => {
           updatedFillipFormData.registeredAddress.email = event.target.value;
           setFillipFormData(updatedFillipFormData);
         }}
+        className="lnai-primary-form-input-field"
       />
       <TextField
         id="outlined-controlled"
@@ -208,6 +224,7 @@ const LNAIDynamicPincode = ({ fillipFormData, setFillipFormData }: any) => {
             event.target.value;
           setFillipFormData(updatedFillipFormData);
         }}
+        className="lnai-primary-form-input-field"
       />
       <TextField
         id="outlined-controlled"
@@ -224,6 +241,7 @@ const LNAIDynamicPincode = ({ fillipFormData, setFillipFormData }: any) => {
           updatedFillipFormData.registeredAddress.fax = event.target.value;
           setFillipFormData(updatedFillipFormData);
         }}
+        className="lnai-primary-form-input-field"
       />
       {/* </FormControl> */}
     </div>

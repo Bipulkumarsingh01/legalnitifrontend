@@ -42,11 +42,10 @@ const LNAILandingPage = () => {
       // );
     }
   }, [accessToken]);
-  console.log(decodedToken);
 
   return (
     <div>
-      <LNAINavBar color={scrolled} />
+      <LNAINavBar />
       {accessToken ? (
         <LNAIDashboardView decodedToken={decodedToken} />
       ) : (

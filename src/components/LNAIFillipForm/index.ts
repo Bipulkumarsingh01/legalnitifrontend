@@ -1,4 +1,4 @@
-import LNAIDynamicPincode from "./LNAIDynamicPincode/LNAIDynamicPincode";
-import LNAIPartnersMainForm from "./LNAIPartnersMainForm/LNAIPartnersMainForm";
+import LNAIDynamicPincode from "../LNAIFormFillip/LNAIDynamicPincode/LNAIDynamicPincode";
+import LNAIPartnersMainForm from "../LNAIFormFillip/LNAIPartnersMainForm/LNAIPartnersMainForm";
 
 export { LNAIDynamicPincode, LNAIPartnersMainForm };

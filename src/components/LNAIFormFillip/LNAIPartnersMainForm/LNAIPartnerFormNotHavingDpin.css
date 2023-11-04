@@ -1,0 +1,88 @@
+.lnai-partners-not-having-dpin-main-container {
+  margin: 1rem 1.5rem 1rem 1.5rem;
+}
+
+.lnai-partners-not-having-dpin-content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.lnai-partners-having-dpin-shares-input-field-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.lnai-partners-having-dpin-contrib-other-input-field {
+  margin-top: 0.5rem !important;
+}
+
+div.lnai-partners-not-having-dpin-form-items-container
+  > *:not(.MuiFormLabel-root) {
+  margin-top: 0.5rem;
+}
+
+.lnai-partners-not-having-dpin-partner-details-fields-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.lnai-partners-not-having-dpin-area-select,
+.lnai-partners-not-having-dpin-year-select,
+.lnai-partners-not-having-dpin-month-select,
+.lnai-partners-not-having-dpin-partner-contribution-select {
+  width: 14rem;
+}
+
+.lnai-partners-not-having-dpin-partner-address-fields-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.lnai-partners-not-having-dpin-partner-address-fields-phone-number {
+  width: 14rem;
+}
+
+.lnai-partners-not-having-dpin-partner-address-stayed-container {
+  display: flex;
+  /* flex-direction: row; */
+  width: 100%;
+  gap: 0.5rem;
+}
+
+.lnai-partners-not-having-dpin-form-pan-details-fields-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.lnai-partners-not-having-dpin-seeking-converion-fields-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.lnai-partners-not-having-dpin-dob-field .MuiInputBase-root {
+  text-transform: none;
+  background: linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(0deg, rgba(61, 5, 94, 1) 0%, rgba(141, 4, 193, 1) 100%)
+      border-box;
+  color: black;
+  border: 1px solid transparent;
+  border-radius: var(--lnai-primary-border-radius);
+}
+
+.lnai-partners-not-having-dpin-dob-field .MuiOutlinedInput-notchedOutline {
+  border: none;
+}
+
+.MuiPickersPopper-root .Mui-selected {
+  background-color: purple !important;
+}
+
+.lnai-partners-not-having-dpin-submit-button-container {
+  text-align: center;
+  margin-top: 3rem;
+}

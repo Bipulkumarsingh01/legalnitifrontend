@@ -1,0 +1,68 @@
+.lnai-form-fillip-main-contaner {
+  background: linear-gradient(
+    180deg,
+    rgba(45, 13, 57, 0.21) 27.34%,
+    rgba(141, 4, 193, 0) 100%
+  );
+  /* max-height: 100vh; */
+  padding-top: 2.5rem;
+}
+
+.lnai-form-fillip-content-container {
+  padding: 1rem;
+  box-shadow: 0px -1.75906px 21.1087px #b8d8fc;
+  background: linear-gradient(white, white) padding-box,
+    var(--lnai-purple-gradient-background) border-box;
+  border-radius: 2rem;
+  border: 5px solid transparent;
+  width: 90%;
+  min-height: 75vh;
+  height: 100%;
+  margin: auto;
+  /* margin-top: 2.5rem; */
+  margin-bottom: 2.5rem;
+}
+
+.lnai-form-fillip-menu-switch-button-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.lnai-form-fillip-menu-switch-button {
+  margin: 1rem !important;
+}
+
+.lnai-form-fillip-menu-switch-button.left-aligned,
+.MuiToggleButton-root {
+  width: 5rem;
+  border-radius: 1rem !important;
+  padding: 0.375rem !important;
+  border: 1px solid black !important;
+}
+
+.lnai-form-fillip-menu-switch-button.left-aligned,
+.MuiToggleButton-root.Mui-selected {
+  background: var(--lnai-purple-gradient-background);
+}
+
+.lnai-form-fillip-menu-switch-button.left-aligned,
+.MuiToggleButton-root.Mui-selected:hover {
+  background: var(--lnai-purple-gradient-background);
+}
+
+.lnai-form-fillip-menu-switch-button.left-aligned,
+.MuiToggleButton-root:hover {
+  background: grey;
+}
+
+.lnai-form-fillip-page-1-main-container,
+.lnai-form-fillip-page-2-main-container,
+.lnai-form-fillip-page-3-main-container {
+  padding: 2rem;
+}
+
+.lnai-form-fillip-menu-switch-button-container {
+  margin-top: 1rem;
+}

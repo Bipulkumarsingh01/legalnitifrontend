@@ -32,7 +32,7 @@ interface navBarComponentPropType {
   color?: string;
 }
 
-const LNAINavBar = ({ color }: navBarComponentPropType) => {
+const LNAINavBar = ({ menuItems }: { menuItems?: string }) => {
   const store: any = useSelector((state) => state);
   const dispatch = useDispatch();
 
@@ -56,10 +56,10 @@ const LNAINavBar = ({ color }: navBarComponentPropType) => {
   const openChildRouteLarge = Boolean(childRoutesLargeMenuState);
 
   const signUpUserHandler = () => {
-    navigate("/signup");
+    navigate("/accounts?source=signup");
   };
   const loginUserHandler = () => {
-    navigate("/login");
+    navigate("/accounts?source=signin");
   };
 
   const logoutUserHandler = () => {
@@ -141,10 +141,11 @@ const LNAINavBar = ({ color }: navBarComponentPropType) => {
                 src={LNAILogoTp}
                 alt={"Legalniti Logo"}
                 className="lnai-navbar-legalniti-logo"
+                height={40}
+                width={80}
               />
             </NavLink>
           </Typography>
-
           <CascadedMenuSmall
             handleOpenNavMenu={handleOpenNavMenu}
             handleCloseNavMenu={handleCloseNavMenu}
@@ -196,7 +197,9 @@ const LNAINavBar = ({ color }: navBarComponentPropType) => {
             navbarChildRoutesLargeMenuCloseHandler={
               navbarChildRoutesLargeMenuCloseHandler
             }
+            menuItems={menuItems}
           />
+
           <Box sx={{ flexGrow: 0 }}>
             <IconButton sx={{ p: 0 }}>
               <img
@@ -207,7 +210,12 @@ const LNAINavBar = ({ color }: navBarComponentPropType) => {
                 style={{ margin: "0.5rem" }}
               />
             </IconButton>
-            <IconButton sx={{ p: 0 }}>
+            <IconButton
+              sx={{ p: 0 }}
+              onClick={() => {
+                navigate("/cart");
+              }}
+            >
               <img
                 src={LNAICart}
                 alt=""

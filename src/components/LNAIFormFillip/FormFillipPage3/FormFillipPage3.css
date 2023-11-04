@@ -1,0 +1,23 @@
+.form-fillip-page3-content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.form-fillip-page3-auth-for-data-label,
+.form-fillip-page3-require-help-label {
+  color: black !important;
+}
+
+.form-fillip-page3-submit-button-container {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.form-fillip-page3-go-back-container {
+  margin-top: 1rem;
+}
+
+.form-fillip-page3-go-back-container img {
+  cursor: pointer;
+}

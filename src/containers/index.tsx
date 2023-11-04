@@ -7,8 +7,12 @@ import LNAIToolsPage from "./LNAIToolsPage/LNAIToolsPage";
 import LNAILoginPage from "./LNAILoginPage/LNAILoginPage";
 import LNAIFillipFormPage from "./LNAIFillipFormPage/LNAIFillipFormPage";
 import LNAISignupPage from "./LNAISignupPage/LNAISignupPage";
+import LNAIAccounts from "./LNAIAccounts/LNAIAccounts";
+import LNAICartPage from "./LNAICartPage/LNAICartPage";
+import LNAIFormsPage from "./LNAIFormsPage/LNAIFormsPage";
 
 export {
+  LNAICartPage,
   LNAIAboutPage,
   LNAIContactPage,
   LNAILandingPage,
@@ -18,4 +22,6 @@ export {
   LNAILoginPage,
   LNAIFillipFormPage,
   LNAISignupPage,
+  LNAIAccounts,
+  LNAIFormsPage,
 };

@@ -15,6 +15,7 @@ import {
 import { getGoogleUserInfo } from "../../axiosActions";
 
 import "./LNAILoginGoogle.css";
+import { GoogleBg } from "../../assets";
 
 const LNAILoginGoole = () => {
   const userCredState: any = useSelector((state) => state);
@@ -65,9 +66,21 @@ const LNAILoginGoole = () => {
           </Button>
         </div>
       ) : (
-        <Button variant="contained" onClick={() => login()}>
-          Sign in with Google 🚀
-        </Button>
+        <div className="lnai-login-google-button-container">
+          <Button
+            component="label"
+            variant="contained"
+            onClick={() => login()}
+            className="lnai-login-google-button"
+            startIcon={
+              <img src={GoogleBg} alt="google" height={25} width={25} />
+            }
+          >
+            <p className="lnai-login-google-button-label">
+              Sign Up with Google
+            </p>
+          </Button>
+        </div>
       )}
     </div>
   );

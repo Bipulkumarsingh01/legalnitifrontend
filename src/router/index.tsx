@@ -10,6 +10,9 @@ import {
   LNAIToolsPage,
   LNAIFillipFormPage,
   LNAISignupPage,
+  LNAIAccounts,
+  LNAICartPage,
+  LNAIFormsPage,
 } from "../containers";
 
 const router = createBrowserRouter([
@@ -49,51 +52,18 @@ const router = createBrowserRouter([
     path: "signup",
     element: <LNAISignupPage />,
   },
+  {
+    path: "accounts",
+    element: <LNAIAccounts />,
+  },
+  {
+    path: "cart",
+    element: <LNAICartPage />,
+  },
+  {
+    path: "form/:formType",
+    element: <LNAIFormsPage />,
+  },
 ]);
 
 export default router;
-
-// export const router = createBrowserRouter([
-//   {
-//     path: '/',
-//     element: <ATMS_LandingPage />,
-//   },
-
-//   {
-//     path: '/',
-//     element: <ATMS_HomePage />,
-//     children: [
-//       {
-//         path: 'dashboard',
-//         element: <ATMS_MainDashboard />,
-//       },
-//       {
-//         path: 'tickets',
-//         element: <ATMS_TicketsPage />,
-//       },
-//       {
-//         path: 'ticket/:ticketId',
-//         element: <ATMS_TicketDetailPage />,
-//       },
-//       {
-//         path: 'settings',
-//         element: <ATMS_SettingsPage />,
-//       },
-//     ],
-//   },
-
-//   {
-//     path: '/ticket-details',
-//     element: <ATMS_TicketDetailsEmbed />,
-//   },
-
-//   {
-//     path: '/widgets',
-//     element: <ATMS_WidgetsPage />,
-//   },
-
-//   {
-//     path: '/add-ticket',
-//     element: <ATMS_AddTicketEmbed />,
-//   },
-// ])

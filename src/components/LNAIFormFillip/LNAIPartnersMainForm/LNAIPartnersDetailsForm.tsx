@@ -9,6 +9,7 @@ import LNAIPartnerFormHavingDpin from "./LNAIPartnerFormHavingDpin";
 import LNAIPartnerFormNotHavingDpin from "./LNAIPartnerFormNotHavingDpin";
 import LNAIBodiesFormHavingDpin from "./LNAIBodiesFormHavingDpin";
 import LNAIBodiesFormNotHavingDpin from "./LNAIBodiesFormNotHavingDpin";
+import { useState } from "react";
 
 const category: any = {
   indHavingDpinNumArray:
@@ -28,10 +29,21 @@ const LNAIPartnersDetailsForm = ({
   personNumber,
   designated,
 }: any) => {
-  console.log(selectedType, personNumber);
+  const [expanded, setExpanded] = useState<string | false>(false);
+
+  const handleChange =
+    (panel: string) => (event: React.SyntheticEvent, isExpanded: boolean) => {
+      setExpanded(isExpanded ? panel : false);
+    };
+
+  console.log(expanded);
+
   return (
-    <div>
-      <Accordion>
+    <>
+      <Accordion
+        expanded={expanded === `${selectedType}`}
+        onChange={handleChange(`${selectedType}`)}
+      >
         <AccordionSummary
           expandIcon={<IoIosArrowDown />}
           aria-controls="panel1a-content"
@@ -78,7 +90,7 @@ const LNAIPartnersDetailsForm = ({
           </Typography>
         </AccordionDetails>
       </Accordion>
-    </div>
+    </>
   );
 };
 

@@ -85,3 +85,15 @@ export const getRunScript = () => {
     return baseUrlApi.get(`forms/script`, config);
   }
 };
+
+export const getSubscribedServices = (usersAccessToken: string) => {
+  if (usersAccessToken) {
+    const config = {
+      headers: {
+        Authorization: `Bearer ${usersAccessToken}`,
+        Accept: "application/json",
+      },
+    };
+    return baseUrlApi.get("services/subscribed", config);
+  }
+};
