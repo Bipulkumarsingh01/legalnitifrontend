@@ -1,0 +1,47 @@
+.lnai-bodies-not-having-dpin-main-container {
+  margin: 1rem 1.5rem 1rem 1.5rem;
+}
+
+.lnai-bodies-not-having-dpin-content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+div.lnai-bodies-not-having-dpin-form-items-container
+  > *:not(.MuiFormLabel-root) {
+  margin-top: 0.5rem;
+}
+
+.lnai-bodies-not-having-dpin-office-addr-fields-container,
+.lnai-bodies-not-having-dpin-nominee-details-fields-container,
+.lnai-bodies-not-having-dpin-pan-details-fields-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.lnai-bodies-not-having-dpin-partner-address-fields-phone-number,
+.lnai-bodies-not-having-dpin-partner-address-fields-mobile-number,
+.lnai-bodies-not-having-dpin-partner-present-address-fields-phone-number {
+  width: 14rem;
+}
+
+.lnai-bodies-not-having-dpin-dob-field .MuiInputBase-root {
+  text-transform: none;
+  background: linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(0deg, rgba(61, 5, 94, 1) 0%, rgba(141, 4, 193, 1) 100%)
+      border-box;
+  color: black;
+  border: 1px solid transparent;
+  border-radius: var(--lnai-primary-border-radius);
+}
+
+.lnai-bodies-not-having-dpin-dob-field .MuiOutlinedInput-notchedOutline {
+  border: none;
+}
+
+.lnai-bodies-not-having-dpin-submit-button-container {
+  text-align: center;
+  margin-top: 3rem;
+}

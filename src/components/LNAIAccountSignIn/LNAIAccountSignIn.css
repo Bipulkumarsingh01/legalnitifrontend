@@ -1,0 +1,49 @@
+.lnai-contact-form-component-phone-number-input-field
+  .MuiInputBase-input::-webkit-outer-spin-button,
+.lnai-contact-form-component-phone-number-input-field
+  .MuiInputBase-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.lnai-contact-form-component-phone-number-input-field .MuiInputBase-input {
+  -moz-appearance: textfield;
+}
+
+.lnai-account-signin-main-form-container {
+}
+
+.lnai-contact-form-component-email-input-logo,
+.lnai-contact-form-component-phone-number-input-logo {
+  font-size: 1.6rem;
+}
+
+.lnai-contact-form-component-phone-number-input-field,
+.lnai-contact-form-component-email-input-field {
+  width: 20rem;
+}
+
+/* Bro delete  */
+
+/* text-transform: none;
+background: linear-gradient(#000, #000) padding-box,
+  linear-gradient(
+      90deg,
+      hsl(266deg 56% 22%) 0%,
+      hsl(267deg 56% 29%) 9%,
+      hsl(268deg 57% 36%) 18%,
+      hsl(269deg 57% 43%) 27%,
+      hsl(270deg 58% 50%) 36%,
+      hsl(271deg 79% 57%) 45%,
+      hsl(275deg 85% 58%) 55%,
+      hsl(281deg 72% 53%) 64%,
+      hsl(287deg 68% 48%) 73%,
+      hsl(293deg 73% 43%) 82%,
+      hsl(298deg 79% 38%) 91%,
+      hsl(303deg 88% 35%) 100%
+    )
+    border-box;
+color: white;
+border: 3px solid transparent;
+box-shadow: 0px -1.75906px 9px rgba(61, 5, 94, 0.63); */

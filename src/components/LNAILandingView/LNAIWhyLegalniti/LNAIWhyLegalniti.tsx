@@ -14,13 +14,20 @@ import "./LNAIWhyLegalniti.css";
 const LNAIWhyLegalniti = () => {
   return (
     <div className="lnai-landing-view-why-legalniti-container">
-      <img
+      {/* <img
         src={AiAnimation}
         alt="AiAnimation"
         height={300}
         width={300}
         className="lnai-landing-view-why-legalniti-ai-animation-gif"
-      />
+      /> */}
+      <iframe
+        frameBorder="0"
+        className="lnai-landing-view-why-legalniti-ai-animation-gif"
+        height={300}
+        width={300}
+        src="https://lottie.host/?file=463cc4e0-8f39-4b51-9743-13a654c02430/MxmUD7365K.json"
+      ></iframe>
       <h1 className="lnai-landing-view-why-legalniti-heading">
         Why{" "}
         <span className="lnai-landing-view-why-legalniti-heading-highlight">

@@ -1,0 +1,14 @@
+.lnai-dynamic-pincode-form-main-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 1rem 0 1rem 0;
+}
+
+.lnai-dynamic-form-area-select-field {
+  width: 14rem;
+}
+
+.lnai-dynamic-form-phone-number-input-field {
+  width: 14rem;
+}

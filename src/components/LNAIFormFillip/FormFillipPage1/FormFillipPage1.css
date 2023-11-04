@@ -1,0 +1,48 @@
+.form-fillip-page1-is-name-approved-label {
+  color: black !important;
+}
+.Mui-focused {
+  color: black !important;
+}
+
+.form-fillip-page1-proof-office-addr {
+  color: black !important;
+}
+
+.form-fillip-page1-company-details-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-fillip-page1-company-address-container {
+  margin-top: 2rem !important;
+}
+
+.form-fillip-page1-is-name-approved-radio-group .MuiFormControlLabel-root {
+  margin: 0.25rem 0 0;
+}
+
+.form-fillip-srn-number-input-container {
+  margin-top: 2rem !important;
+}
+
+.form-fillip-srn-number-input-container .MuiFormControl-root {
+  margin: 1rem 0 1rem 0;
+}
+
+.form-fillip-page1-proof-office-addr-container {
+  margin-top: 2rem;
+}
+
+.form-fillip-page1-proof-office-addr-container .MuiButtonBase-root {
+  margin: 1rem 0 1rem 0;
+}
+
+.form-fillip-page1-go-next-container {
+  float: right;
+  margin-top: -1.5rem;
+}
+
+.form-fillip-page1-go-next-container img {
+  cursor: pointer;
+}

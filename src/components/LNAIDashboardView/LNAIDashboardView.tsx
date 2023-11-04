@@ -1,15 +1,44 @@
 import { Button } from "@mui/material";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { getFormData, getRunScript } from "../../axiosActions";
+import {
+  getFormData,
+  getRunScript,
+  getSubscribedServices,
+} from "../../axiosActions";
 import "./LNAIDashboardView.css";
 
 const LNAIDashboardView = ({ decodedToken }: any) => {
   const navigate = useNavigate();
   const [fillipData, setFillipData] = useState<any>();
+  const [servicesSubscribed, setServicesSubscribed] = useState<any>({});
+
   const fillipFormOpenHandler = () => {
-    navigate("fillipform");
+    navigate(`form/fillip`);
   };
+  const formOpenHandler = (indService: string) => {
+    navigate(`form/${indService}`);
+  };
+
+  useEffect(() => {
+    const getSubscribedServicesData = async () => {
+      const localStorageTokens = localStorage.getItem("x-users-tokens");
+
+      if (localStorageTokens) {
+        const parsedLocalStorageTokens = JSON.parse(localStorageTokens);
+        const accessToken: string = parsedLocalStorageTokens["access_token"];
+        const subscribedServicesData: any = await getSubscribedServices(
+          accessToken
+        );
+
+        if (subscribedServicesData.status === 200) {
+          setServicesSubscribed(subscribedServicesData.data.ServicesSubscribed);
+        }
+      }
+    };
+
+    getSubscribedServicesData();
+  }, []);
 
   useEffect(() => {
     const getFormDataLocal = async () => {
@@ -18,6 +47,7 @@ const LNAIDashboardView = ({ decodedToken }: any) => {
         setFillipData(fillipDataResponse.data);
       }
     };
+
     getFormDataLocal();
   }, [decodedToken]);
 
@@ -29,9 +59,22 @@ const LNAIDashboardView = ({ decodedToken }: any) => {
   return (
     <div>
       {decodedToken?.["role"] === "Client" ? (
-        <Button onClick={fillipFormOpenHandler} variant="contained">
-          Fill Fillip Form
-        </Button>
+        <>
+          {Object.keys(servicesSubscribed)?.length > 0 &&
+            Object.keys(servicesSubscribed)?.map((key, index) =>
+              servicesSubscribed[key].map(
+                (indService: any, serviceIndex: any) => (
+                  <Button
+                    // onClick={fillipFormOpenHandler}
+                    onClick={() => formOpenHandler(indService)}
+                    variant="contained"
+                  >
+                    {indService}
+                  </Button>
+                )
+              )
+            )}
+        </>
       ) : (
         <>
           <code>{JSON.stringify(fillipData?.["Data"])}</code>

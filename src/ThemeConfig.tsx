@@ -3,10 +3,13 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 declare module "@mui/material/Button" {
   interface ButtonPropsVariantOverrides {
     LNAIPrimaryButton: true;
+    LNAIPrimaryButtonDensed: true;
     LNAISecondaryButton: true;
     LNAIPurpleGradientLight: true;
     LNAIPurpleGradientDark: true;
     LNAIDarkPurpleGradientLight: true;
+    LNAIBasicLight: true;
+    LNAIPlainButton: true;
   }
 }
 
@@ -17,14 +20,78 @@ export const LNAIThemeConfig = createTheme({
     MuiButton: {
       variants: [
         {
+          props: { variant: "LNAIBasicLight" },
+          style: {
+            textTransform: "none",
+            backgroundColor: "white",
+            fontSize: "1.2rem",
+            fontWeight: "600",
+            padding: "0.2rem 0.6rem",
+            color: "black",
+            border: "1px solid var(--lnai-light-purple)",
+            borderRadius: "var(--lnai-primary-border-radius)",
+            "&:hover": {
+              backgroundColor: "white",
+              border: "1px solid var(--lnai-dark-purple)",
+            },
+          },
+        },
+        {
+          props: { variant: "LNAIPlainButton" },
+          style: {
+            textTransform: "none",
+            backgroundColor: "white",
+            fontSize: "0.8rem",
+            fontWeight: "400",
+            padding: "0.2rem 0.6rem",
+            color: "black",
+            border: "none",
+            "&:hover": {
+              border: "none",
+            },
+          },
+        },
+        {
           props: { variant: "LNAIPrimaryButton" },
           style: {
             textTransform: "none",
             color: "white",
+            fontSize: "1.2rem",
+            fontWeight: "520",
+            padding: "0.2rem 1rem",
             background: "var(--lnai-purple-gradient-background)",
             borderRadius: "var(--lnai-primary-border-radius)",
           },
         },
+        {
+          props: { variant: "LNAIPrimaryButtonDensed" },
+          style: {
+            textTransform: "none",
+            color: "white",
+            fontSize: "0.9rem",
+            fontWeight: "400",
+            background: "var(--lnai-purple-gradient-background)",
+            borderRadius: "var(--lnai-primary-border-radius)",
+          },
+        },
+        {
+          props: { variant: "LNAIPrimaryButtonDensed", disabled: true },
+          style: {
+            textTransform: "none",
+            fontSize: "1rem",
+            fontWeight: "400",
+            background:
+              "linear-gradient(#fff, #fff) padding-box, linear-gradient(0deg, rgba(61,5,94,1) 0%, rgba(141,4,193,1) 100%) border-box",
+            color: "black",
+            padding: "3px",
+            border: "1px solid transparent",
+            borderRadius: "var(--lnai-primary-border-radius)",
+            "&:hover": {
+              color: "black",
+            },
+          },
+        },
+
         {
           props: { variant: "LNAISecondaryButton" },
           style: {
@@ -119,17 +186,67 @@ export const LNAIThemeConfig = createTheme({
       styleOverrides: {
         root: {
           "&.lnai-primary-input-field": {
+            "& .MuiInputBase-root": {
+              textTransform: "none",
+              background:
+                "linear-gradient(#fff, #fff) padding-box, linear-gradient(90deg, rgba(61,5,94,1) 0%, rgba(141,4,193,1) 100%) border-box",
+              color: "black",
+              border: "3px solid transparent",
+              borderRadius: "1rem",
+            },
+            "& .MuiInputBase-root:hover": {
+              boxShadow: "0px -1.75906px 9px rgba(61, 5, 94, 0.63)",
+            },
             "& fieldset": {
-              border: " 1px solid var(--lnai-dark-purple)",
+              border: "none",
+            },
+
+            // "& .MuiInputBase-input:hover + fieldset": {
+            //   border: "2px groove var(--lnai-light-purple)",
+            // },
+            "& .MuiInputBase-input:focus + fieldset": {
+              boxShadow: "0px -1.75906px 9px rgba(61, 5, 94, 0.63)",
+            },
+            // "& input::placeholder": {
+            //   color: "var(--lnai-light-purple)",
+            //   paddingLeft: "1rem",
+            //   opacity: 0.6,
+            //   fontWeight: 500,
+            // },
+          },
+          "&.lnai-primary-form-input-field": {
+            "& .MuiInputBase-root": {
+              textTransform: "none",
+              background:
+                "linear-gradient(#fff, #fff) padding-box, linear-gradient(0deg, rgba(61,5,94,1) 0%, rgba(141,4,193,1) 100%) border-box",
+              color: "black",
+              border: "1px solid transparent",
               borderRadius: "var(--lnai-primary-border-radius)",
             },
-            "& .MuiInputBase-input:hover + fieldset": {
-              border: "1px solid var(--lnai-light-purple)",
+            "& .MuiInputBase-root:hover": {
+              // boxShadow: "0px -1.75906px 9px rgba(61, 5, 94, 0.63)",
             },
+            "& fieldset": {
+              border: "none",
+            },
+            "& .MuiInputBase-input": {
+              padding: "0.5rem",
+            },
+
+            // "& .MuiInputBase-input:hover + fieldset": {
+            //   border: "2px groove var(--lnai-light-purple)",
+            // },
             "& .MuiInputBase-input:focus + fieldset": {
-              border: "1px solid var(--lnai-light-purple)",
+              // boxShadow: "0px -1.75906px 9px rgba(61, 5, 94, 0.63)",
             },
+            // "& input::placeholder": {
+            //   color: "var(--lnai-light-purple)",
+            //   paddingLeft: "1rem",
+            //   opacity: 0.6,
+            //   fontWeight: 500,
+            // },
           },
+
           "&.lnai-footer-input-field": {
             "& input::placeholder": {
               color: "#000",
@@ -145,6 +262,43 @@ export const LNAIThemeConfig = createTheme({
             },
             "& .MuiInputBase-input:focus + fieldset": {
               border: "1px solid var(--lnai-light-purple)",
+            },
+          },
+        },
+      },
+    },
+    MuiSelect: {
+      styleOverrides: {
+        root: {
+          "&.lnai-primary-form-select-field": {
+            ".MuiSelect-select": {
+              textTransform: "none",
+              background:
+                "linear-gradient(#fff, #fff) padding-box, linear-gradient(0deg, rgba(61,5,94,1) 0%, rgba(141,4,193,1) 100%) border-box",
+              color: "black",
+              border: "1px solid transparent",
+              borderRadius: "var(--lnai-primary-border-radius)",
+            },
+
+            ".MuiOutlinedInput-notchedOutline": {
+              textTransform: "none",
+              background:
+                "linear-gradient(#fff, #fff) padding-box, linear-gradient(0deg, rgba(61,5,94,1) 0%, rgba(141,4,193,1) 100%) border-box",
+              color: "black",
+              border: "1px solid transparent",
+              borderRadius: "var(--lnai-primary-border-radius)",
+            },
+
+            "& .MuiSelect-select": {
+              zIndex: 1,
+            },
+
+            "&  svg": {
+              zIndex: 1,
+            },
+
+            "& .MuiInputBase-input:focus + fieldset": {
+              boxShadow: "0px -1.75906px 9px rgba(61, 5, 94, 0.63)",
             },
           },
         },

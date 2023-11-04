@@ -17,16 +17,12 @@ import {
   saveUserDetails,
   saveUserToken,
 } from "../../actions";
+
 import { postUserLogin } from "../../axiosActions";
 
 import { useNavigate } from "react-router-dom";
-import {
-  LNAICircleScatter,
-  LNAILoginPageBg1,
-  LNAILoginPageBgBlack,
-  LNAILoginPageBgBlack2,
-  LNAILogoTp,
-} from "../../assets";
+import { LNAICircleScatter, LNAILoginPageBg1, LNAILogoTp } from "../../assets";
+
 import "./LNAILoginPage.css";
 
 import { BsArrowLeftRight } from "react-icons/bs";

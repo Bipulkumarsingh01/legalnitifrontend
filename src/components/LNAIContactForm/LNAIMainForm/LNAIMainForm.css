@@ -1,12 +1,52 @@
-.lnai-contact-form-component-phone-number-input-field
+.lnai-account-signup-main-form-phone-number-input-field
   .MuiInputBase-input::-webkit-outer-spin-button,
-.lnai-contact-form-component-phone-number-input-field
+.lnai-account-signup-main-form-phone-number-input-field
   .MuiInputBase-input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
 /* Firefox */
-.lnai-contact-form-component-phone-number-input-field .MuiInputBase-input {
+.lnai-account-signup-main-form-phone-number-input-field .MuiInputBase-input {
   -moz-appearance: textfield;
+}
+
+.lnai-account-signup-main-form-container {
+  margin-top: 4rem;
+  margin-right: 4rem;
+}
+
+.lnai-signup-main-form-heading-container {
+  width: 100%;
+  text-align: center;
+}
+
+.lnai-account-signup-main-form-name-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.lnai-account-signup-main-form-email-phone-container {
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.lnai-account-signup-main-form-email-input,
+.lnai-account-signup-main-form-phone-number-input-field {
+  width: 44%;
+}
+
+.lnai-contact-form-component-details-contact-container {
+  width: 100%;
+}
+
+.lnai-contact-form-component-details-contact-input-field {
+  width: 90%;
+}
+
+.lnai-account-signup-main-form-first-name-input,
+.lnai-account-signup-main-form-middle-name-input,
+.lnai-account-signup-main-form-last-name-input {
+  width: 28%;
 }

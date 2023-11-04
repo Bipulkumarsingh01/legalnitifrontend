@@ -46,8 +46,32 @@ import Linkedin from "./Linkedin.png";
 import Twitter from "./Twitter.png";
 import FooterAiImage from "./FooterAiImage.png";
 import AiAnimation from "./AiAnimation.gif";
+import FacebookLogo from "./FacebookLogo.png";
+import GoogleLogo from "./GoogleLogo.png";
+import LinkedinLogo from "./LinkedinLogo.png";
+import LoginOverlayLogo from "./LoginOverlayLogo.png";
+import SignupOverlayLogo from "./SignupOverlayLogo.png";
+import GoogleBg from "./GoogleBg.png";
+import CartBag from "./CartBag.png";
+import LawDigitalTechniques from "./LawAndDigitalTechniques.png";
+import Upload from "./upload.png";
+import GoNext from "./GoNext.png";
+import GoBack from "./GoBack.png";
+import Delete from "./Delete.png";
 
 export {
+  GoBack,
+  Delete,
+  GoNext,
+  Upload,
+  LawDigitalTechniques,
+  CartBag,
+  GoogleBg,
+  SignupOverlayLogo,
+  LoginOverlayLogo,
+  FacebookLogo,
+  GoogleLogo,
+  LinkedinLogo,
   FooterAiImage,
   AiAnimation,
   Whatsapp,

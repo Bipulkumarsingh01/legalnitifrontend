@@ -1,0 +1,9 @@
+.lnai-login-google-button-container > .MuiButtonBase-root {
+  text-transform: none;
+  padding: 0;
+  background-color: var(--lnai-dark-purple);
+}
+
+.lnai-login-google-button-label {
+  padding-right: 0.5rem;
+}

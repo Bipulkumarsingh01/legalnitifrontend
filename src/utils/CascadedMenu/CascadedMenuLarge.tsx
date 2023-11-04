@@ -13,6 +13,7 @@ const CascadedMenuLarge = ({
   navbarChildRoutesLargeMenuOpenHandler,
   childRoutesLargeMenuState,
   navbarChildRoutesLargeMenuCloseHandler,
+  menuItems,
 }: CascadedMenuLargePropType) => {
   return (
     <Box
@@ -20,6 +21,7 @@ const CascadedMenuLarge = ({
         flexGrow: 1,
         display: { xs: "none", md: "flex" },
         justifyContent: "center",
+        opacity: menuItems === "none" ? 0 : 1,
       }}
     >
       {navbarRoutes.map((pageItem, index) => (

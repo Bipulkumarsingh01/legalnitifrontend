@@ -30,6 +30,7 @@ export interface CascadedMenuLargePropType {
   ) => void;
   childRoutesLargeMenuState: null | HTMLElement;
   navbarChildRoutesLargeMenuCloseHandler: () => void;
+  menuItems?: string;
 }
 
 export interface statesAndCityListIndiaDataType {

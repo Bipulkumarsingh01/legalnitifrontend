@@ -30,7 +30,8 @@ export const StyledRadioIcon = styled("span")(({ theme }) => ({
 }));
 
 export const StyledRadioCheckedIcon = styled(StyledRadioIcon)({
-  backgroundColor: "#137cbd",
+  // backgroundColor: "#137cbd",
+  backgroundColor: "var(--lnai-light-purple)",
   backgroundImage:
     "linear-gradient(180deg,hsla(0,0%,100%,.1),hsla(0,0%,100%,0))",
   "&:before": {
@@ -41,7 +42,7 @@ export const StyledRadioCheckedIcon = styled(StyledRadioIcon)({
     content: '""',
   },
   "input:hover ~ &": {
-    backgroundColor: "#106ba3",
+    backgroundColor: "var(--lnai-light-purple)",
   },
 });
 
