@@ -5,14 +5,14 @@
 
 .lnai-info-graph-main-container::before {
   content: "---";
-  font-size: 4rem;
+  font-size: 3.5rem;
   margin-top: auto;
   margin-bottom: auto;
   color: var(--lnai-dark-purple);
 }
 .lnai-info-graph-main-container::after {
   content: "---";
-  font-size: 4rem;
+  font-size: 3.5rem;
   margin-top: auto;
   margin-bottom: auto;
   color: var(--lnai-light-purple);
@@ -21,8 +21,7 @@
 .lnai-info-graph-detail-container-1 {
   display: flex;
   gap: 10px;
-  height: 8rem;
-  width: 15rem;
+  height: 10rem;
   justify-content: center;
   align-items: center;
   border-top: 1px solid var(--lnai-light-purple);
@@ -36,8 +35,7 @@
 .lnai-info-graph-detail-container-2 {
   display: flex;
   gap: 10px;
-  height: 8rem;
-  width: 15rem;
+  height: 10rem;
   justify-content: center;
   align-items: center;
   border-top: 1px solid var(--lnai-light-purple);
@@ -48,8 +46,7 @@
 .lnai-info-graph-detail-container-3 {
   display: flex;
   gap: 10px;
-  height: 8rem;
-  width: 15rem;
+  height: 10rem;
   justify-content: center;
   align-items: center;
   border-top: 1px solid var(--lnai-light-purple);
@@ -69,4 +66,10 @@
 
 .lnai-info-graph-highlight-text {
   color: var(--lnai-light-purple);
+}
+
+.lnai-info-graph-detail-container-1,
+.lnai-info-graph-detail-container-2,
+.lnai-info-graph-detail-container-3 {
+  width: 29%;
 }

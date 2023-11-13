@@ -21,35 +21,43 @@ const LNAITestimonials = () => {
           className="lnai-landing-view-testimonial-image"
         />
       </div>
+
       <div className="lnai-landing-view-testimonial-items">
         <div className="lnai-landing-view-testimonial-items-main-container">
           <div className="lnai-landing-view-testimonial-item-container-outer">
             <div className="lnai-landing-view-testimonial-item-container-inner">
-              <blockquote></blockquote>
+              <blockquote className="lnai-landing-view-testimonial-item-container-inner-blockquote"></blockquote>
+
               <p className="lnai-landing-view-testimonial-item-text">
                 One of the standout features is the intuitive interface, which
                 makes it easy for our team to navigate and utilize the platform
                 effectively. we can manage our compliance tasks effortlessly
               </p>
+
               <h3 className="lnai-landing-view-testimonial-item-text-author">
                 Yash Sengde
               </h3>
+
               <div className="lnai-landing-view-testimonial-item-circle"></div>
             </div>
           </div>
         </div>
+
         <div className="lnai-landing-view-testimonial-items-main-container">
           <div className="lnai-landing-view-testimonial-item-container-outer">
             <div className="lnai-landing-view-testimonial-item-container-inner">
-              <blockquote></blockquote>
+              <blockquote className="lnai-landing-view-testimonial-item-container-inner-blockquote"></blockquote>
+
               <p className="lnai-landing-view-testimonial-item-text">
                 One of the standout features is the intuitive interface, which
                 makes it easy for our team to navigate and utilize the platform
                 effectively. we can manage our compliance tasks effortlessly
               </p>
+
               <h3 className="lnai-landing-view-testimonial-item-text-author">
                 Yash Sengde
               </h3>
+
               <div className="lnai-landing-view-testimonial-item-circle"></div>
             </div>
           </div>

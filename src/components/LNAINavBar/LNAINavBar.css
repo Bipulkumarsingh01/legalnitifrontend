@@ -52,7 +52,9 @@
   .css-lo9b43-MuiButtonBase-root-MuiMenuItem-root:hover {
   background-color: rgba(0, 0, 0, 0.3);
 }
-@media screen and (max-width: 768px) {
+
+/* @media screen and (max-width: 768px) { */
+@media screen and (max-width: 900px) {
   .lnai-navbar-legalniti-logo {
     width: 5rem;
     height: 2.5rem;

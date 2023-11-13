@@ -90,6 +90,7 @@ const LNAINameGenerator = () => {
     navigator.clipboard.writeText(name);
     setCopyNotificationState(true);
   };
+
   return (
     <div>
       <form onSubmit={nameGenFormSubmitHandler}>
@@ -184,6 +185,7 @@ const LNAINameGenerator = () => {
           </Paper>
         </div>
       )}
+
       <LNAINotification
         notificationState={copyNotificationState}
         setNotificationState={setCopyNotificationState}

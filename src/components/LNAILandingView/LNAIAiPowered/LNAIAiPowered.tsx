@@ -24,7 +24,7 @@ export const LNAIAiPowered = () => {
         </div>
 
         <div className="lnai-landing-view-about-ai-image">
-          <img src={LNAILandingAboutAI} alt="ai" width={250} height={250} />
+          <img src={LNAILandingAboutAI} alt="ai" width={350} height={350} />
         </div>
       </div>
     </div>

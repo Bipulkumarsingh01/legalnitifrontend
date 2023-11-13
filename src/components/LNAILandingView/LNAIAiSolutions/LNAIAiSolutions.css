@@ -3,7 +3,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 5rem;
+  width: 85%;
+  margin: 5rem auto;
 }
 
 .lnai-landing-page-ai-solutions-heading-span {
@@ -17,10 +18,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 4rem;
 }
 
 .lnai-landing-page-ai-solutions-details-text-container {
-  margin: 2rem;
+  width: 100%;
 }
 
 .lnai-landing-page-ai-solutions-details-heading {
@@ -35,11 +37,10 @@
   display: block;
   position: absolute;
   top: 50%;
-  right: 45%;
+  left: 22%;
 }
 
 .lnai-landing-page-ai-solutions-details-text {
-  width: 25rem;
 }
 
 .lnai-landing-page-ai-solutions-details-know-more-button {

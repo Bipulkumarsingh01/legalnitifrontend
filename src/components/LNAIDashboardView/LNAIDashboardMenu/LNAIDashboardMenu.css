@@ -1,0 +1,93 @@
+.lnai-dashboard-menu-main-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.lnai-dashboard-menu-item.pending-task-container,
+.lnai-dashboard-menu-item.pending-task-container-not-expanded,
+.lnai-dashboard-menu-item.ongoing-task-container,
+.lnai-dashboard-menu-item.ongoing-task-container-not-expanded,
+.lnai-dashboard-menu-item.completed-task-container,
+.lnai-dashboard-menu-item.completed-task-container-not-expanded {
+  width: 95%;
+  height: 70vh;
+  margin-top: -2rem;
+  /* height: 100%; */
+}
+
+.lnai-dashboard-menu-item.pending-task-container,
+.lnai-dashboard-menu-item.ongoing-task-container,
+.lnai-dashboard-menu-item.completed-task-container {
+  width: 95.6%;
+}
+
+.lnai-dashboard-menu-item.pending-task-container,
+.lnai-dashboard-menu-item.pending-task-container-not-expanded {
+  position: absolute;
+  top: 1rem;
+  background-color: white;
+  box-shadow: 0px -1.75906px 21.1087px #b8d8fc;
+  background: linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(0deg, rgba(61, 5, 94, 1) 0%, rgba(141, 4, 193, 1) 100%)
+      border-box;
+  border-radius: 2rem;
+  border: 2px solid transparent;
+}
+
+.lnai-dashboard-menu-item.ongoing-task-container,
+.lnai-dashboard-menu-item.ongoing-task-container-not-expanded {
+  position: absolute;
+  top: 4rem;
+  background-color: white;
+  box-shadow: 0px -1.75906px 21.1087px #b8d8fc;
+  background: linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(0deg, rgba(61, 5, 94, 1) 0%, rgba(141, 4, 193, 1) 100%)
+      border-box;
+  border-radius: 2rem;
+  border: 2px solid transparent;
+}
+
+.lnai-dashboard-menu-item.completed-task-container,
+.lnai-dashboard-menu-item.completed-task-container-not-expanded {
+  position: absolute;
+  top: 8rem;
+  background-color: white;
+  box-shadow: 0px -1.75906px 21.1087px #b8d8fc;
+  background: linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(0deg, rgba(61, 5, 94, 1) 0%, rgba(141, 4, 193, 1) 100%)
+      border-box;
+  border-radius: 2rem;
+  border: 2px solid transparent;
+}
+
+.lnai-dashboard-menu-item.pending-task-container-not-expanded,
+.lnai-dashboard-menu-item.ongoing-task-container-not-expanded,
+.lnai-dashboard-menu-item.completed-task-container-not-expanded {
+  &:hover {
+    content: "";
+    background: linear-gradient(90deg, #3d055e 23.07%, #8d04c1 81%);
+    color: white;
+  }
+}
+
+.lnai-dashboard-menu-item-pending-task-header,
+.lnai-dashboard-menu-item-ongoing-task-header,
+.lnai-dashboard-menu-item-completed-task-header {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.lnai-dashboard-menu-item-pending-task-content,
+.lnai-dashboard-menu-item-ongoing-task-content,
+.lnai-dashboard-menu-item-completed-task-content {
+  padding: 1rem;
+}
+
+.lnai-dashboard-menu-item-pending-task-header .lnai-primary-heading,
+.lnai-dashboard-menu-item-ongoing-task-header .lnai-primary-heading,
+.lnai-dashboard-menu-item-completed-task-header .lnai-primary-heading {
+  font-size: 1.5rem;
+}

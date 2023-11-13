@@ -4,12 +4,10 @@ import {
   LNAIAboutPage,
   LNAIContactPage,
   LNAILandingPage,
-  LNAILoginPage,
   LNAIServicePage,
   LNAITeamPage,
   LNAIToolsPage,
   LNAIFillipFormPage,
-  LNAISignupPage,
   LNAIAccounts,
   LNAICartPage,
   LNAIFormsPage,
@@ -41,16 +39,8 @@ const router = createBrowserRouter([
     element: <LNAIContactPage />,
   },
   {
-    path: "login",
-    element: <LNAILoginPage />,
-  },
-  {
     path: "fillipform",
     element: <LNAIFillipFormPage />,
-  },
-  {
-    path: "signup",
-    element: <LNAISignupPage />,
   },
   {
     path: "accounts",

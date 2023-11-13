@@ -1,3 +1,8 @@
+.lnai-landing-view-trusted-clients-container {
+  width: 85%;
+  margin: auto;
+}
+
 .lnai-landing-view-trusted-clients-heading-highlight {
   text-align: center;
   font-size: 3rem;
@@ -25,7 +30,9 @@
 
 .lnai-landing-view-trusted-clients-details-container > p {
   margin-left: 4rem;
-  width: 30%;
+  width: 50%;
+  text-align: justify;
+  font-weight: 600;
 }
 
 .lnai-landing-view-trusted-clients-logo-container {
@@ -33,7 +40,6 @@
   display: flex;
   gap: 5rem;
   justify-content: center;
-  /* width: 100%; */
 }
 
 .lnai-landing-view-trusted-clients-logo-item {

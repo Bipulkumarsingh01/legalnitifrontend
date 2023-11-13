@@ -14,7 +14,7 @@ const LNAIAiSolutions = () => {
         </p>
       </h1>
       <div className="lnai-landing-page-ai-solutions-details-container">
-        <img src={AiSolution} alt="ai-solution" height={300} width={300} />
+        <img src={AiSolution} alt="ai-solution" height={375} width={375} />
         <div className="lnai-landing-page-ai-solutions-details-text-container">
           <h2 className="lnai-landing-page-ai-solutions-details-heading">
             Since 2023

@@ -6,11 +6,20 @@ import {
   LegalDrafting,
   Affidavit,
   Will,
+  LegalServicesBgTp,
 } from "../../../assets";
 
 const LNAIServiceInfo = () => {
   return (
-    <div className="lnai-service-info-container">
+    <div
+      className="lnai-service-info-container"
+      style={{
+        background: `url(${LegalServicesBgTp})`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "100% 100%",
+        // backgroundPosition: "center",
+      }}
+    >
       <h1 className="lnai-service-info-container-heading">
         Discover 50+{" "}
         <span className="lnai-service-info-container-heading-highlight-text">
@@ -28,6 +37,7 @@ const LNAIServiceInfo = () => {
           />
           <p>Import License</p>
         </div>
+
         <div className="lnai-service-info-card">
           <img
             src={PartnershipDeals}
@@ -37,6 +47,7 @@ const LNAIServiceInfo = () => {
           />
           <p>Partnership Deals</p>
         </div>
+
         <div className="lnai-service-info-card">
           <img
             src={LegalDrafting}
@@ -46,10 +57,12 @@ const LNAIServiceInfo = () => {
           />
           <p>Legal Drafting</p>
         </div>
+
         <div className="lnai-service-info-card">
           <img src={Affidavit} alt="Import License" height={75} width={75} />
           <p>Affidavit</p>
         </div>
+
         <div className="lnai-service-info-card">
           <img src={Will} alt="Import License" height={75} width={75} />
           <p>Will</p>
@@ -66,6 +79,7 @@ const LNAIServiceInfo = () => {
           />
           <p>Import License</p>
         </div>
+
         <div className="lnai-service-info-card">
           <img
             src={PartnershipDeals}
@@ -75,6 +89,7 @@ const LNAIServiceInfo = () => {
           />
           <p>Partnership Deals</p>
         </div>
+
         <div className="lnai-service-info-card">
           <img
             src={LegalDrafting}
@@ -84,6 +99,7 @@ const LNAIServiceInfo = () => {
           />
           <p>Legal Drafting</p>
         </div>
+
         <div className="lnai-service-info-card">
           <img src={Affidavit} alt="Import License" height={75} width={75} />
           <p>Affidavit</p>

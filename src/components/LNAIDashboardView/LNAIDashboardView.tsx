@@ -1,4 +1,4 @@
-import { Button } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import {
@@ -7,17 +7,47 @@ import {
   getSubscribedServices,
 } from "../../axiosActions";
 import "./LNAIDashboardView.css";
+import { LNAISideBar } from "..";
+import { LNAIDashboardMenu } from "./LNAIDashboardMenu/LNAIDashboardMenu";
+
+interface TabPanelProps {
+  children?: React.ReactNode;
+  index: number;
+  value: number;
+}
+
+function TabPanel(props: TabPanelProps) {
+  const { children, value, index, ...other } = props;
+
+  return (
+    <div
+      role="tabpanel"
+      hidden={value !== index}
+      id={`vertical-tabpanel-${index}`}
+      aria-labelledby={`vertical-tab-${index}`}
+      {...other}
+    >
+      {value === index && (
+        <Box sx={{ p: 3 }}>
+          <Typography>{children}</Typography>
+        </Box>
+      )}
+    </div>
+  );
+}
 
 const LNAIDashboardView = ({ decodedToken }: any) => {
   const navigate = useNavigate();
   const [fillipData, setFillipData] = useState<any>();
   const [servicesSubscribed, setServicesSubscribed] = useState<any>({});
+  const [dashboardMenuValue, setDashboardMenuValue] = useState(2);
 
-  const fillipFormOpenHandler = () => {
-    navigate(`form/fillip`);
-  };
-  const formOpenHandler = (indService: string) => {
-    navigate(`form/${indService}`);
+  const dashboardMenuChangeHandler = (
+    event: React.SyntheticEvent,
+    newValue: number
+  ) => {
+    console.log(event);
+    setDashboardMenuValue(newValue);
   };
 
   useEffect(() => {
@@ -51,40 +81,48 @@ const LNAIDashboardView = ({ decodedToken }: any) => {
     getFormDataLocal();
   }, [decodedToken]);
 
-  const runScriptHandler = async () => {
-    const scriptResponse: any = await getRunScript();
-    console.log(scriptResponse.data);
-  };
-
   return (
-    <div>
-      {decodedToken?.["role"] === "Client" ? (
-        <>
-          {Object.keys(servicesSubscribed)?.length > 0 &&
-            Object.keys(servicesSubscribed)?.map((key, index) =>
-              servicesSubscribed[key].map(
-                (indService: any, serviceIndex: any) => (
-                  <Button
-                    // onClick={fillipFormOpenHandler}
-                    onClick={() => formOpenHandler(indService)}
-                    variant="contained"
-                  >
-                    {indService}
-                  </Button>
-                )
-              )
-            )}
-        </>
-      ) : (
-        <>
-          <code>{JSON.stringify(fillipData?.["Data"])}</code>
-          <Button variant="contained" onClick={runScriptHandler}>
-            Run Script
-          </Button>
-        </>
-      )}
+    <div className="lnai-dashboard-view-main-container">
+      <LNAISideBar
+        value={dashboardMenuValue}
+        dashboardMenuChangeHandler={dashboardMenuChangeHandler}
+      >
+        <div>
+          <TabPanel value={dashboardMenuValue} index={0}>
+            Home Menu
+          </TabPanel>
+
+          <TabPanel value={dashboardMenuValue} index={1}>
+            Profile Menu
+          </TabPanel>
+
+          <TabPanel value={dashboardMenuValue} index={2}>
+            <LNAIDashboardMenu servicesSubscribed={servicesSubscribed} />
+          </TabPanel>
+
+          <TabPanel value={dashboardMenuValue} index={3}>
+            Service Menu
+          </TabPanel>
+        </div>
+      </LNAISideBar>
     </div>
   );
 };
 
 export default LNAIDashboardView;
+
+// const fillipFormOpenHandler = () => {
+//   navigate(`form/fillip`);
+// };
+// const formOpenHandler = (indService: string) => {
+//   navigate(`form/${indService}`);
+// };
+
+// const runScriptHandler = async () => {
+//   const scriptResponse: any = await getRunScript();
+//   console.log(scriptResponse.data);
+// };
+
+// const CallBack = (childData: any) => {
+//   return <p>{childData}</p>;
+// };

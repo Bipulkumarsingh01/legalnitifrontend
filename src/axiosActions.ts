@@ -41,6 +41,7 @@ export const postFormData = (formType: string, formData: any) => {
   if (localStorageTokens) {
     const parsedLocalStorageTokens = JSON.parse(localStorageTokens);
     const accessToken = parsedLocalStorageTokens["access_token"];
+
     const config = {
       headers: {
         Authorization: `Bearer ${accessToken}`,
@@ -50,6 +51,7 @@ export const postFormData = (formType: string, formData: any) => {
     const payload = {
       form_data: formData,
     };
+
     return baseUrlApi.post(`forms/${formType}`, payload, config);
   }
 };
@@ -95,5 +97,27 @@ export const getSubscribedServices = (usersAccessToken: string) => {
       },
     };
     return baseUrlApi.get("services/subscribed", config);
+  }
+};
+export const getPendingTasks = (usersAccessToken: string) => {
+  if (usersAccessToken) {
+    const config = {
+      headers: {
+        Authorization: `Bearer ${usersAccessToken}`,
+        Accept: "application/json",
+      },
+    };
+    return baseUrlApi.get("services/pending", config);
+  }
+};
+export const getOngoingTasks = (usersAccessToken: string) => {
+  if (usersAccessToken) {
+    const config = {
+      headers: {
+        Authorization: `Bearer ${usersAccessToken}`,
+        Accept: "application/json",
+      },
+    };
+    return baseUrlApi.get("services/ongoing", config);
   }
 };
