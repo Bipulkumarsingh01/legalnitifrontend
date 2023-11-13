@@ -80,7 +80,8 @@
 
 .lnai-landing-view-about-us-content-address-item > p {
   margin-top: 1rem;
-  width: 19rem;
+  width: 17rem;
+  text-align: justify;
 }
 
 .lnai-landing-view-about-us-content-address-contact-container {

@@ -10,7 +10,6 @@ import {
 
 const LNAILandingPage = () => {
   const store: any = useSelector((state) => state);
-  const [scrolled, setScrolled] = useState("rgba(0,0,0,0.4)");
   const [decodedToken, setDecodedToken] = useState({});
 
   const userToken = store["userToken"] ? store["userToken"] : {};
@@ -45,7 +44,7 @@ const LNAILandingPage = () => {
 
   return (
     <div>
-      <LNAINavBar />
+      {!accessToken && <LNAINavBar />}
       {accessToken ? (
         <LNAIDashboardView decodedToken={decodedToken} />
       ) : (

@@ -78,7 +78,7 @@ const LNAIFooter = ({ getStarted }: { getStarted: boolean }) => {
               <img src={LNAILogoTp} alt="LNAI LOGO" height={75} width={100} />
               <p>
                 Address : <br /> Legalniti workspace,5th floor PG block
-                BMSCE,Bull temple road,Basavanagudi Bangalore -560019.
+                BMSCE,Bull temple road,Basavanagudi Bangalore - 560019.
               </p>
               <div className="lnai-landing-view-about-us-content-address-contact-container">
                 <img

@@ -1,22 +1,9 @@
-import {
-  Button,
-  Divider,
-  IconButton,
-  InputBase,
-  Paper,
-  Table,
-  TableBody,
-  TableCell,
-  TableContainer,
-  TableHead,
-  TableRow,
-  ThemeProvider,
-} from "@mui/material";
+import { Button, InputBase, Paper, ThemeProvider } from "@mui/material";
 
-import "./LNAICartTable.css";
-import { LawDigitalTechniques } from "../../assets";
-import { LNAIThemeConfig } from "../../ThemeConfig";
 import { NavLink } from "react-router-dom";
+import { LNAIThemeConfig } from "../../ThemeConfig";
+import { LawDigitalTechniques } from "../../assets";
+import "./LNAICartTable.css";
 
 const productItems = [
   {

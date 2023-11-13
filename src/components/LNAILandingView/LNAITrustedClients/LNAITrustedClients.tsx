@@ -10,7 +10,7 @@ import "./LNAITrustedClients.css";
 
 const LNAITrustedClients = () => {
   return (
-    <div>
+    <div className="lnai-landing-view-trusted-clients-container">
       <h1 className="lnai-landing-view-trusted-clients-heading-highlight">
         Trusted Clients
       </h1>
@@ -18,8 +18,8 @@ const LNAITrustedClients = () => {
         <img
           src={TrustedClients}
           alt="TrustedClients"
-          height={250}
-          width={350}
+          height={300}
+          width={375}
         />
         <p>
           We leverage the power of digital to simplify the things and not make
@@ -33,7 +33,7 @@ const LNAITrustedClients = () => {
           <img
             src={TrustedClients1}
             alt="TrustedClients1"
-            height={50}
+            height={45}
             width={75}
           />
         </div>

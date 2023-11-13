@@ -3,7 +3,6 @@ import { navbarRoutesObjType } from "../../utils";
 const navbarRoutes: Array<navbarRoutesObjType> = [
   { key: 1, to: "/about", label: "About", hasChildren: false },
   { key: 2, to: "/service", label: "Service", hasChildren: false },
-  { key: 3, to: "/team", label: "Team", hasChildren: false },
   {
     key: 4,
     to: "/tools",

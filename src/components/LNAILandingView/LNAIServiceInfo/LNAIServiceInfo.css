@@ -38,6 +38,7 @@
   align-items: center;
   width: 150px;
   height: 200px;
+  background: white;
   border-radius: var(--lnai-primary-border-radius);
   border: 1px solid var(--lnai-light-purple);
   box-shadow: 0px 3.18498px 42.32px rgba(0, 0, 0, 0.25);

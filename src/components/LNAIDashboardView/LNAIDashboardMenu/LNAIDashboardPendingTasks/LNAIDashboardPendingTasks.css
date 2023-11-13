@@ -1,0 +1,90 @@
+.lnai-dashboard-pending-tasks-main-container {
+}
+
+.lnai-dashboard-pending-tasks-main-service-status-heading-container {
+  display: flex;
+  gap: 0.5rem;
+  text-transform: capitalize;
+}
+
+.lnai-dashboard-pending-tasks-table {
+  border-collapse: collapse;
+}
+
+.lnai-dashboard-pending-tasks-table-heading-row {
+  background-color: white;
+  color: black;
+  filter: drop-shadow(0 0 5px black);
+  box-shadow: 0px 0px 5px -0.5px rgba(61, 5, 94, 0.63);
+}
+
+.lnai-dashboard-pending-tasks-table-heading-row-item {
+  padding: 0.8rem;
+  background: linear-gradient(180deg, #000000 0%, #3d065f 50%, #200554 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.lnai-dashboard-pending-tasks-table-heading-row-item:first-child {
+  border-top-left-radius: var(--lnai-primary-border-radius);
+  border-bottom-left-radius: var(--lnai-primary-border-radius);
+  border: 1px solid white;
+}
+
+.lnai-dashboard-pending-tasks-table-heading-row-item:last-child {
+  border-top-right-radius: var(--lnai-primary-border-radius);
+  border-bottom-right-radius: var(--lnai-primary-border-radius);
+  border: 1px solid white;
+}
+
+.lnai-dashboard-pending-tasks-table-items-data-row {
+  background-color: white;
+  border-radius: 10rem;
+  filter: drop-shadow(0 0 5px black);
+}
+
+.lnai-dashboard-pending-tasks-table-items-data-cell {
+  padding: 0.8rem;
+  text-align: center;
+
+  &:first-child {
+    border-top-left-radius: var(--lnai-primary-border-radius);
+    border-bottom-left-radius: var(--lnai-primary-border-radius);
+  }
+
+  &:last-child {
+    border-bottom-right-radius: var(--lnai-primary-border-radius);
+    border-top-right-radius: var(--lnai-primary-border-radius);
+  }
+}
+
+.lnai-dashboard-pending-tasks-table-items-data-cell.service-slot-timings-container {
+  color: #1eab24;
+  text-align: center;
+
+  & .service-slot-timings-date {
+    font-size: 0.97rem;
+  }
+  & .service-slot-timings-time {
+    font-size: 0.88rem;
+  }
+}
+
+.lnai-dashboard-pending-tasks-table-items-data-cell.payment-status-container {
+  text-transform: capitalize;
+  font-weight: 600;
+  color: #cb991a;
+}
+
+.lnai-dashboard-pending-tasks-table {
+  border-collapse: separate;
+  border-spacing: 0 1rem;
+  width: 90%;
+  margin: auto;
+}
+
+.lnai-dashboard-pending-tasks-pending-pay-now-button-container {
+  text-align: center;
+}

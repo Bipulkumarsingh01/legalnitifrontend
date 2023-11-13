@@ -1,15 +1,15 @@
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { LNAINavBar } from "..";
 
-import FormFillipPage1 from "./FormFillipPage1/FormFillipPage1";
-import Radio from "@mui/material/Radio";
-import "./LNAIFormFillip.css";
-import { ToggleButton, ToggleButtonGroup } from "@mui/material";
-import FormFillipPage2 from "./FormFillipPage2/FormFillipPage2";
-import FormFillipPage3 from "./FormFillipPage3/FormFillipPage3";
+import { ToggleButton } from "@mui/material";
 import { addFormObjectStoreHandler } from "../../actions";
 import { postFormData } from "../../axiosActions";
+
+import FormFillipPage1 from "./FormFillipPage1/FormFillipPage1";
+import FormFillipPage2 from "./FormFillipPage2/FormFillipPage2";
+import FormFillipPage3 from "./FormFillipPage3/FormFillipPage3";
+
+import "./LNAIFormFillip.css";
 
 const initialFillipFormData = {
   extra: {
@@ -132,7 +132,6 @@ const LNAIFormFillip = () => {
 
   return (
     <div className="lnai-form-fillip-main-contaner">
-      {/* <LNAINavBar menuItems={"none"} /> */}
       <div className="lnai-form-fillip-content-container">
         <div className="lnai-form-fillip-menu-switch-button-container">
           <ToggleButton

@@ -48,7 +48,13 @@ body {
 }
 
 .lnai-primary-heading {
-  background: var(--lnai-primary-heading-gradient);
+  /* background: var(--lnai-primary-heading-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent; */
+
+  background: linear-gradient(90deg, #3d055e 23.07%, #8d04c1 81%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

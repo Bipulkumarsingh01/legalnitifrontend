@@ -2,14 +2,17 @@
   text-align: center;
   padding-top: 5rem;
   position: relative;
+  width: 85%;
+  margin: auto;
 }
 
 .lnai-landing-view-why-legalniti-ai-animation-gif {
   position: absolute;
   top: 0;
   right: 0;
-  margin-top: 2rem;
-  margin-right: -3rem;
+  margin-top: 1rem;
+  margin-right: 2rem;
+  border: 0;
 }
 
 .lnai-landing-view-why-legalniti-heading {
@@ -28,8 +31,10 @@
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr;
 
-  gap: 0px;
+  gap: 2rem 0rem;
   height: 100%;
+
+  margin-top: 3rem;
 }
 
 .lnai-landing-view-why-legalniti-grid-item {
@@ -45,7 +50,20 @@
 }
 
 .lnai-landing-view-why-legalniti-grid-item-text {
-  /* margin-left: 1rem; */
-  width: 5rem;
-  /* width: 10rem; */
+  width: 50%;
+  text-align: justify;
+}
+
+.lnai-landing-view-why-legalniti-grid-item.trusted-advisors,
+.lnai-landing-view-why-legalniti-grid-item.years-experience,
+.lnai-landing-view-why-legalniti-grid-item.dedicated-lawyers,
+.lnai-landing-view-why-legalniti-grid-item.safe-secure {
+  justify-content: end;
+}
+
+.lnai-landing-view-why-legalniti-grid-item.fast-team,
+.lnai-landing-view-why-legalniti-grid-item.round-clock,
+.lnai-landing-view-why-legalniti-grid-item.chat-support,
+.lnai-landing-view-why-legalniti-grid-item.reliable-system {
+  justify-content: start;
 }

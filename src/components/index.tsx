@@ -9,6 +9,7 @@ import LNAIAccountSignUp from "./LNAIAccountSignUp/LNAIAccountSignUp";
 import LNAIAccountSignIn from "./LNAIAccountSignIn/LNAIAccountSignIn";
 import LNAICartTable from "./LNAICartTable/LNAICartTable";
 import LNAIFormFillip from "./LNAIFormFillip/LNAIFormFillip";
+import LNAISideBar from "./LNAISideBar/LNAISideBar";
 
 export * from "./LNAIContactForm";
 
@@ -24,4 +25,5 @@ export {
   LNAIFooter,
   LNAIAccountSignUp,
   LNAIAccountSignIn,
+  LNAISideBar,
 };

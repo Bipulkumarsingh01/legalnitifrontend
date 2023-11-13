@@ -1,0 +1,71 @@
+.lnai-side-bar-main-container {
+  & .MuiDrawer-paper {
+    box-shadow: 0px -1.75906px 21.1087px #b8d8fc;
+    border-top-right-radius: 5rem;
+    background: black;
+    border-right: 1px solid var(--lnai-light-purple);
+  }
+}
+
+.lnai-side-bar-header-main-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.lnai-side-bar-lnai-logo {
+  margin: 1rem 2rem 2rem 1rem;
+}
+
+.lnai-side-bar-avatar-logo {
+  margin: auto;
+}
+
+.lnai-side-bar-user-name {
+  color: white;
+  margin: auto;
+  margin-top: 0.7rem;
+}
+
+.lnai-side-bar-menu-item-main-container.MuiButtonBase-root {
+  margin-left: 1rem;
+  align-items: normal !important;
+}
+
+.lnai-side-bar-menu-item-logout-main-container.MuiButtonBase-root {
+  margin-left: 1.5rem;
+  align-items: normal;
+  color: white;
+  margin-bottom: 1rem;
+  position: fixed;
+  bottom: 0;
+}
+
+.lnai-side-bar-menu-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.lnai-side-bar-menu-item-logo-container {
+  width: 30%;
+}
+
+.lnai-side-bar-menu-item-label-container {
+  width: 100%;
+  text-align: justify;
+}
+
+.lnai-side-bar-menu-item-main-container {
+  height: 3.2rem;
+}
+
+.lnai-side-bar-menu-item-main-container.Mui-selected {
+  background: linear-gradient(
+    90.11deg,
+    rgba(61, 5, 94, 0) 18.94%,
+    #3d055e 99.9%
+  );
+  border-radius: var(--lnai-primary-border-radius);
+}

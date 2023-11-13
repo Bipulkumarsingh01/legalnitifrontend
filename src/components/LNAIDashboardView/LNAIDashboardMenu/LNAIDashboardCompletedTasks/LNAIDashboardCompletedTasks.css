@@ -1,0 +1,17 @@
+.lnai-dashboard-completed-tasks-main-content-container {
+  height: 100%;
+}
+
+.lnai-dashboard-completed-tasks-all-completed-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  gap: 1rem;
+
+  & > p {
+    font-weight: 500;
+    font-size: 1.25rem;
+  }
+}
