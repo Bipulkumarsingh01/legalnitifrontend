@@ -1,12 +1,7 @@
 import jwt from "jwt-decode";
 import { useDispatch, useSelector } from "react-redux";
 
-import {
-  LNAIGoogleContactForm,
-  LNAIMainForm,
-  LNAINavBar,
-  LNAIThankYou,
-} from "../../components";
+import { LNAINavBar } from "../../components";
 
 import { removeUserDetails, removeUserToken } from "../../actions";
 
