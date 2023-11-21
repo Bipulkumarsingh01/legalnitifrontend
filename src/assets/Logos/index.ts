@@ -15,6 +15,7 @@ import Linkedin from "./Linkedin.png";
 import Twitter from "./Twitter.png";
 import LNAILogo from "./LNAILogo.jpeg";
 import LNAILogoTp from "./LNAILogoTp.png";
+import Isolation_Mode from "./Isolation_Mode.png";
 
 export {
   TrustedClients1,
@@ -30,6 +31,7 @@ export {
   Gmail,
   Whatsapp,
   Instagram,
+  Isolation_Mode,
   Linkedin,
   Twitter,
   LNAILogo,
