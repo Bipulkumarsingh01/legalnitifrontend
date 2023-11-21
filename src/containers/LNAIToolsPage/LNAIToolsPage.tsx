@@ -16,43 +16,53 @@ import PPFcalculator from "./PPFcalculator/PPFcalculator";
 import EpfCalculator from "./EpfCalculator/EpfCalculator";
 import SIPcalculator from "./SIPcalculator/SIPcalculator";
 import GSTcalculator from "./GSTcalculator/GSTcalculator";
+
 const LNAIToolsPage = () => {
   const [searchParams, setSearchParams] = useSearchParams();
+  const service = searchParams.get("service");
+
+  const renderCalculator = () => {
+    switch (service) {
+      case "incometaxcalculator":
+        return <IncomeTaxCalculator />;
+      case "businesssetupcalculator":
+        return <BussinessSetup />;
+      case "salarycalculator":
+        return <SalaryCalculator />;
+      case "tdscalculator":
+        return <TdsCalculator />;
+      case "gratuitycalculator":
+        return <GratuityCalculator />;
+      case "retirementplanning":
+        return <RetirementPlanning />;
+      case "epfcalculator":
+        return <EpfCalculator />;
+      case "npscalculator":
+        return <NpsCalculator />;
+      case "hracalculator":
+        return <HRAcalculator />;
+      case "rdcalculator":
+        return <RDcalculator />;
+      case "ppfcalculator":
+        return <PPFcalculator />;
+      case "sipcalculator":
+        return <SIPcalculator />;
+      case "gstcalculator":
+        return <GSTcalculator />;
+      default:
+        return "";
+    }
+  };
 
   return (
     <>
       <LNAINavBar />
-      <Box className="lnai-toolsPage-mainBox">
-        {/* <div>Selected Service: {searchParams.get("service")}</div>
-      LNAIToolsPage
-      <br />
-    <LNAINameGenerator />  */}
-        {searchParams.get("service") === "incometaxcalculator" && (
-          <IncomeTaxCalculator />
-        )}
-        {searchParams.get("service") === "businesssetupcalculator" && (
-          <BussinessSetup />
-        )}
-        {searchParams.get("service") === "salarycalculator" && (
-          <SalaryCalculator />
-        )}
-        {searchParams.get("service") === "tdscalculator" && <TdsCalculator />}
-        {searchParams.get("service") === "gratuitycalculator" && (
-          <GratuityCalculator />
-        )}
-        {searchParams.get("service") === "retirementplanning" && (
-          <RetirementPlanning />
-        )}
-        {searchParams.get("service") === "epfcalculator" && <EpfCalculator />}
-        {searchParams.get("service") === "npscalculator" && <NpsCalculator />}
-        {searchParams.get("service") === "hracalculator" && <HRAcalculator />}
-        {searchParams.get("service") === "rdcalculator" && <RDcalculator />}
-        {searchParams.get("service") === "ppfcalculator" && <PPFcalculator />}
-        {searchParams.get("service") === "sipcalculator" && <SIPcalculator />}
-        {searchParams.get("service") === "gstcalculator" && <GSTcalculator />}
-      </Box>
+      {/* <div>Selected Service: {searchParams.get("service")}</div> */}
+
+      <Box className="lnai-toolsPage-mainBox">{renderCalculator()}</Box>
       <LNAIFooter getStarted={false} />
     </>
   );
 };
+
 export default LNAIToolsPage;
