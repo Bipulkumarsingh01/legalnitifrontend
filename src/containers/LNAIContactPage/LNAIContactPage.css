@@ -1,0 +1,98 @@
+.lnai-contactPage-mainBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: calc(100vh - 64px);
+    box-sizing: border-box;
+    background: linear-gradient(180deg, rgba(45, 13, 57, 0.21) 27.34%, rgba(141, 4, 193, 0.00) 100%);
+}
+.lnai-contactPage-innerBox1{
+    width: 55.90rem;
+    box-sizing: border-box;
+    margin-top: 4rem;
+}
+
+
+.lnai-contactPage-innerBox1 .customStackClass {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  } 
+   .lnai-contactPage-innerBox1 .customStackClass h1 {
+    font-family: "Poppins";
+    font-size: 5.3125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .lnai-contactPage-innerBox1 .customStackClass h1:nth-child(2) {
+    color: #000;
+    font-family: "Poppins";
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .lnai-contactPage-innerBox1 .customStackClass span {
+    background: var(--Gradient, linear-gradient(90deg, #3D055E 23.07%, #8D04C1 81%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 0.2rem;
+  }
+  .lnai-contactPage-innerBox1 .customStackClass img {
+    max-width: 100%;
+    height: auto;
+    font-style: italic;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+
+
+
+  .lnai-contactPage-innerBox2{
+    width: 30rem;
+    height: 38.062rem;
+    background-color: #FFF;
+    border-radius: 1.2rem;
+    padding: 1rem;
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin-top: 4rem;
+}
+.lnai-contactPage-innerBox2 .customStackClass2{
+    display: flex;
+    flex-direction: column;
+    gap:1.25rem;
+}
+.lnai-contactPage-innerBox2 .customStackClass3{
+    display: flex;
+    flex-direction: row;
+    gap:0.75rem;
+}
+.lnai-contactPage-innerBox2 h4{
+    font-family: "Poppins";
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    background: linear-gradient(90deg, #3D055E 23.07%, #8D04C1 81%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.contactus-page-form .customStackClass4 {
+        display: "flex";
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+}
+

@@ -264,6 +264,25 @@ export const LNAIThemeConfig = createTheme({
               border: "1px solid var(--lnai-light-purple)",
             },
           },
+          "&.lnai-tools-text-field": {
+            "& .MuiInputBase-root": {
+              textTransform: "none",
+              background:
+                "linear-gradient(#fff, #fff) padding-box, linear-gradient(0deg, rgba(61,5,94,1) 0%, rgba(141,4,193,1) 100%) border-box",
+              color: "black",
+              border: "1px solid transparent",
+              borderRadius: "3.5px",
+            },
+            "& .MuiInputBase-root:hover": {
+              boxShadow: "0px -1.75906px 9px rgba(61, 5, 94, 0.63)",
+            },
+            "& fieldset": {
+              border: "none",
+            },
+            "& .MuiInputBase-input": {
+              padding: "0.7rem",
+            },
+          },
         },
       },
     },
