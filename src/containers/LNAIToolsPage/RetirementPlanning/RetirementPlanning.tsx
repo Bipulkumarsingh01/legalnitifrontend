@@ -7,7 +7,7 @@ import { FaRupeeSign } from "react-icons/fa";
 import { useState, useEffect } from "react";
 
 import "./RetirementPlanning.css";
-export const RetirementPlanning = () => {
+const RetirementPlanning = () => {
   const [currentAge, setCurrentAge] = useState<number>(0);
   const [retirementAge, setRetirementAge] = useState<number>(0);
   const [monthlySavings, setMonthlySavings] = useState<number>(0);
@@ -150,3 +150,5 @@ export const RetirementPlanning = () => {
     </Box>
   );
 };
+
+export default RetirementPlanning;

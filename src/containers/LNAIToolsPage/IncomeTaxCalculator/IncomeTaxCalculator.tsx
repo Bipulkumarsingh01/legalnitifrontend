@@ -4,7 +4,7 @@ import { FaRupeeSign } from "react-icons/fa";
 import { useState, useEffect } from "react";
 import { startruppeComponent } from "../BussinessSetup/BussinessSetup";
 
-export const IncomeTaxCalculator = () => {
+const IncomeTaxCalculator = () => {
   const [income, setIncome] = useState<number>(0);
   const [tax, setTax] = useState<number>(0);
 
@@ -95,3 +95,5 @@ export const IncomeTaxCalculator = () => {
     </Box>
   );
 };
+
+export default IncomeTaxCalculator;

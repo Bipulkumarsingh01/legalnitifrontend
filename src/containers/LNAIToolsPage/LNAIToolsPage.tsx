@@ -2,25 +2,25 @@ import { useSearchParams } from "react-router-dom";
 import { LNAIFooter, LNAINameGenerator, LNAINavBar } from "../../components";
 import { Box } from "@mui/material";
 import "./LNAIToolsPage.css";
-import { IncomeTaxCalculator } from "./IncomeTaxCalculator/IncomeTaxCalculator";
-import BussinessSetup from "./BussinessSetup/BussinessSetup";
-import SalaryCalculator from "./SalaryCalculator/SalaryCalculator";
-import TdsCalculator from "./TdsCalculator/TdsCalculator";
-import GratuityCalculator from "./GratuitCalculator/GratuityCalculator";
-import { RetirementPlanning } from "./RetirementPlanning/RetirementPlanning";
-
-import NpsCalculator from "./NpsCalculator/NpsCalculator";
-import HRAcalculator from "./HRAcalculator/HRAcalculator";
-import RDcalculator from "./RDcalculator/RDcalculator";
-import PPFcalculator from "./PPFcalculator/PPFcalculator";
-import EpfCalculator from "./EpfCalculator/EpfCalculator";
-import SIPcalculator from "./SIPcalculator/SIPcalculator";
-import GSTcalculator from "./GSTcalculator/GSTcalculator";
+import {
+  BussinessSetup,
+  EpfCalculator,
+  GratuityCalculator,
+  GSTcalculator,
+  HRAcalculator,
+  IncomeTaxCalculator,
+  NpsCalculator,
+  PPFcalculator,
+  RDcalculator,
+  RetirementPlanning,
+  SalaryCalculator,
+  SIPcalculator,
+  TdsCalculator,
+} from "./index.ts";
 
 const LNAIToolsPage = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const service = searchParams.get("service");
-
   const renderCalculator = () => {
     switch (service) {
       case "incometaxcalculator":
@@ -64,5 +64,4 @@ const LNAIToolsPage = () => {
     </>
   );
 };
-
 export default LNAIToolsPage;
