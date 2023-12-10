@@ -2,7 +2,40 @@ import { navbarRoutesObjType } from "../../utils";
 
 const navbarRoutes: Array<navbarRoutesObjType> = [
   { key: 1, to: "/about", label: "About", hasChildren: false },
-  { key: 2, to: "/service", label: "Service", hasChildren: false },
+  {
+    key: 2, to: "/service", label: "Service", hasChildren: true,
+    children: [{
+      key: 21,
+      to: "/service?service=bussiness_setup",
+      label: "Bussiness Setup",
+    },
+    {
+      key: 22,
+      to: "/service?service=taxandcompilance",
+      label: "Tax & Compilance",
+    },
+    {
+      key: 23,
+      to: "/service?service=trademarkandip",
+      label: "Trademark & IP",
+    },
+    {
+      key: 24,
+      to: "/service?service=documentation",
+      label: "Documentation",
+    },
+    {
+      key: 25,
+      to: "/service?service=consultation",
+      label: "Consultation",
+    },
+    {
+      key: 26,
+      to: "/service?service=lawgpt",
+      label: "LawGPT",
+    },
+    ]
+  },
   {
     key: 4,
     to: "/tools",

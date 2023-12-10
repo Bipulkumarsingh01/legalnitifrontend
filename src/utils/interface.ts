@@ -28,7 +28,8 @@ export interface CascadedMenuLargePropType {
   navbarChildRoutesLargeMenuOpenHandler: (
     event: React.MouseEvent<HTMLButtonElement>
   ) => void;
-  childRoutesLargeMenuState: null | HTMLElement;
+  // childRoutesLargeMenuState: null | HTMLElement;
+  childRoutesLargeMenuState: any;
   navbarChildRoutesLargeMenuCloseHandler: () => void;
   menuItems?: string;
 }
