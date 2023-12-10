@@ -31,6 +31,7 @@ const LNAIFooter = ({ getStarted }: { getStarted: boolean }) => {
                   requirements and avoid any potential penalties and fines.
                 </p>
               </div>
+
               <div className="lnai-landing-view-get-started-content-input-fields">
                 <ThemeProvider theme={LNAIThemeConfig}>
                   <TextField
@@ -102,6 +103,7 @@ const LNAIFooter = ({ getStarted }: { getStarted: boolean }) => {
                 +91-9481829401
               </div>
             </div>
+
             <div className="lnai-landing-view-about-us-content-web-services-item">
               <h1>About Us</h1>
               <h2>Our Company</h2>
@@ -109,6 +111,7 @@ const LNAIFooter = ({ getStarted }: { getStarted: boolean }) => {
               <h2>Our Services</h2>
               <h2>Careers</h2>
             </div>
+
             <div className="lnai-landing-view-about-us-content-social-links-item">
               <h1>Social Links</h1>
               <h2>
@@ -123,6 +126,13 @@ const LNAIFooter = ({ getStarted }: { getStarted: boolean }) => {
               <h2>
                 <img src={Twitter} alt="Twitter" height={30} width={30} />
               </h2>
+            </div>
+
+            <div className="lnai-landing-view-about-us-content-learn-more-item">
+              <h1>Learn More</h1>
+              <h2>Privacy</h2>
+              <h2>Security</h2>
+              <h2>Terms</h2>
             </div>
           </div>
         </div>

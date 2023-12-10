@@ -10,9 +10,10 @@ const LNAITestimonials = () => {
             Testimonials
           </h1>
           <h3 className="lnai-landing-view-testimonial-sub-heading">
-            Our Coustomers Love What We Do
+            Our Customers Love What We Do
           </h3>
         </div>
+
         <img
           src={Testimonials}
           alt="Testimonials"

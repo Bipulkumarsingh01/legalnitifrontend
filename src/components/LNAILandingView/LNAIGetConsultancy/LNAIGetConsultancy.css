@@ -23,12 +23,36 @@
   /* background: red; */
   border: 1px solid var(--lnai-dark-purple);
   box-shadow: 3.51999px 3.51999px 37.2415px rgba(0, 0, 0, 0.25);
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .lnai-landing-view-get-consultancy-steps-item > img {
-  margin-top: 1rem;
+  margin-top: 0.1rem;
 }
 
 .lnai-landing-view-get-consultancy-steps-item > h3 {
   margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+.lnai-landing-view-get-consultancy-dashed-gradient-line {
+  height: 4px;
+  background-image: linear-gradient(
+      90deg,
+      transparent,
+      transparent 50%,
+      #fff 50%,
+      #fff 100%
+    ),
+    var(--lnai-purple-gradient-background);
+  background-size: 2rem 1rem, 100% 1rem;
+  border: none;
+  position: relative;
+  left: 0px;
+  top: -6rem;
+  z-index: -1;
 }
