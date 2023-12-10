@@ -63,7 +63,11 @@ const CascadedMenuLarge = ({
               <Menu
                 id="basic-menu"
                 anchorEl={childRoutesLargeMenuState}
-                open={openChildRouteLarge}
+                open={
+                  childRoutesLargeMenuState?.textContent == pageItem.label
+                    ? true
+                    : false
+                }
                 onClose={navbarChildRoutesLargeMenuCloseHandler}
                 MenuListProps={{
                   "aria-labelledby": "basic-button",

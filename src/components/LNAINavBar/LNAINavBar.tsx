@@ -50,7 +50,7 @@ const LNAINavBar = ({ menuItems }: { menuItems?: string }) => {
   const [childRoutesSmallMenuState, setChildRoutesSmallMenuState] =
     useState<null | HTMLElement>(null);
   const [childRoutesLargeMenuState, setChildRoutesLargeMenuState] =
-    useState<null | HTMLElement>(null);
+    useState<any>(null);
 
   const openChildRouteSmall = Boolean(childRoutesSmallMenuState);
   const openChildRouteLarge = Boolean(childRoutesLargeMenuState);
@@ -101,9 +101,12 @@ const LNAINavBar = ({ menuItems }: { menuItems?: string }) => {
   };
 
   const navbarChildRoutesLargeMenuOpenHandler = (
-    event: React.MouseEvent<HTMLButtonElement>
+    // event: React.MouseEvent<HTMLButtonElement>
+    event: any
   ) => {
     event.stopPropagation();
+    // console.log(event.target.textContent);
+    // console.log(event.currentTarget);
     setChildRoutesLargeMenuState(event.currentTarget);
   };
   const navbarChildRoutesLargeMenuCloseHandler = () => {
