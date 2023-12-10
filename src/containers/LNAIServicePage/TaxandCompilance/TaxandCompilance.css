@@ -1,4 +1,10 @@
 .wrapper-box-taxandcompilance {
   flex-wrap: wrap;
   width: 90%;
+  gap: 20px 18px;
+  justify-content: center;
+}
+
+.more-services-taxandcompilance {
+  height: 967px;
 }

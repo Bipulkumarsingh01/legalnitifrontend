@@ -4,7 +4,6 @@
 // export default Documentation;
 import { Box, Typography, Button } from "@mui/material";
 import {
-  ServicesBussinessSetup,
   DocumentationServices,
   SigningADocument,
   Internet,
@@ -14,12 +13,18 @@ import {
   bussinesssetup_icon,
   TrademarkandIp_service,
 } from "../../../assets";
-import {
-  trademark_icon,
-  documentation_icon,
-  taxcompilation_icon,
-} from "../../../assets";
+import { taxcompilation_icon } from "../../../assets";
+import { ItemList } from "../BussinessSetupService/BussinessSetupService";
+import { useState } from "react";
+import { itemListdata } from "../ItemsData";
 const TrademarkandIp = () => {
+  const [moreService, setMoreServices] = useState<string[]>([]);
+  const [ismoreservices, setIsmoreServices] = useState(false);
+  const onclickHandler = (itemsvalue: any) => {
+    setMoreServices(itemsvalue);
+    // setIsmoreServices(!ismoreservices);
+    setIsmoreServices(true);
+  };
   return (
     <Box className="lnai-bussiness-setupservice-mainBox">
       <Box className="lnai-bussiness-setupservice-innerBox1">
@@ -57,52 +62,72 @@ const TrademarkandIp = () => {
             Non-Disclosure Agreements <br /> (NDA), ensuring that your
             proprietary knowledge and trade secrets remain secure.
           </Typography>
-          <Box className="about-service-innerbox-more-related-services wrapper-box-trademarkandip">
-            <Button>
-              <img
-                src={SigningADocument} // Replace with the actual path to your image
-                alt="Signing a document icon"
-              />
-              <Typography component={"p"}>
-                Bussiness <br /> Contracts
+          <Box className="about-page-trademarkandIp-setup-more-services">
+            <Box className="about-service-innerbox-more-related-services wrapper-box-trademarkandip">
+              <Button
+                onClick={() => onclickHandler(itemListdata.bussinesscontract)}
+              >
+                <img
+                  src={SigningADocument} // Replace with the actual path to your image
+                  alt="Signing a document icon"
+                />
+                <Typography component={"p"}>
+                  Bussiness <br /> Contracts
+                </Typography>
+              </Button>
+              <Button
+                onClick={() => onclickHandler(itemListdata.websitepolicies)}
+              >
+                <img
+                  src={Internet} // Replace with the actual path to your image
+                  alt="Internet icon"
+                />
+                <Typography component={"p"}>
+                  Website <br /> Policies
+                </Typography>
+              </Button>
+              <Button onClick={() => onclickHandler(itemListdata.notice)}>
+                <img
+                  src={Leave} // Replace with the actual path to your image
+                  alt="Leave icon"
+                />
+                <Typography component={"p"}>Notice</Typography>
+              </Button>
+              <Button onClick={() => onclickHandler(itemListdata.hrpolicies)}>
+                <img
+                  src={PrivacyPolicy} // Replace with the actual path to your image
+                  alt="Privacy Policy icon"
+                />
+                <Typography component={"p"} variant="subtitle1">
+                  HR Policies
+                </Typography>
+              </Button>
+              <Button onClick={() => onclickHandler(itemListdata.realestate)}>
+                <img
+                  src={RealEstate} // Replace with the actual path to your image
+                  alt="Real Estate icon"
+                />
+                <Typography component={"p"} variant="subtitle1">
+                  Real Estate
+                </Typography>
+              </Button>
+            </Box>
+            <Box
+              className="more-services"
+              sx={{
+                display: ismoreservices ? "" : "none",
+              }}
+            >
+              <Typography
+                variant="h4"
+                className="lnai-landing-page-ai-solutions-heading-span"
+              >
+                More Services
               </Typography>
-            </Button>
-            <Button>
-              <img
-                src={Internet} // Replace with the actual path to your image
-                alt="Internet icon"
-              />
-              <Typography component={"p"}>
-                Website <br /> Policies
-              </Typography>
-            </Button>
-            <Button>
-              <img
-                src={Leave} // Replace with the actual path to your image
-                alt="Leave icon"
-              />
-              <Typography component={"p"}>Notice</Typography>
-            </Button>
-            <Button>
-              <img
-                src={PrivacyPolicy} // Replace with the actual path to your image
-                alt="Privacy Policy icon"
-              />
-              <Typography component={"p"} variant="subtitle1">
-                HR Policies
-              </Typography>
-            </Button>
-            <Button>
-              <img
-                src={RealEstate} // Replace with the actual path to your image
-                alt="Real Estate icon"
-              />
-              <Typography component={"p"} variant="subtitle1">
-                Real Estate
-              </Typography>
-            </Button>
+              <Box className="line"></Box>
+              <ItemList items={moreService} />
+            </Box>
           </Box>
-          <Box></Box>
         </Box>
         <Box className="more-related-services">
           <Typography variant="h3" component={"h2"}>

@@ -39,22 +39,27 @@ import Internet from "./Internet.png";
 import Leave from "./Leave.png";
 import PrivacyPolicy from "./PrivacyPolicy.png";
 import RealEstate from "./RealEstate.png";
-import Copyright from './Copyright.png';
-import Concept from './Concept.png';
-import Design from './Design.png';
-import Documents from './Documents.png';
-import Handshake_taxandCompilance from './Handshake_taxandCompilance.png';
-import Company_taxAndCompilance from './Company_taxAndCompilance.png';
-import Accounting from './Accounting.png';
-import Document_taxandCompilation from './Document_taxandCompilation.png';
-import HardWorking from './HardWorking.png';
-import Estimate from './Estimate.png'
-import Business_taxAndCompilance from './Business_taxAndCompilance.png'
+import Copyright from "./Copyright.png";
+import Concept from "./Concept.png";
+import Design from "./Design.png";
+import Documents from "./Documents.png";
+import Handshake_taxandCompilance from "./Handshake_taxandCompilance.png";
+import Company_taxAndCompilance from "./Company_taxAndCompilance.png";
+import Accounting from "./Accounting.png";
+import Document_taxandCompilation from "./Document_taxandCompilation.png";
+import HardWorking from "./HardWorking.png";
+import Estimate from "./Estimate.png";
+import Business_taxAndCompilance from "./Business_taxAndCompilance.png";
+import MandatoryAnnualFilling from "./MandatoryAnnualFilling.png";
 export * from "./SideBar";
 
 export {
-  Handshake_taxandCompilance
-  , Accounting, Document_taxandCompilation, HardWorking, Estimate, Business_taxAndCompilance,
+  Handshake_taxandCompilance,
+  Accounting,
+  Document_taxandCompilation,
+  HardWorking,
+  Estimate,
+  Business_taxAndCompilance,
   Business,
   Company,
   Registration,
@@ -98,5 +103,8 @@ export {
   RealEstate,
   Copyright,
   Concept,
-  Design, Documents
+  Design,
+  Documents,
+  Company_taxAndCompilance,
+  MandatoryAnnualFilling,
 };
