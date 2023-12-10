@@ -1,4 +1,14 @@
+.about-page-trademarkandIp-setup-more-services {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 30px;
+  justify-content: center;
+}
+
 .wrapper-box-trademarkandip {
   width: 80%;
+  justify-content: center;
   flex-wrap: wrap;
+  gap: 20px 19px;
 }

@@ -1,17 +1,29 @@
 import { Box, Typography, Button } from "@mui/material";
 import {
-  trademark_icon,
   documentation_icon,
   TaxandCompilance_services,
-  Copyright,
-  Concept,
-  Design,
-  Documents,
   bussinesssetup_icon,
   TrademarkandIp_service,
+  Company_taxAndCompilance,
+  Handshake_taxandCompilance,
+  MandatoryAnnualFilling,
+  Accounting,
+  HardWorking,
+  Estimate,
+  Business_taxAndCompilance,
 } from "../../../assets";
 import "./TaxandCompilance.css";
+import { ItemList } from "../BussinessSetupService/BussinessSetupService";
+import { useState } from "react";
+import { itemListdata } from "../ItemsData";
 const TaxandCompilance = () => {
+  const [moreService, setMoreServices] = useState<string[]>([]);
+  const [ismoreservices, setIsmoreServices] = useState(false);
+  const onclickHandler = (itemsvalue: any) => {
+    setMoreServices(itemsvalue);
+    // setIsmoreServices(!ismoreservices);
+    setIsmoreServices(true);
+  };
   return (
     <Box className="lnai-bussiness-setupservice-mainBox">
       <Box className="lnai-bussiness-setupservice-innerBox1">
@@ -60,70 +72,102 @@ const TaxandCompilance = () => {
             while we take care of <br /> your tax and compliance needs. Unlock
             new horizons of success with our exceptional services.
           </Typography>
-          <Box className="about-service-innerbox-more-related-services wrapper-box-taxandcompilance">
-            <Button>
-              <img
-                src={trademark_icon} // Replace with the actual path to your image
-                alt="Trademark icon"
-              />
-              <Typography component={"p"}>
-                GST & other <br /> Indirect Tax
+          <Box className="about-page-trademarkandIp-setup-more-services">
+            <Box className="about-service-innerbox-more-related-services wrapper-box-taxandcompilance">
+              <Button onClick={() => onclickHandler(itemListdata.trademark)}>
+                <img
+                  src={Accounting} // Replace with the actual path to your image
+                  alt="Trademark icon"
+                />
+                <Typography component={"p"}>
+                  GST & other <br /> Indirect Tax
+                </Typography>
+              </Button>
+              <Button
+                onClick={() =>
+                  onclickHandler(itemListdata.changeincompanylimited)
+                }
+              >
+                <img
+                  src={Company_taxAndCompilance} // Replace with the actual path to your image
+                  alt="Internet icon"
+                />
+                <Typography component={"p"}>
+                  Changes in <br /> Pvt. Limited Company
+                </Typography>
+              </Button>
+              <Button onClick={() => onclickHandler(itemListdata.changeinllp)}>
+                <img
+                  src={Handshake_taxandCompilance} // Replace with the actual path to your image
+                  alt="Leave icon"
+                />
+                <Typography component={"p"}>Changes in LLP</Typography>
+              </Button>
+              <Button
+                onClick={() =>
+                  onclickHandler(itemListdata.mandatoryannualfilling)
+                }
+              >
+                <img
+                  src={MandatoryAnnualFilling} // Replace with the actual path to your image
+                  alt="Documents Icon"
+                />
+                <Typography component={"p"} variant="subtitle1">
+                  Mandatory <br /> Annual Filings
+                </Typography>
+              </Button>
+              <Button
+                onClick={() => onclickHandler(itemListdata.labourcompilance)}
+              >
+                <img
+                  src={HardWorking} // Replace with the actual path to your image
+                  alt="Design Icon"
+                />
+                <Typography component={"p"} variant="subtitle1">
+                  Labour <br /> Compliance
+                </Typography>
+              </Button>
+              <Button
+                onClick={() => onclickHandler(itemListdata.accountingAndTax)}
+              >
+                <img
+                  src={Estimate} // Replace with the actual path to your image
+                  alt="Design Icon"
+                />
+                <Typography component={"p"} variant="subtitle1">
+                  Accounting & Tax
+                </Typography>
+              </Button>
+              <Button
+                onClick={() =>
+                  onclickHandler(itemListdata.convertyourbussiness)
+                }
+              >
+                <img
+                  src={Business_taxAndCompilance} // Replace with the actual path to your image
+                  alt="Design Icon"
+                />
+                <Typography component={"p"} variant="subtitle1">
+                  Design <br /> Registration
+                </Typography>
+              </Button>
+            </Box>
+            <Box
+              className="more-services more-services-taxandcompilance"
+              sx={{
+                display: ismoreservices ? "" : "none",
+              }}
+            >
+              <Typography
+                variant="h4"
+                className="lnai-landing-page-ai-solutions-heading-span "
+              >
+                More Services
               </Typography>
-            </Button>
-            <Button>
-              <img
-                src={Copyright} // Replace with the actual path to your image
-                alt="Internet icon"
-              />
-              <Typography component={"p"}>
-                Changes in <br /> Pvt. Limited Company
-              </Typography>
-            </Button>
-            <Button>
-              <img
-                src={Concept} // Replace with the actual path to your image
-                alt="Leave icon"
-              />
-              <Typography component={"p"}>Changes in LLP</Typography>
-            </Button>
-            <Button>
-              <img
-                src={Documents} // Replace with the actual path to your image
-                alt="Documents Icon"
-              />
-              <Typography component={"p"} variant="subtitle1">
-                Labour Compliance
-              </Typography>
-            </Button>
-            <Button>
-              <img
-                src={Design} // Replace with the actual path to your image
-                alt="Design Icon"
-              />
-              <Typography component={"p"} variant="subtitle1">
-                Accounting & Tax
-              </Typography>
-            </Button>
-            <Button>
-              <img
-                src={Design} // Replace with the actual path to your image
-                alt="Design Icon"
-              />
-              <Typography component={"p"} variant="subtitle1">
-                Convert you <br /> Business
-              </Typography>
-            </Button>
-            <Button>
-              <img
-                src={Design} // Replace with the actual path to your image
-                alt="Design Icon"
-              />
-              <Typography component={"p"} variant="subtitle1">
-                Design <br /> Registration
-              </Typography>
-            </Button>
+              <Box className="line"></Box>
+              <ItemList items={moreService} />
+            </Box>
           </Box>
-          <Box></Box>
         </Box>
         <Box className="more-related-services">
           <Typography variant="h3" component={"h2"}>
@@ -153,7 +197,7 @@ const TaxandCompilance = () => {
                 alt="Trademark icon"
               />
               <Typography component={"p"} variant="subtitle1">
-                Documentation
+                Convert you <br /> Business
               </Typography>
             </Button>
           </Box>

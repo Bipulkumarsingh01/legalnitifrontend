@@ -182,6 +182,7 @@
 .about-page-busines-setup-more-services {
   display: flex;
   flex-direction: row;
+  width: 100%;
   gap: 170px;
   justify-content: center;
 }

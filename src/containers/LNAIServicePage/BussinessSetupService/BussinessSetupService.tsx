@@ -14,7 +14,7 @@ import { itemListdata } from "../ItemsData";
 interface ItemListProps {
   items: string[];
 }
-const ItemList: React.FC<ItemListProps> = ({ items }) => {
+export const ItemList: React.FC<ItemListProps> = ({ items }) => {
   return (
     <Box className="more-services-text">
       {items.map((item, index) => (
@@ -28,7 +28,8 @@ const BussinessSetupService = () => {
   const [ismoreservices, setIsmoreServices] = useState(false);
   const onclickHandler = (itemsvalue: any) => {
     setMoreServices(itemsvalue);
-    setIsmoreServices(!ismoreservices);
+    setIsmoreServices(true);
+    // setIsmoreServices(!ismoreservices);
   };
   return (
     <Box className="lnai-bussiness-setupservice-mainBox">
