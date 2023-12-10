@@ -9,7 +9,8 @@ import {
 } from "../../../assets";
 import { documentation_icon, taxcompilation_icon } from "../../../assets";
 import "./BussinessSetupService.css";
-
+import { useState } from "react";
+import { itemListdata } from "../ItemsData";
 interface ItemListProps {
   items: string[];
 }
@@ -17,23 +18,18 @@ const ItemList: React.FC<ItemListProps> = ({ items }) => {
   return (
     <Box className="more-services-text">
       {items.map((item, index) => (
-        <div key={index}>{item}</div>
+        <Box key={index}>{item}</Box>
       ))}
     </Box>
   );
 };
 const BussinessSetupService = () => {
-  const itemList: string[] = [
-    "Private Limited Company",
-    "Limited Liaibility Partnership",
-    "Sole Proprietorhsip",
-    "One Person Company",
-    "Section 8 Company",
-    "Partnership Firm",
-    "Nidhi Company",
-    "Producer Company",
-    "Startup India Registration",
-  ];
+  const [moreService, setMoreServices] = useState<string[]>([]);
+  const [ismoreservices, setIsmoreServices] = useState(false);
+  const onclickHandler = (itemsvalue: any) => {
+    setMoreServices(itemsvalue);
+    setIsmoreServices(!ismoreservices);
+  };
   return (
     <Box className="lnai-bussiness-setupservice-mainBox">
       <Box className="lnai-bussiness-setupservice-innerBox1">
@@ -73,9 +69,13 @@ const BussinessSetupService = () => {
             India Registration, ensuring you <br /> access the incentives and
             support available to innovative startups
           </Typography>
-          <Box sx={{ display: "flex" }}>
-            <Box className="about-service-innerbox-more-related-services">
-              <Button>
+          <Box className="about-page-busines-setup-more-services">
+            <Box className="about-service-innerbox-more-related-services ">
+              <Button
+                onClick={() =>
+                  onclickHandler(itemListdata.bussinessRegistration)
+                }
+              >
                 <img
                   src={Registration} // Replace with the actual path to your image
                   alt="Trademark icon"
@@ -84,7 +84,9 @@ const BussinessSetupService = () => {
                   Bussiness <br /> Registration
                 </Typography>
               </Button>
-              <Button>
+              <Button
+                onClick={() => onclickHandler(itemListdata.companynamesearch)}
+              >
                 <img
                   src={Company} // Replace with the actual path to your image
                   alt="Trademark icon"
@@ -94,7 +96,11 @@ const BussinessSetupService = () => {
                   Search
                 </Typography>
               </Button>
-              <Button>
+              <Button
+                onClick={() =>
+                  onclickHandler(itemListdata.licenseandregistration)
+                }
+              >
                 <img
                   src={Business} // Replace with the actual path to your image
                   alt="Trademark icon"
@@ -103,7 +109,9 @@ const BussinessSetupService = () => {
                   License & <br /> Registration
                 </Typography>
               </Button>
-              <Button>
+              <Button
+                onClick={() => onclickHandler(itemListdata.changecompanyname)}
+              >
                 <img
                   src={EditProperty} // Replace with the actual path to your image
                   alt="Trademark icon"
@@ -113,10 +121,21 @@ const BussinessSetupService = () => {
                 </Typography>
               </Button>
             </Box>
-            {/* <Box className="more-services">
-              <Typography variant="h4">More Services</Typography>
-              <ItemList items={itemList} />
-            </Box> */}
+            <Box
+              className="more-services"
+              sx={{
+                display: ismoreservices ? "" : "none",
+              }}
+            >
+              <Typography
+                variant="h4"
+                className="lnai-landing-page-ai-solutions-heading-span"
+              >
+                More Services
+              </Typography>
+              <Box className="line"></Box>
+              <ItemList items={moreService} />
+            </Box>
           </Box>
         </Box>
         <Box className="more-related-services">
