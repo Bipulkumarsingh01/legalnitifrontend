@@ -12,9 +12,9 @@ import Will from "./Will.png";
 import YearsOfExperience from "./YearsOfExperience.png";
 import LegalServicesBgTp from "./LegalServicesBgTp.png";
 import ServicesBussinessSetup from "./ServicesBussinessSetup.png";
-import DocumentationServices from './DocumentationServices.png';
-import TrademarkandIp_service from './TrademarkandIp_service.png';
-import TaxandCompilance_services from './TaxandCompilance_services.png';
+import DocumentationServices from "./DocumentationServices.png";
+import TrademarkandIp_service from "./TrademarkAndIp_service.png";
+import TaxandCompilance_services from "./TaxandCompilance_services.png";
 export {
   LawDigitalTechniques,
   SignupOverlayLogo,
@@ -32,5 +32,5 @@ export {
   ServicesBussinessSetup,
   DocumentationServices,
   TrademarkandIp_service,
-  TaxandCompilance_services
+  TaxandCompilance_services,
 };

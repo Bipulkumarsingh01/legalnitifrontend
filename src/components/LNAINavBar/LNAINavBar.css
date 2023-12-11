@@ -21,6 +21,16 @@
 .lnai-navbar-active-route {
   color: white;
   text-decoration: none;
+
+  & .MuiButtonBase-root {
+    text-transform: none !important;
+    font-weight: 600;
+  }
+}
+
+.lnai-navbar-cascaded-route {
+  text-transform: none !important;
+  font-weight: 600 !important;
 }
 
 .lnai-navbar-non-active-route {

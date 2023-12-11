@@ -40,6 +40,14 @@
   display: flex;
   gap: 5rem;
   justify-content: center;
+
+  /* Logo Move Animation */
+  animation-name: servicesOfferedMove;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  flex-flow: row nowrap;
+  overflow: hidden;
 }
 
 .lnai-landing-view-trusted-clients-logo-item {
@@ -53,4 +61,13 @@
 
 .lnai-landing-view-trusted-clients-logo-item > img {
   margin-top: 0.5rem;
+}
+
+@keyframes clientsLogoMoveAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }

@@ -37,6 +37,7 @@ const LNAITrustedClients = () => {
             width={75}
           />
         </div>
+
         <div className="lnai-landing-view-trusted-clients-logo-item">
           <img
             src={TrustedClients2}
@@ -45,6 +46,7 @@ const LNAITrustedClients = () => {
             width={50}
           />
         </div>
+
         <div className="lnai-landing-view-trusted-clients-logo-item">
           <img
             src={TrustedClients3}
@@ -53,6 +55,7 @@ const LNAITrustedClients = () => {
             width={50}
           />
         </div>
+
         <div className="lnai-landing-view-trusted-clients-logo-item">
           <img
             src={TrustedClients4}
@@ -61,6 +64,7 @@ const LNAITrustedClients = () => {
             width={50}
           />
         </div>
+
         <div className="lnai-landing-view-trusted-clients-logo-item">
           <img
             src={TrustedClients5}

@@ -11,6 +11,7 @@ import {
   LNAIAccounts,
   LNAICartPage,
   LNAIFormsPage,
+  LNAIBlogsPage,
 } from "../containers";
 
 const router = createBrowserRouter([
@@ -53,6 +54,10 @@ const router = createBrowserRouter([
   {
     path: "form/:formType",
     element: <LNAIFormsPage />,
+  },
+  {
+    path: "blogs",
+    element: <LNAIBlogsPage />,
   },
 ]);
 
