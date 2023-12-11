@@ -98,7 +98,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
+  /* text-fill-color: transparent; */
 }
 
 .lnai-landing-view-testimonial-item-text {
@@ -130,4 +130,23 @@
   margin-right: 2rem;
   border-radius: 50%;
   background: #d2cbd5;
+}
+
+/* for crousel */
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.outer-slide-div:hover .inner-slide-div {
+  animation-play-state: paused;
+  cursor: pointer;
+}
+.inner-slide-div {
+  display: inline-block;
+  animation: 15s slide infinite linear;
 }

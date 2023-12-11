@@ -23,8 +23,9 @@ const LNAITestimonials = () => {
         />
       </div>
 
-      <div className="lnai-landing-view-testimonial-items">
-        <div className="lnai-landing-view-testimonial-items-main-container">
+      <div className="lnai-landing-view-testimonial-items  outer-slide-div">
+        {/* 1 */}
+        <div className="lnai-landing-view-testimonial-items-main-container inner-slide-div">
           <div className="lnai-landing-view-testimonial-item-container-outer">
             <div className="lnai-landing-view-testimonial-item-container-inner">
               <blockquote className="lnai-landing-view-testimonial-item-container-inner-blockquote"></blockquote>
@@ -36,15 +37,15 @@ const LNAITestimonials = () => {
               </p>
 
               <h3 className="lnai-landing-view-testimonial-item-text-author">
-                Yash Sengde
+                Willium Tiwari
               </h3>
 
               <div className="lnai-landing-view-testimonial-item-circle"></div>
             </div>
           </div>
         </div>
-
-        <div className="lnai-landing-view-testimonial-items-main-container">
+        {/* 2 */}
+        <div className="lnai-landing-view-testimonial-items-main-container inner-slide-div">
           <div className="lnai-landing-view-testimonial-item-container-outer">
             <div className="lnai-landing-view-testimonial-item-container-inner">
               <blockquote className="lnai-landing-view-testimonial-item-container-inner-blockquote"></blockquote>
@@ -56,7 +57,47 @@ const LNAITestimonials = () => {
               </p>
 
               <h3 className="lnai-landing-view-testimonial-item-text-author">
-                Yash Sengde
+                Mohit
+              </h3>
+
+              <div className="lnai-landing-view-testimonial-item-circle"></div>
+            </div>
+          </div>
+        </div>
+        {/* 3 */}
+        <div className="lnai-landing-view-testimonial-items-main-container inner-slide-div">
+          <div className="lnai-landing-view-testimonial-item-container-outer">
+            <div className="lnai-landing-view-testimonial-item-container-inner">
+              <blockquote className="lnai-landing-view-testimonial-item-container-inner-blockquote"></blockquote>
+
+              <p className="lnai-landing-view-testimonial-item-text">
+                One of the standout features is the intuitive interface, which
+                makes it easy for our team to navigate and utilize the platform
+                effectively. we can manage our compliance tasks effortlessly
+              </p>
+
+              <h3 className="lnai-landing-view-testimonial-item-text-author">
+                Ashish Yadav
+              </h3>
+
+              <div className="lnai-landing-view-testimonial-item-circle"></div>
+            </div>
+          </div>
+        </div>
+        {/* 4 */}
+        <div className="lnai-landing-view-testimonial-items-main-container inner-slide-div">
+          <div className="lnai-landing-view-testimonial-item-container-outer">
+            <div className="lnai-landing-view-testimonial-item-container-inner">
+              <blockquote className="lnai-landing-view-testimonial-item-container-inner-blockquote"></blockquote>
+
+              <p className="lnai-landing-view-testimonial-item-text">
+                One of the standout features is the intuitive interface, which
+                makes it easy for our team to navigate and utilize the platform
+                effectively. we can manage our compliance tasks effortlessly
+              </p>
+
+              <h3 className="lnai-landing-view-testimonial-item-text-author">
+                Nikhil Yadav
               </h3>
 
               <div className="lnai-landing-view-testimonial-item-circle"></div>
