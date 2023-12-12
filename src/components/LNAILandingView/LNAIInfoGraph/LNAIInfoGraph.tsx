@@ -8,6 +8,11 @@ const LNAIInfoGraph = () => {
   return (
     <div>
       <div className="lnai-info-graph-main-container">
+        <div className="inner-dashes-logic">
+          <hr />
+          <hr />
+          <hr />
+        </div>
         <div className="lnai-info-graph-detail-container-1">
           <img src={Crowd} alt="Trusted Lawyers" width={50} height={50} />
           <div className="lnai-info-graph-detail-number-container">
@@ -24,7 +29,6 @@ const LNAIInfoGraph = () => {
             </p>
           </div>
         </div>
-
         <div className="lnai-info-graph-detail-container-2">
           <img src={Tick} alt="Queries Solved" width={50} height={50} />
           <div className="lnai-info-graph-detail-number-container">
@@ -41,7 +45,6 @@ const LNAIInfoGraph = () => {
             </p>
           </div>
         </div>
-
         <div className="lnai-info-graph-detail-container-3">
           <img src={Handshake} alt="Trusted Lawyers" width={50} height={50} />
           <div className="lnai-info-graph-detail-number-container">
@@ -58,8 +61,14 @@ const LNAIInfoGraph = () => {
             </p>
           </div>
         </div>
+        <div className="inner-dashes-logic">
+          <hr />
+          <hr />
+          <hr />
+        </div>
       </div>
-      <hr className="lnai-landing-view-info-graph-dashed-gradient-line" />
+
+      {/* <hr className="lnai-landing-view-info-graph-dashed-gradient-line" /> */}
     </div>
   );
 };

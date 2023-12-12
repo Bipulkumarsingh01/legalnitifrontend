@@ -19,6 +19,11 @@ const LNAIGetConsultancy = () => {
       <div>
         {/* <div className="lnai-landing-view-get-consultancy-steps-dotted-line"></div> */}
         <div className="lnai-landing-view-get-consultancy-steps-main-container">
+          <div className="inner-dashes-logic">
+            <hr />
+            <hr />
+            <hr />
+          </div>
           <div className="lnai-landing-view-get-consultancy-steps-item register-queries-step-item">
             <img
               src={RegisterQueries}
@@ -31,7 +36,11 @@ const LNAIGetConsultancy = () => {
               Register <br /> your query
             </h3>
           </div>
-
+          <div className="inner-dashes-logic">
+            <hr />
+            <hr />
+            <hr />
+          </div>
           <div className="lnai-landing-view-get-consultancy-steps-item choose-consultancy-step-item">
             <img
               src={ChooseConsultancy}
@@ -44,7 +53,11 @@ const LNAIGetConsultancy = () => {
               Choose your <br /> Consultancy
             </h3>
           </div>
-
+          <div className="inner-dashes-logic">
+            <hr />
+            <hr />
+            <hr />
+          </div>
           <div className="lnai-landing-view-get-consultancy-steps-item on-call-discussion-step-item">
             <img
               src={OnCallDiscussion}
@@ -57,7 +70,12 @@ const LNAIGetConsultancy = () => {
               On Call <br /> Discussion
             </h3>
           </div>
+          <div className="inner-dashes-logic">
+            <hr />
+            <hr />
 
+            <hr />
+          </div>
           <div className="lnai-landing-view-get-consultancy-steps-item solution-delivered-step-item">
             <img
               src={SolutionDelivered}
@@ -70,8 +88,13 @@ const LNAIGetConsultancy = () => {
               Solution <br /> Delivered
             </h3>
           </div>
+          <div className="inner-dashes-logic">
+            <hr />
+            <hr />
+            <hr />
+          </div>
         </div>
-        <hr className="lnai-landing-view-get-consultancy-dashed-gradient-line" />
+        {/* <hr className="lnai-landing-view-get-consultancy-dashed-gradient-line" /> */}
       </div>
     </div>
   );

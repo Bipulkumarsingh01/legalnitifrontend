@@ -11,21 +11,17 @@ import "./LNAITrustedClients.css";
 const LNAITrustedClients = () => {
   return (
     <div className="lnai-landing-view-trusted-clients-container">
-      <h1 className="lnai-landing-view-trusted-clients-heading-highlight">
+      <h1 className="lnai-landing-view-testimonial-heading-highlight">
         Trusted Clients
       </h1>
       <div className="lnai-landing-view-trusted-clients-details-container">
-        <img
-          src={TrustedClients}
-          alt="TrustedClients"
-          height={300}
-          width={375}
-        />
+        <img src={TrustedClients} alt="TrustedClients" />
         <p>
-          We leverage the power of digital to simplify the things and not make
-          them complex for you. Our clear, concise and transparent process gives
-          you the complete control of actions taken for you. Working smartly we
-          execute the operations in a flawless manner.
+          We leverage the power of digital to simplify the <br /> things and not
+          make them complex for you. Our <br /> clear, concise and transparent
+          process gives you <br /> the complete control of actions taken for
+          you. <br /> Working smartly we execute the operations in a <br />{" "}
+          flawless manner.
         </p>
       </div>
       <div className="lnai-landing-view-trusted-clients-logo-container">
@@ -33,7 +29,7 @@ const LNAITrustedClients = () => {
           <img
             src={TrustedClients1}
             alt="TrustedClients1"
-            height={45}
+            height={75}
             width={75}
           />
         </div>

@@ -1,11 +1,16 @@
 .lnai-landing-view-get-consultancy-heading {
   margin-top: 5rem;
   text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  font-size: 3.125rem;
+  text-transform: capitalize;
 }
-
 .lnai-landing-view-get-consultancy-heading-highlight {
   background: var(--lnai-purple-gradient-background);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -17,10 +22,9 @@
 .lnai-landing-view-get-consultancy-steps-item {
   margin: auto;
   text-align: center;
-  width: 12rem;
-  height: 12rem;
+  width: 14rem;
+  height: 14rem;
   border-radius: 50%;
-  /* background: red; */
   border: 1px solid var(--lnai-dark-purple);
   box-shadow: 3.51999px 3.51999px 37.2415px rgba(0, 0, 0, 0.25);
   background-color: white;

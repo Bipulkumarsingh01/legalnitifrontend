@@ -176,7 +176,8 @@ export const LNAIThemeConfig = createTheme({
             boxShadow: "0px -1.75906px 9px rgba(61, 5, 94, 0.63)",
             borderRadius: "var(--lnai-primary-border-radius)",
             "&:hover": {
-              color: "black",
+              color: "white",
+              background: "black",
             },
           },
         },

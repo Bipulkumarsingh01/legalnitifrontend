@@ -9,20 +9,27 @@ const LNAITestimonials = () => {
   return (
     <div className="lnai-landing-view-testimonial-container">
       <div className="lnai-landing-view-testimonial-heading-image-container">
-        <div style={{ display: "flex", flexDirection: "column" }}>
-          <h1 className="lnai-landing-view-testimonial-heading-highlight">
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <p className="lnai-landing-view-testimonial-heading-highlight">
             Testimonials
-          </h1>
-          <h3 className="lnai-landing-view-testimonial-sub-heading">
+          </p>
+          <p className="lnai-landing-view-testimonial-sub-heading">
             Our Customers Love What We Do
-          </h3>
+          </p>
         </div>
 
         <img
           src={Testimonials}
           alt="Testimonials"
-          height={150}
-          width={200}
+          height={350}
+          width={480}
           className="lnai-landing-view-testimonial-image"
         />
       </div>
@@ -104,7 +111,6 @@ const LNAITestimonials = () => {
                     <h3 className="lnai-landing-view-testimonial-item-text-author">
                       Yash Sengde 1
                     </h3>
-
                     <div className="lnai-landing-view-testimonial-item-circle"></div>
                   </div>
                 </div>

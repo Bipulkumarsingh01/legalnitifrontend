@@ -12,9 +12,12 @@ export const LNAIAiPowered = () => {
       <div className="lnai-landing-page-about-ai-details-and-image-container">
         <div className="lnai-landing-view-about-ai-details">
           <p>
-            At Legal Niti, we leverage the latest AI technology to simplify the
-            process of incorporating your startup and ensuring GST compliance.
-            Our user-friendly platform automates company registration, license
+            At Legal Niti, we leverage the latest AI technology to simplify the{" "}
+            <br />
+            process of incorporating your startup and ensuring GST compliance.{" "}
+            <br />
+            Our user-friendly platform automates company registration, license{" "}
+            <br />
             acquisition, GST filing, and compliance management.
           </p>
           <div className="lnai-landing-view-about-ai-buttons-container">
@@ -25,7 +28,7 @@ export const LNAIAiPowered = () => {
         </div>
 
         <div className="lnai-landing-view-about-ai-image">
-          <img src={LNAILandingAboutAI} alt="ai" width={350} height={350} />
+          <img src={LNAILandingAboutAI} alt="ai" />
         </div>
       </div>
     </div>

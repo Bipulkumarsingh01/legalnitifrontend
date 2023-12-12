@@ -5,19 +5,13 @@ import "./LNAIAiSolutions.css";
 const LNAIAiSolutions = () => {
   return (
     <div className="lnai-landing-page-ai-solutions-container">
-      <h1>
-        <p className="lnai-landing-page-ai-solutions-heading-span">
-          Al-Powered Solutions For Effortless
-        </p>
-        <p className="lnai-landing-page-ai-solutions-heading-span">
-          Incorporation and GST Compliance
-        </p>
-      </h1>
+      <p className=" heading-span-1">Al-Powered Solutions For Effortless</p>
+      <p className=" heading-span-1">Incorporation and GST Compliance</p>
       <div className="lnai-landing-page-ai-solutions-details-container">
-        <img src={AiSolution} alt="ai-solution" height={375} width={375} />
+        <img src={AiSolution} alt="ai-solution" height={529} width={532} />
         <div className="lnai-landing-page-ai-solutions-details-text-container">
           <h2 className="lnai-landing-page-ai-solutions-details-heading">
-            Since 2023
+            Since 2023{" "}
           </h2>
           <br />
           <p className="lnai-landing-page-ai-solutions-details-text">
