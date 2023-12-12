@@ -11,8 +11,11 @@
 
 .lnai-landing-view-about-ai-heading {
   font-weight: 600;
-  font-size: 4.8rem;
+  font-size: 5.625rem;
   letter-spacing: 0.188rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 
 .lnai-landing-view-about-ai-details {
@@ -20,7 +23,8 @@
 }
 
 .lnai-landing-view-about-ai-details p {
-  width: 90%;
+  width: 100%;
+  font-size: 20px;
 }
 
 .lnai-landing-view-about-ai-buttons-container {
@@ -28,8 +32,16 @@
   margin-top: 2rem;
   gap: 3rem;
 }
-
+.lnai-landing-view-about-ai-buttons-container button {
+  font-size: 17px;
+}
+/* changes */
+.lnai-landing-view-about-ai-image {
+  margin-left: 110px;
+}
 .lnai-landing-view-about-ai-image img {
-  margin-right: 2rem;
+  width: 529.46px;
+  height: 432px;
+  /* margin-right: 2rem; */
   /* margin-top: -1.7rem; */
 }
