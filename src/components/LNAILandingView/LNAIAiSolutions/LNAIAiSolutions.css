@@ -6,12 +6,16 @@
   width: 85%;
   margin: 5rem auto;
 }
-
-.lnai-landing-page-ai-solutions-heading-span {
-  font-size: 2rem;
+.heading-span-1 {
+  text-align: center;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
   background: var(--lnai-purple-gradient-background);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .lnai-landing-page-ai-solutions-details-container {
@@ -19,18 +23,28 @@
   justify-content: center;
   align-items: center;
   gap: 4rem;
+  margin-top: 2rem;
 }
 
 .lnai-landing-page-ai-solutions-details-text-container {
   width: 100%;
 }
+.lnai-landing-page-ai-solutions-details-text-container p {
+  color: #000;
+  text-align: justify;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
 
 .lnai-landing-page-ai-solutions-details-heading {
   position: relative;
+  font-size: 28px;
 }
 
 .lnai-landing-page-ai-solutions-details-heading::after {
-  content: " ";
+  content: "  ";
   height: 2px;
   width: 100px;
   background: rgba(0, 0, 0, 0.767);
@@ -40,9 +54,13 @@
   left: 22%;
 }
 
-.lnai-landing-page-ai-solutions-details-text {
-}
-
 .lnai-landing-page-ai-solutions-details-know-more-button {
-  padding-top: 2rem;
+  margin-top: 2rem;
+}
+.lnai-landing-page-ai-solutions-details-know-more-button button {
+  height: 61px;
+  width: 194px;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: normal;
 }
