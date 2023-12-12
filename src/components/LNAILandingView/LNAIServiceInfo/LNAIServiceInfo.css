@@ -11,7 +11,8 @@
 
   /*Animation Logic  */
   overflow: hidden;
-  animation: 15s slide infinite linear;
+  /* animation: 15s slide infinite linear; */
+
 }
 .lnai-service-info-cards-main-container-1 {
   margin-top: 4.5rem;
@@ -57,12 +58,12 @@
 
 /* for crousel */
 @keyframes slide {
-  from {
+  /* from {
     transform: translateX(0);
   }
   to {
-    transform: translateX(-100%);
-  }
+    transform: translateX(-200%);
+  } */
 }
 .outer-slide-div-legalserices {
   margin-left: 500px;

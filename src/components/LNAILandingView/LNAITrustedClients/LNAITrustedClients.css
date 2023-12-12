@@ -51,10 +51,7 @@
   gap: 5rem;
   justify-content: center;
 
-  /*Animation Logic  */
-  overflow: hidden;
-  animation: 15s slide infinite linear;
-  overflow: hidden;
+
 }
 
 .lnai-landing-view-trusted-clients-logo-item {

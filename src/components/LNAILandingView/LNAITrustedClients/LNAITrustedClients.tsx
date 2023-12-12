@@ -1,3 +1,4 @@
+import Marquee from "react-fast-marquee";
 import {
   TrustedClients,
   TrustedClients1,
@@ -24,6 +25,7 @@ const LNAITrustedClients = () => {
           flawless manner.
         </p>
       </div>
+      <Marquee speed={50} direction={"left"} pauseOnHover={true} loop={0} gradient={true}>
       <div className="lnai-landing-view-trusted-clients-logo-container">
         <div className="lnai-landing-view-trusted-clients-logo-item">
           <img
@@ -70,6 +72,7 @@ const LNAITrustedClients = () => {
           />
         </div>
       </div>
+      </Marquee>
     </div>
   );
 };

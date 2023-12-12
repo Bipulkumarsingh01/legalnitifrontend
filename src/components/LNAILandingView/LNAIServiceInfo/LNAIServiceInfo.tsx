@@ -1,3 +1,5 @@
+import Marquee from "react-fast-marquee";
+
 import "./LNAIServiceInfo.css";
 
 import {
@@ -23,6 +25,7 @@ import {
   Leave,
 } from "../../../assets";
 
+
 const LNAIServiceInfo = () => {
   return (
     <div
@@ -41,6 +44,7 @@ const LNAIServiceInfo = () => {
         </span>{" "}
         over one platform
       </h1>
+      <Marquee speed={50} direction={"left"} pauseOnHover={true} loop={0} gradient={true}>
       <div className="outer-slide-div-legalserices">
         <div className="lnai-service-info-cards-main-container-1 ">
           <div className="lnai-service-info-card">
@@ -172,6 +176,7 @@ const LNAIServiceInfo = () => {
           </div>
         </div>
       </div>
+      </Marquee>
     </div>
   );
 };
