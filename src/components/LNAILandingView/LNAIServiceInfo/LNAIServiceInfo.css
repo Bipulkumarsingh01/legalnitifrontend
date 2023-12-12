@@ -2,44 +2,30 @@
   margin-top: 5rem;
 }
 
-.lnai-service-info-cards-main-container-1 {
-  display: flex;
-  gap: 2rem;
-  margin-top: 4.5rem;
-  justify-content: center;
-  width: max-content;
-
-  /* Moving animation */
-  animation-name: servicesOfferedMove;
-  animation-duration: 70s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  flex-flow: row nowrap;
-  overflow: hidden;
-
-  /* &:hover {
-    animation-play-state: paused;
-    cursor: pointer;
-  } */
-}
-
+.lnai-service-info-cards-main-container-1,
 .lnai-service-info-cards-main-container-2 {
   display: flex;
   gap: 2rem;
-  margin-top: 1rem;
-  margin-left: 1rem;
   justify-content: center;
   width: max-content;
 
-  /* Moving animation */
-  animation-name: servicesOfferedMove;
-  animation-duration: 70s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  flex-flow: row nowrap;
+  /*Animation Logic  */
   overflow: hidden;
+  animation: 15s slide infinite linear;
+}
+.lnai-service-info-cards-main-container-1 {
+  margin-top: 4.5rem;
+}
+.lnai-service-info-cards-main-container-2 {
+  margin-top: 2rem;
+  margin-left: 2.7rem;
 }
 
+.lnai-service-info-container-heading {
+  text-align: center;
+  font-size: 50px;
+  text-transform: capitalize;
+}
 .lnai-service-info-container-heading-highlight-text {
   background: -webkit-linear-gradient(
     rgba(147, 64, 238, 1) 0%,
@@ -47,10 +33,6 @@
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-.lnai-service-info-container-heading {
-  text-align: center;
 }
 
 .lnai-service-info-card {
@@ -73,11 +55,21 @@
   text-align: center;
 }
 
-@keyframes servicesOfferedMove {
-  0% {
-    transform: translateX(100%); /* Start from the right end of the container */
+/* for crousel */
+@keyframes slide {
+  from {
+    transform: translateX(0);
   }
-  100% {
-    transform: translateX(-100%); /* Move to the left end of the container */
+  to {
+    transform: translateX(-100%);
   }
+}
+.outer-slide-div-legalserices {
+  margin-left: 500px;
+}
+
+.outer-slide-div-legalserices:hover .lnai-service-info-cards-main-container-1,
+.outer-slide-div-legalserices:hover .lnai-service-info-cards-main-container-2 {
+  animation-play-state: paused;
+  cursor: pointer;
 }

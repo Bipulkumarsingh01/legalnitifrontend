@@ -15,7 +15,9 @@
 }
 .inner-dashes-logic hr {
   border: 2px solid #8804ba;
-  width: 30px;
+  background: #8804ba;
+  width: 25px;
+  height: 6px;
 }
 /* .lnai-info-graph-main-container::before {
   content: "---";
