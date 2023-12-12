@@ -53,6 +53,7 @@ const CascadedMenuLarge = ({
                 aria-expanded={openChildRouteLarge ? "true" : undefined}
                 style={{ color: "white" }}
                 onClick={navbarChildRoutesLargeMenuOpenHandler}
+                className="lnai-navbar-cascaded-route"
                 // onMouseOver={navbarChildRoutesLargeMenuOpenHandler}
                 // onMouseOut={navbarChildRoutesLargeMenuCloseHandler}
               >

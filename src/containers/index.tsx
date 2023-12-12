@@ -8,6 +8,7 @@ import LNAIFillipFormPage from "./LNAIFillipFormPage/LNAIFillipFormPage";
 import LNAIAccounts from "./LNAIAccounts/LNAIAccounts";
 import LNAICartPage from "./LNAICartPage/LNAICartPage";
 import LNAIFormsPage from "./LNAIFormsPage/LNAIFormsPage";
+import LNAIBlogsPage from "./LNAIBlogsPage/LNAIBlogsPage";
 
 export {
   LNAICartPage,
@@ -20,4 +21,5 @@ export {
   LNAIFillipFormPage,
   LNAIAccounts,
   LNAIFormsPage,
+  LNAIBlogsPage,
 };
