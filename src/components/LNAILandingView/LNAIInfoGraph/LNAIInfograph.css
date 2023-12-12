@@ -14,10 +14,13 @@
   width: 100px;
 }
 .inner-dashes-logic hr {
-  border: 2px solid #8804ba;
-  background: #8804ba;
   width: 25px;
+  border: 2px solid #8804ba;
   height: 6px;
+  background: var(
+    --Gradient,
+    linear-gradient(90deg, #3d055e 23.07%, #8d04c1 81%)
+  );
 }
 /* .lnai-info-graph-main-container::before {
   content: "---";
