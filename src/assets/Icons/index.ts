@@ -51,6 +51,7 @@ import HardWorking from "./HardWorking.png";
 import Estimate from "./Estimate.png";
 import Business_taxAndCompilance from "./Business_taxAndCompilance.png";
 import MandatoryAnnualFilling from "./MandatoryAnnualFilling.png";
+import Clock from "./Clock.png";
 export * from "./SideBar";
 
 export {
@@ -107,4 +108,5 @@ export {
   Documents,
   Company_taxAndCompilance,
   MandatoryAnnualFilling,
+  Clock,
 };

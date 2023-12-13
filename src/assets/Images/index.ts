@@ -19,6 +19,8 @@ import Collage from "./Collage.png";
 import KashviJain from "./KashviJain.png";
 import Koushik from "./Koushik.png";
 import BipulKumar from "./BipulKumar.png";
+import BlogPostMain from "./BlogPostMain.png";
+import BlogPostSub from "./BlogPostSub.png";
 export {
   LawDigitalTechniques,
   SignupOverlayLogo,
@@ -41,4 +43,6 @@ export {
   KashviJain,
   Koushik,
   BipulKumar,
+  BlogPostSub,
+  BlogPostMain,
 };
