@@ -15,6 +15,10 @@ import ServicesBussinessSetup from "./ServicesBussinessSetup.png";
 import DocumentationServices from "./DocumentationServices.png";
 import TrademarkandIp_service from "./TrademarkAndIp_service.png";
 import TaxandCompilance_services from "./TaxandCompilance_services.png";
+import Collage from "./Collage.png";
+import KashviJain from "./KashviJain.png";
+import Koushik from "./Koushik.png";
+import BipulKumar from "./BipulKumar.png";
 export {
   LawDigitalTechniques,
   SignupOverlayLogo,
@@ -33,4 +37,8 @@ export {
   DocumentationServices,
   TrademarkandIp_service,
   TaxandCompilance_services,
+  Collage,
+  KashviJain,
+  Koushik,
+  BipulKumar,
 };
