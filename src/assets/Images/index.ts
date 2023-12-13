@@ -21,6 +21,9 @@ import Koushik from "./Koushik.png";
 import BipulKumar from "./BipulKumar.png";
 import BlogPostMain from "./BlogPostMain.png";
 import BlogPostSub from "./BlogPostSub.png";
+import PawanKumarSingh from "./PawanKumarSingh.jpg";
+import AayushiSingh from "./AayushiSingh.jpg";
+import YashSengde from "./YashSengde.jpg";
 export {
   LawDigitalTechniques,
   SignupOverlayLogo,
@@ -45,4 +48,7 @@ export {
   BipulKumar,
   BlogPostSub,
   BlogPostMain,
+  PawanKumarSingh,
+  AayushiSingh,
+  YashSengde,
 };

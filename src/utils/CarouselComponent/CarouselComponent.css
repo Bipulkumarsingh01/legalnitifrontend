@@ -1,0 +1,19 @@
+.lnai-active-indicator {
+  & div {
+    background: linear-gradient(
+      180deg,
+      #000000 0%,
+      #3d065f 50%,
+      #200554 100%
+    ) !important;
+  }
+  & .muitouchripple-root {
+    display: none !important;
+  }
+}
+
+.lnai-carousel-indicator {
+  & .MuiTouchRipple-root {
+    display: none !important;
+  }
+}
