@@ -17,7 +17,7 @@ const LNAINotification = ({
   const [exited, setExited] = useState(true);
   const nodeRef = useRef(null);
 
-  const handleClose = (_: any, reason: SnackbarCloseReason) => {
+  const handleClose = (_: any) => {
     // if (reason === "clickaway") {
     //   return;
     // }

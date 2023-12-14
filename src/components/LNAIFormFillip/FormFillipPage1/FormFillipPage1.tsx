@@ -8,7 +8,6 @@ import {
   Tooltip,
 } from "@mui/material";
 import React from "react";
-import { IoMdCloudUpload } from "react-icons/io";
 import { addFormObjectStoreHandler } from "../../../actions";
 import { postFormData } from "../../../axiosActions";
 import { StyledRadio } from "../../../utils";
@@ -25,11 +24,12 @@ const FormFillipPage1 = ({
   setSelectedFormPageTab,
 }: any) => {
   const dispatch = useDispatch();
-  const submitFillipFormHandler = () => {
-    dispatch(addFormObjectStoreHandler("fillip", fillipFormData));
-    console.log(fillipFormData);
-    postFormData("fillip", fillipFormData);
-  };
+
+  // const submitFillipFormHandler = () => {
+  //   dispatch(addFormObjectStoreHandler("fillip", fillipFormData));
+  //   console.log(fillipFormData);
+  //   postFormData("fillip", fillipFormData);
+  // };
 
   const companyRegisteredChangeHandler = (
     event: React.ChangeEvent<HTMLInputElement>

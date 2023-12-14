@@ -86,6 +86,7 @@ const LNAINameGenerator = () => {
     console.log(nameGenRes.data.available_names);
   };
 
+  // @ts-ignore
   const copyGeneratedNameHandler = (event: any, name: string) => {
     navigator.clipboard.writeText(name);
     setCopyNotificationState(true);

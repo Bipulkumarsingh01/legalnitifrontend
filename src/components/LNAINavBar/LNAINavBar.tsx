@@ -23,7 +23,7 @@ import "./LNAINavBar.css";
 import { useDispatch, useSelector } from "react-redux";
 import {
   removeUserDetails,
-  removeUserLoginCred,
+  // removeUserLoginCred,
   removeUserToken,
 } from "../../actions";
 import { googleLogout } from "@react-oauth/google";
@@ -38,9 +38,9 @@ const LNAINavBar = ({ menuItems }: { menuItems?: string }) => {
 
   const userToken = store["userToken"];
   const accessToken = userToken?.["access_token"];
-  const refreshToken = userToken?.["refresh_token"];
+  // const refreshToken = userToken?.["refresh_token"];
 
-  const userDetails = store["userDetails"];
+  // const userDetails = store["userDetails"];
 
   const navigate = useNavigate();
   const [navbarRouteMenuState, setNavbarRouteMenuState] =

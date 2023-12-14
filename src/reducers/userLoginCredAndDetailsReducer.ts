@@ -4,9 +4,10 @@ import {
   UPDATE_USER_DETAILS,
 } from "../actionTypes";
 
-const token: any = localStorage.getItem("x-users-tokens")
-  ? localStorage.getItem("x-users-tokens")
-  : localStorage.getItem("g-users-tokens");
+// const token: any = localStorage.getItem("x-users-tokens")
+//   ? localStorage.getItem("x-users-tokens")
+//   : localStorage.getItem("g-users-tokens");
+
 const userDetails: any = localStorage.getItem("userDetails");
 const parsedUserDetails = JSON.parse(userDetails);
 

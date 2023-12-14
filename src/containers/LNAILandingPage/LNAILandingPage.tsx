@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
-import jwt from "jsonwebtoken";
+// import jwt from "jsonwebtoken";
 
 import {
   LNAIDashboardView,
@@ -15,7 +15,7 @@ const LNAILandingPage = () => {
   const userToken = store["userToken"] ? store["userToken"] : {};
 
   const accessToken = userToken?.["access_token"];
-  const refreshToken = userToken?.["refresh_token"];
+  // const refreshToken = userToken?.["refresh_token"];
 
   // Decode the token using your secret key
   useEffect(() => {

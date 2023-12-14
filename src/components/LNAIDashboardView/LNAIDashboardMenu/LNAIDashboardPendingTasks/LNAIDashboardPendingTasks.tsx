@@ -6,7 +6,7 @@ import { Button } from "@mui/material";
 import moment from "moment";
 import { getPendingTasks } from "../../../../axiosActions";
 
-const LNAIDashboardPendingTasks = ({ servicesSubscribed }: any) => {
+const LNAIDashboardPendingTasks = ({}: any) => {
   const [pendingTasksLocalState, setPendingTasksLocalState] = useState<any>({
     pending_tasks: {},
     service_status: "",

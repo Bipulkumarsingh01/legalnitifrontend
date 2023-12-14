@@ -1,4 +1,4 @@
-import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { createTheme } from "@mui/material/styles";
 
 declare module "@mui/material/Button" {
   interface ButtonPropsVariantOverrides {
@@ -12,8 +12,6 @@ declare module "@mui/material/Button" {
     LNAIPlainButton: true;
   }
 }
-
-const defaultTheme = createTheme();
 
 export const LNAIThemeConfig = createTheme({
   components: {

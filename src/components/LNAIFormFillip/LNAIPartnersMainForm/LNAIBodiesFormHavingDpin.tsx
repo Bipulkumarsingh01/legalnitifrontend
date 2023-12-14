@@ -3,7 +3,7 @@ import {
   FormControl,
   FormLabel,
   InputAdornment,
-  InputLabel,
+  // InputLabel,
   MenuItem,
   Select,
   SelectChangeEvent,
@@ -11,7 +11,6 @@ import {
 } from "@mui/material";
 import { useState } from "react";
 import { getPincodeDetails } from "../../../axiosActions";
-import { IoMdCloudUpload } from "react-icons/io";
 
 import "./LNAIBodiesFormHavingDpin.css";
 import { Upload } from "../../../assets";
@@ -683,7 +682,7 @@ const LNAIBodiesFormHavingDpin = ({
       <div className="lnai-bodies-having-dpin-submit-button-container">
         <Button
           variant="LNAIPrimaryButton"
-          onClick={(event: any) => {
+          onClick={() => {
             let updateFillipFormData = {
               ...fillipFormData,
             };

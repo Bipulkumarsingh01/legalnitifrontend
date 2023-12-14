@@ -1,7 +1,5 @@
-import React from "react";
 import Carousel from "react-material-ui-carousel";
 import { AayushiSingh, PawanKumarSingh, YashSengde } from "../../assets";
-import { TbCapsule } from "react-icons/tb";
 
 import "./CarouselComponent.css";
 

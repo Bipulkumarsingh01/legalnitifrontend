@@ -1,5 +1,5 @@
 import { useSearchParams } from "react-router-dom";
-import { LNAIFooter, LNAINameGenerator, LNAINavBar } from "../../components";
+import { LNAIFooter, LNAINavBar } from "../../components";
 import { Box } from "@mui/material";
 import "./LNAIToolsPage.css";
 import {

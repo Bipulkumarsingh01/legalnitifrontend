@@ -1,4 +1,4 @@
-import { Box, Stack, Typography, TextField } from "@mui/material";
+import { Box, Typography, TextField } from "@mui/material";
 import "./incometaxcalulator.css";
 import { FaRupeeSign } from "react-icons/fa";
 import { useState, useEffect } from "react";

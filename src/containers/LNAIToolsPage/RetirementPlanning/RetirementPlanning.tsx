@@ -1,4 +1,4 @@
-import { Box, Divider, Typography, TextField } from "@mui/material";
+import { Box, Typography, TextField } from "@mui/material";
 import {
   startruppeComponent,
   endtextComponent,

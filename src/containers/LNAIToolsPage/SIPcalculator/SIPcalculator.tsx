@@ -1,6 +1,6 @@
 import "./SIPcalculator.css";
 import { Box, Typography, TextField, Button } from "@mui/material";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import {
   startruppeComponent,
   endtextComponent,
@@ -11,11 +11,11 @@ const SIPcalculator = () => {
   const [expectedReturnRate, setExpectedReturnRate] = useState<number>(0);
   const [timePeriod, setTimePeriod] = useState<number>(0);
 
-  const handleInvestmentTypeChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    setInvestmentType(e.target.value);
-  };
+  // const handleInvestmentTypeChange = (
+  //   e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  // ) => {
+  //   setInvestmentType(e.target.value);
+  // };
 
   const handleMonthlyInvestmentChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>

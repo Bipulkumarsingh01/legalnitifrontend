@@ -11,7 +11,6 @@ import {
   SelectChangeEvent,
   TextField,
 } from "@mui/material";
-import { IoMdCloudUpload } from "react-icons/io";
 import { DatePicker, LocalizationProvider } from "@mui/x-date-pickers";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import moment from "moment";
@@ -1170,7 +1169,7 @@ const LNAIBodiesFormNotHavingDpin = ({
       <div className="lnai-bodies-not-having-dpin-submit-button-container">
         <Button
           variant="LNAIPrimaryButton"
-          onClick={(event: any) => {
+          onClick={() => {
             let updateFillipFormData = {
               ...fillipFormData,
             };

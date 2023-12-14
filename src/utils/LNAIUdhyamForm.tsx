@@ -54,7 +54,7 @@ const LNAIUdhyamForm = () => {
 
   const splabled = [{ label: "Yes" }, { label: "No" }];
   const [xyt, setX] = useState(false);
-  const [em, setEm] = useState(false);
+  // const [em, setEm] = useState(false);
   const [lbl, setLbl] = useState(false);
   const [uam, setUam] = useState(false);
   const [activeStep, setActiveStep] = useState(0);
@@ -68,19 +68,19 @@ const LNAIUdhyamForm = () => {
     setActiveStep((prevActiveStep) => prevActiveStep - 1);
   };
 
-  const handleChange = (event: { target: { name: any; value: any } }) => {
-    setFormData({
-      ...formData,
-      [event.target.name]: event.target.value,
-    });
-  };
+  // const handleChange = (event: { target: { name: any; value: any } }) => {
+  //   setFormData({
+  //     ...formData,
+  //     [event.target.name]: event.target.value,
+  //   });
+  // };
 
-  function datePickerChangeHandler(
-    value: unknown,
-    _context: PickerChangeHandlerContext<DateValidationError>
-  ): void {
-    throw new Error("Function not implemented.");
-  }
+  // function datePickerChangeHandler(
+  //   value: unknown,
+  //   _context: PickerChangeHandlerContext<DateValidationError>
+  // ): void {
+  //   throw new Error("Function not implemented.");
+  // }
 
   return (
     <Container maxWidth="sm" sx={{ mt: 8 }}>

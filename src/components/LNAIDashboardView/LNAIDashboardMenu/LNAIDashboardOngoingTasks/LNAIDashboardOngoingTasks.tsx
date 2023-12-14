@@ -7,12 +7,13 @@ import {
   AccordionSummary,
   FormLabel,
   TextField,
-  Typography,
+  // Typography,
 } from "@mui/material";
 import { ExpandLeftArrow } from "../../../../assets";
 import moment from "moment";
 
-const LNAIDashboardOngoingTasks = ({ servicesSubscribed }: any) => {
+const LNAIDashboardOngoingTasks = ({}: // servicesSubscribed
+any) => {
   const [ongoingTasksLocalState, setOngoingTasksLocalState] = useState<any>({});
 
   useEffect(() => {
@@ -37,9 +38,9 @@ const LNAIDashboardOngoingTasks = ({ servicesSubscribed }: any) => {
 
   return (
     <div className="lnai-dashboard-ongoing-tasks-content-main-container">
-      {Object.keys(ongoingTasksLocalState)?.map((indUserId, indUserIndex) =>
+      {Object.keys(ongoingTasksLocalState)?.map((indUserId) =>
         Object.keys(ongoingTasksLocalState?.[indUserId])?.map(
-          (indOngoingTask, indOngoingTaskIndex) => (
+          (indOngoingTask) => (
             <Accordion className="lnai-dashboard-ongoing-tasks-main-container">
               <AccordionSummary
                 expandIcon={

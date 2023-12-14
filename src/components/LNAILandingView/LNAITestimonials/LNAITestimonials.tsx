@@ -1,4 +1,4 @@
-import { PawanKumarSingh, Testimonials } from "../../../assets";
+import { Testimonials } from "../../../assets";
 
 import { CarouselComponent } from "../../../utils";
 

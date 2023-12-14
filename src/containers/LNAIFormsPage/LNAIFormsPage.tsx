@@ -49,8 +49,8 @@ const LNAIFormsPage = () => {
 
   useEffect(() => {
     Object.keys(servicesSubscribed)?.length > 0 &&
-      Object.keys(servicesSubscribed)?.map((key, index) => {
-        servicesSubscribed[key].map((indService: any, serviceIndex: any) => {
+      Object.keys(servicesSubscribed)?.map((key) => {
+        servicesSubscribed[key].map((indService: any) => {
           if (formType == indService) setIsAuthorized(true);
         });
       });

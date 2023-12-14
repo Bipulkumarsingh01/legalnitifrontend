@@ -10,7 +10,10 @@ import {
 } from "@mui/material";
 
 import { LNAILoginGoole } from "../..";
-import { saveUserLoginCred, saveUserToken } from "../../../actions";
+import {
+  // saveUserLoginCred,
+  saveUserToken,
+} from "../../../actions";
 import { postUserSignup } from "../../../axiosActions";
 
 import { LNAIThemeConfig } from "../../../ThemeConfig";
@@ -31,17 +34,17 @@ const LNAIMainForm = () => {
   const dispatch = useDispatch();
   const [formValues, setFormValues] = useState(initialFormValues);
 
-  const checkRequiredFields = () => {
-    if (
-      formValues.phone_number !== -1 &&
-      formValues.first_name.length > 0 &&
-      formValues.last_name.length > 0 &&
-      formValues.email.length > 0
-    ) {
-      return false;
-    }
-    return true;
-  };
+  // const checkRequiredFields = () => {
+  //   if (
+  //     formValues.phone_number !== -1 &&
+  //     formValues.first_name.length > 0 &&
+  //     formValues.last_name.length > 0 &&
+  //     formValues.email.length > 0
+  //   ) {
+  //     return false;
+  //   }
+  //   return true;
+  // };
 
   const handleInputChange = (e: any) => {
     const { name, value } = e.target;

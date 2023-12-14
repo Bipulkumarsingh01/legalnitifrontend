@@ -1,6 +1,5 @@
 import { Box, Typography, TextField } from "@mui/material";
 import { FaRupeeSign } from "react-icons/fa";
-import { Divider } from "@mui/material";
 import { useState, useEffect } from "react";
 
 import "./SalaryCalculator.css";

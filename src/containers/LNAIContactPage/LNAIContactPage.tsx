@@ -1,13 +1,13 @@
 import jwt from "jwt-decode";
 import { useDispatch, useSelector } from "react-redux";
-import { LNAIThemeConfig } from "../../ThemeConfig.tsx";
+// import { LNAIThemeConfig } from "../../ThemeConfig.tsx";
 
 import {
   LNAIFooter,
-  LNAIGoogleContactForm,
-  LNAIMainForm,
+  // LNAIGoogleContactForm,
+  // LNAIMainForm,
   LNAINavBar,
-  LNAIThankYou,
+  // LNAIThankYou,
 } from "../../components";
 import { removeUserDetails, removeUserToken } from "../../actions";
 import { IoIosSend } from "react-icons/io";
@@ -15,7 +15,7 @@ import "./LNAIContactPage.css";
 import {
   Box,
   Stack,
-  ThemeProvider,
+  // ThemeProvider,
   Typography,
   TextField,
   Button,

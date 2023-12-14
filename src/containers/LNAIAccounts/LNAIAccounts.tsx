@@ -48,15 +48,15 @@ const LNAIAccounts = () => {
     }
   }, []);
 
-  const checkRequiredFields = () => {
-    if (
-      loginFormValues.phone_number !== null &&
-      loginFormValues.email.length > 0
-    ) {
-      return false;
-    }
-    return true;
-  };
+  // const checkRequiredFields = () => {
+  //   if (
+  //     loginFormValues.phone_number !== null &&
+  //     loginFormValues.email.length > 0
+  //   ) {
+  //     return false;
+  //   }
+  //   return true;
+  // };
 
   const loginInputFieldHandler = (e: any) => {
     const { name, value } = e.target;

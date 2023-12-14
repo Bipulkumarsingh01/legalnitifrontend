@@ -98,7 +98,7 @@ const LNAIFormFillip = () => {
     right: false,
   });
 
-  const formData = store?.["formData"];
+  // const formData = store?.["formData"];
 
   const numberOfDesignatedPartners =
     +fillipFormData.extra.numberOfDesignatedPartners;
@@ -137,7 +137,7 @@ const LNAIFormFillip = () => {
           <ToggleButton
             value="left"
             selected={selectedFormPageTab["left"]}
-            onChange={(event) => {
+            onChange={() => {
               let prevSelectedFormPageTabData = { ...selectedFormPageTab };
               if (prevSelectedFormPageTabData["left"] === false) {
                 prevSelectedFormPageTabData["left"] = true;
@@ -150,7 +150,7 @@ const LNAIFormFillip = () => {
           <ToggleButton
             value="center"
             selected={selectedFormPageTab["center"]}
-            onChange={(event) => {
+            onChange={() => {
               let prevSelectedFormPageTabData = { ...selectedFormPageTab };
               if (prevSelectedFormPageTabData["center"] === false) {
                 prevSelectedFormPageTabData["center"] = true;
@@ -163,7 +163,7 @@ const LNAIFormFillip = () => {
           <ToggleButton
             value="right"
             selected={selectedFormPageTab["right"]}
-            onChange={(event) => {
+            onChange={() => {
               let prevSelectedFormPageTabData = { ...selectedFormPageTab };
               if (prevSelectedFormPageTabData["right"] === false) {
                 prevSelectedFormPageTabData["right"] = true;

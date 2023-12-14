@@ -1,19 +1,17 @@
 import { googleLogout, useGoogleLogin } from "@react-oauth/google";
-import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
 import { Button } from "@mui/material";
 
 import {
   removeUserDetails,
-  removeUserLoginCred,
+  // removeUserLoginCred,
   removeUserToken,
-  saveUserDetails,
-  saveUserLoginCred,
+  // saveUserDetails,
+  // saveUserLoginCred,
   saveUserToken,
 } from "../../actions";
-import { getGoogleUserInfo } from "../../axiosActions";
-
+// import { getGoogleUserInfo } from "../../axiosActions";
 import "./LNAILoginGoogle.css";
 import { GoogleBg } from "../../assets";
 

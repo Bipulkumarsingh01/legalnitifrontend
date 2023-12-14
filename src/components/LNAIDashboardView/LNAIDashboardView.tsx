@@ -1,11 +1,6 @@
-import { Box, Button, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
-import {
-  getFormData,
-  getRunScript,
-  getSubscribedServices,
-} from "../../axiosActions";
+import { getFormData, getSubscribedServices } from "../../axiosActions";
 import "./LNAIDashboardView.css";
 import { LNAISideBar } from "..";
 import { LNAIDashboardMenu } from "./LNAIDashboardMenu/LNAIDashboardMenu";
@@ -37,16 +32,15 @@ function TabPanel(props: TabPanelProps) {
 }
 
 const LNAIDashboardView = ({ decodedToken }: any) => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const [fillipData, setFillipData] = useState<any>();
   const [servicesSubscribed, setServicesSubscribed] = useState<any>({});
   const [dashboardMenuValue, setDashboardMenuValue] = useState(2);
 
   const dashboardMenuChangeHandler = (
-    event: React.SyntheticEvent,
+    // event: React.SyntheticEvent,
     newValue: number
   ) => {
-    console.log(event);
     setDashboardMenuValue(newValue);
   };
 

@@ -49,7 +49,7 @@ const LNAICartTable = () => {
             <th className="lnai-cart-table-heading-row-item">Quantity</th>
             <th className="lnai-cart-table-heading-row-item">Subtotal</th>
           </tr>
-          {productItems.map((item: any, key: any) => (
+          {productItems.map((item: any) => (
             <tr key={item.key} className="lnai-cart-table-items-data-row">
               <td className="lnai-cart-table-items-data-cell">
                 <div className="lnai-cart-table-product-column-main-container">

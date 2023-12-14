@@ -32,6 +32,7 @@ const LNAIPartnersDetailsForm = ({
   const [expanded, setExpanded] = useState<string | false>(false);
 
   const handleChange =
+    // @ts-ignore
     (panel: string) => (event: React.SyntheticEvent, isExpanded: boolean) => {
       setExpanded(isExpanded ? panel : false);
     };
