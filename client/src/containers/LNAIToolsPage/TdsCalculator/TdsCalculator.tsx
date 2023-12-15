@@ -32,16 +32,13 @@ const TdsCalculator = () => {
   return (
     <Box className="lnai-salaryCalculator-mainBox">
       <Box className="lnai-salaryCalculator-innerBox1">
-        <Typography
-          variant="h1"
-          className="lnai-landing-page-ai-solutions-heading-span"
-        >
+        <Typography variant="h2" className="tools-main-heading">
           TDS Calculator
         </Typography>
         <Box className="lnai-salaryCalculator-leftrightbox">
           <Box className="lnai-salaryCalculator-leftbox">
             <Box>
-              <Typography component={"p"}>
+              <Typography className="tools-main-subheading">
                 Can't figure out how to calculate your taxes?
               </Typography>
               <Typography

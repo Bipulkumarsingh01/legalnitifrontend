@@ -56,10 +56,7 @@ const NpsCalculator = () => {
   return (
     <Box className="lnai-npsCalculator-mainBox">
       <Box className="lnai-npsCalculator-innerBox1">
-        <Typography
-          variant="h2"
-          className="lnai-landing-page-ai-solutions-heading-span"
-        >
+        <Typography variant="h2" className="tools-main-heading">
           NPS Calculator
         </Typography>
         <Box className="leftrightbox-npscalculator">

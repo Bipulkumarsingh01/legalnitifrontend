@@ -65,15 +65,12 @@ const BussinessSetup = () => {
   return (
     <Box className="lnai-BussinessSetup-mainBox">
       <Box className="lnai-BussinessSetup-innerBox1">
-        <Typography
-          variant="h1"
-          className="lnai-landing-page-ai-solutions-heading-span"
-        >
+        <Typography variant="h2" className="tools-main-heading">
           Business Setup Calculator
         </Typography>
         <Box className="lnai-BussinessSetup-leftrightbox">
           <Box className="lnai-BussinessSetup-leftbox">
-            <Typography component={"p"}>
+            <Typography className="tools-main-subheading">
               Calculate Startup/Setup Costs
             </Typography>
             <Box className="lnai-incomeTaxCalculator-innerBox1-inner">

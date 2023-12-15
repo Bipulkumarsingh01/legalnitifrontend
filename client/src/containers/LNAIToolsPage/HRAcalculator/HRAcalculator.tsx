@@ -46,10 +46,7 @@ const HRAcalculator = () => {
   return (
     <Box className="lnai-hracalculator-mainBox">
       <Box className="lnai-hracalculator-innerBox1">
-        <Typography
-          variant="h2"
-          className="lnai-landing-page-ai-solutions-heading-span"
-        >
+        <Typography variant="h2" className="tools-main-heading">
           House Rent Allowance Calculator
         </Typography>
         <Box className="leftrightbox-hracalculator">

@@ -37,12 +37,16 @@ body {
 
   /* Font Sizes */
 
+  /* Tools Heading Settings */
+  --lnai-heading-01-font-size: 3.5rem;
+  --lnai-heading-01-font-weight: 700;
+
   /* Primary Heading Settings */
   --lnai-primary-heading-font-size: 2.5rem;
   --lnai-primary-heading-font-weight: 600;
 
   /* Secondary/Sub-headings Heading Settings */
-  --lnai-secondary-heading-font-size: 0.9rem;
+  --lnai-secondary-heading-font-size: 1.4rem;
   --lnai-secondary-heading-font-weigth: 500;
 
   /* Primary Paragraph Settings */

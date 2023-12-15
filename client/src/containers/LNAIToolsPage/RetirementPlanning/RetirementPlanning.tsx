@@ -55,11 +55,7 @@ const RetirementPlanning = () => {
   return (
     <Box className="lnai-Retirement-mainBox">
       <Box className="lnai-Retirement-innerBox1">
-        <Typography
-          variant="h1"
-          className="lnai-landing-page-ai-solutions-heading-span"
-          component={"h1"}
-        >
+        <Typography variant="h2" className="tools-main-heading">
           Online Retirement Planning Calculator
         </Typography>
 

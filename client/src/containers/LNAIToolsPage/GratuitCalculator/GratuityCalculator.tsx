@@ -33,10 +33,7 @@ const GratuityCalculator = () => {
   return (
     <Box className="lnai-salaryCalculator-mainBox">
       <Box className="lnai-salaryCalculator-innerBox1">
-        <Typography
-          variant="h1"
-          className="lnai-landing-page-ai-solutions-heading-span"
-        >
+        <Typography variant="h2" className="tools-main-heading">
           Gratuity Calculator
         </Typography>
         <Box className="lnai-salaryCalculator-leftrightbox">

@@ -50,10 +50,7 @@ const PPFcalculator = () => {
   return (
     <Box className="lnai-ppfcalculator-mainBox">
       <Box className="lnai-ppfcalculator-innerBox1">
-        <Typography
-          variant="h2"
-          className="lnai-landing-page-ai-solutions-heading-span"
-        >
+        <Typography variant="h2" className="tools-main-heading">
           Calculate Your PPF Online Now!
         </Typography>
         <Box className="leftrightbox-ppfcalculator">

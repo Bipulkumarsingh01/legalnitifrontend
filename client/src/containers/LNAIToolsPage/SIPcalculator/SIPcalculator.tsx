@@ -60,10 +60,7 @@ const SIPcalculator = () => {
   return (
     <Box className="lnai-sipcalculator-mainBox">
       <Box className="lnai-sipcalculator-innerBox1">
-        <Typography
-          variant="h2"
-          className="lnai-landing-page-ai-solutions-heading-span"
-        >
+        <Typography variant="h2" className="tools-main-heading">
           SIP Return Calculator
         </Typography>
         <Box className="leftbox-sipcalculator-textpart">

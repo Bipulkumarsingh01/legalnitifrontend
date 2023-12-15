@@ -41,16 +41,13 @@ const EpfCalculator = () => {
   return (
     <Box className="lnai-npsCalculator-mainBox">
       <Box className="lnai-npsCalculator-innerBox1">
-        <Typography
-          variant="h2"
-          className="lnai-landing-page-ai-solutions-heading-span"
-        >
+        <Typography variant="h2" className="tools-main-heading">
           EPF Calculator
         </Typography>
         <Box className="leftrightbox-npscalculator">
           <Box className="leftbox-npscalculator">
             <Box className="leftbox-npscalculator-textpart">
-              <Typography component={"p"}>
+              <Typography className="tools-main-subheading">
                 Having trouble figuring out your PF, EPF Calculations?
               </Typography>
               <Typography

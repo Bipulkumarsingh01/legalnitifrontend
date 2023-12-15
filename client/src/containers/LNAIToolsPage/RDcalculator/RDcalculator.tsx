@@ -52,10 +52,7 @@ const RDcalculator = () => {
   return (
     <Box className="lnai-RDcalculator-mainBox">
       <Box className="lnai-RDcalculator-innerBox1">
-        <Typography
-          variant="h2"
-          className="lnai-landing-page-ai-solutions-heading-span"
-        >
+        <Typography variant="h2" className="tools-main-heading">
           RD Calculator For Maturity Amount
         </Typography>
         <Box className="leftrightbox-RDcalculator">

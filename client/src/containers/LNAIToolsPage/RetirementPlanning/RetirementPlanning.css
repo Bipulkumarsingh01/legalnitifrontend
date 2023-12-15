@@ -18,19 +18,7 @@
   align-items: center;
   gap: 40px;
 }
-.lnai-Retirement-innerBox1 h1 {
-  font-family: Poppins;
-  font-size: 69px;
-  font-weight: 400;
-  line-height: normal;
-  background: var(
-    --Gradient,
-    linear-gradient(90deg, #3d055e 23.07%, #8d04c1 81%)
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+
 .leftrightbox-retirement {
   display: flex;
   flex-direction: row;

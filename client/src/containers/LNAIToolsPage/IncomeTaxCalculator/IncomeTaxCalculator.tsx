@@ -38,10 +38,7 @@ const IncomeTaxCalculator = () => {
   return (
     <Box className="lnai-incomeTaxCalculator-mainBox">
       <Box className="lnai-incomeTaxCalculator-innerBox1">
-        <Typography
-          variant="h1"
-          className="lnai-landing-page-ai-solutions-heading-span"
-        >
+        <Typography variant="h2" className="tools-main-heading">
           Income Tax Calculator
         </Typography>
         <Typography component={"p"}>
