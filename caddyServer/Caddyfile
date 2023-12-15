@@ -1,4 +1,4 @@
-:80 {
+legalniti.com, www.legalniti.com {
 	log {
 		output file /var/log/access.log
 	}
@@ -6,4 +6,4 @@
 	handle {
 		reverse_proxy client:3000
 	}
-}
+} 
