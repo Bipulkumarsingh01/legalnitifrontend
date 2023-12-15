@@ -34,6 +34,24 @@ body {
     var(--lnai-dark-purple) 0%,
     var(--lnai-light-purple) 33.75%
   );
+
+  /* Font Sizes */
+
+  /* Primary Heading Settings */
+  --lnai-primary-heading-font-size: 2.5rem;
+  --lnai-primary-heading-font-weight: 600;
+
+  /* Secondary/Sub-headings Heading Settings */
+  --lnai-secondary-heading-font-size: 0.9rem;
+  --lnai-secondary-heading-font-weigth: 500;
+
+  /* Primary Paragraph Settings */
+  --lnai-primary-paragraph-font-size: 1rem;
+  --lnai-primary-paragraph-font-weight: 400;
+
+  /* Primary Paragraph Settings */
+  --lnai-secondary-paragraph-font-size: 0.8rem;
+  --lnai-secondary-paragraph-font-weight: 400;
 }
 
 .lnai-primary-button {

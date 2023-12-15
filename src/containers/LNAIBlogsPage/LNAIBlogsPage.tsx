@@ -23,6 +23,7 @@ const LNAIBlogsPage = () => {
                   height={"70%"}
                   width={"100%"}
                 />
+
                 <div className="lnai-blogs-page-blog-item-posts-main-post-footer-content">
                   <Button variant="LNAIPurpleGradientLight">
                     Private Limited
@@ -32,6 +33,7 @@ const LNAIBlogsPage = () => {
                     <span>4 mins read</span>
                   </div>
                 </div>
+
                 <div>
                   <h4>Private Placement - Section 42 of Companies Act 2013</h4>
                   <p>
