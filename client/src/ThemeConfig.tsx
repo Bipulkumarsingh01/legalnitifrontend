@@ -265,6 +265,7 @@ export const LNAIThemeConfig = createTheme({
           "&.lnai-tools-text-field": {
             "& .MuiInputBase-root": {
               textTransform: "none",
+              fontSize: "var(--lnai-secondary-paragraph-font-size)",
               background:
                 "linear-gradient(#fff, #fff) padding-box, linear-gradient(0deg, rgba(61,5,94,1) 0%, rgba(141,4,193,1) 100%) border-box",
               color: "black",

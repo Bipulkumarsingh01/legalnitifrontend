@@ -109,7 +109,7 @@ const SIPcalculator = () => {
             <Box className="left-sipcalculator-inputpart">
               {investmentType === "sip" ? (
                 <Box className="left-sipcalculator-inputs">
-                  <Typography component={"h3"} variant="h5">
+                  <Typography component={"h2"} variant="h2">
                     Cost of Goods/Services
                   </Typography>
                   <TextField
@@ -125,7 +125,7 @@ const SIPcalculator = () => {
                 </Box>
               ) : (
                 <Box className="left-sipcalculator-inputs">
-                  <Typography component={"h3"} variant="h5">
+                  <Typography component={"h2"} variant="h2">
                     Monthly Investment
                   </Typography>
                   <TextField
@@ -142,7 +142,7 @@ const SIPcalculator = () => {
               )}
 
               <Box className="left-sipcalculator-inputs">
-                <Typography component={"h3"} variant="h5">
+                <Typography component={"h2"} variant="h2">
                   Expected Return Rate
                 </Typography>
                 <TextField
@@ -157,7 +157,7 @@ const SIPcalculator = () => {
                 />
               </Box>
               <Box className="left-sipcalculator-inputs">
-                <Typography component={"h3"} variant="h5">
+                <Typography component={"h2"} variant="h2">
                   Time period
                 </Typography>
                 <TextField
