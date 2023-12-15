@@ -1,3 +1,29 @@
-.lnai-toolsPage-mainBox{
-    background: linear-gradient(180deg, rgba(45, 13, 57, 0.21) 27.34%, rgba(141, 4, 193, 0.00) 100%);
+.lnai-toolsPage-mainBox {
+  background: linear-gradient(
+    180deg,
+    rgba(45, 13, 57, 0.21) 27.34%,
+    rgba(141, 4, 193, 0) 100%
+  );
+}
+.tools-main-heading {
+  font-size: var(--lnai-heading-01-font-size);
+  font-weight: var(--lnai-heading-01-font-weight);
+  line-height: normal;
+  background: var(
+    --Gradient,
+    linear-gradient(90deg, #3d055e 23.07%, #8d04c1 81%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tools-main-subheading {
+  font-size: var(--lnai-secondary-heading-font-size);
+  /* font-size: larger; */
+  font-weight: var(--lnai-secondary-heading-font-weigth);
+}
+.tools-main-paragraph {
+  font-size: var(--lnai-primary-paragraph-font-size);
+  font-weight: var(--lnai-primary-paragraph-font-weight);
 }

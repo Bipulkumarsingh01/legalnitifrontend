@@ -58,21 +58,14 @@ const GSTcalculator = () => {
   return (
     <Box className="lnai-gstcalculator-mainBox">
       <Box className="lnai-gstcalculator-innerBox1">
-        <Typography
-          variant="h2"
-          className="lnai-landing-page-ai-solutions-heading-span"
-        >
+        <Typography variant="h2" className="tools-main-heading">
           GST Calculator
         </Typography>
         <Box className="leftbox-gstcalculator-textpart">
           <Typography component={"p"}>
             Don't know how to calculate GST?
           </Typography>
-          <Typography
-            component={"h5"}
-            variant="h6"
-            className="innertext-salaryCalculator"
-          >
+          <Typography component={"h5"} variant="h6">
             Get the best GST calculator in India. Easy GST calculation in
             seconds, <br /> anytime and anywhere!
           </Typography>
@@ -148,7 +141,7 @@ const GSTcalculator = () => {
               </Box>
               {investmentType === "exclusive" ? (
                 <Box className="left-gstcalculator-inputs">
-                  <Typography component={"h3"} variant="h5">
+                  <Typography component={"h3"} variant="h3">
                     Profit Ratio
                   </Typography>
                   <TextField
