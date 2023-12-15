@@ -68,37 +68,27 @@ const BussinessSetup = () => {
         <Typography variant="h2" className="tools-main-heading">
           Business Setup Calculator
         </Typography>
-        <Box className="lnai-BussinessSetup-leftrightbox">
-          <Box className="lnai-BussinessSetup-leftbox">
-            <Typography className="tools-main-subheading">
-              Calculate Startup/Setup Costs
+        <Box className="lnai-BussinessSetup-subheading">
+          <Typography component={"p"}>Calculate Startup/Setup Costs</Typography>
+        </Box>
+        <Box className="leftright-box-BussinessSetup">
+          <Box className="lnai-bussiness-innerBox1-inner">
+            <Typography variant="h3" component={"h3"}>
+              Investment
             </Typography>
-            <Box className="lnai-incomeTaxCalculator-innerBox1-inner">
-              <Typography
-                variant="h5"
-                className="lnai-incometaxcalculator-inputheading"
-                component={"h5"}
-              >
-                Investment
-              </Typography>
-              <TextField
-                placeholder="Enter your income"
-                type="number"
-                value={investment}
-                onChange={handleInvestmentChange}
-                fullWidth
-                className="lnai-tools-text-field"
-                InputProps={{
-                  startAdornment: startruppeComponent(),
-                }}
-              />
-            </Box>
-            <Box className="lnai-incomeTaxCalculator-innerBox1-inner">
-              <Typography
-                variant="h5"
-                className="lnai-incometaxcalculator-inputheading"
-                component={"h5"}
-              >
+            <TextField
+              placeholder="Enter your income"
+              type="number"
+              value={investment}
+              onChange={handleInvestmentChange}
+              fullWidth
+              className="lnai-tools-text-field"
+              InputProps={{
+                startAdornment: startruppeComponent(),
+              }}
+            />
+            <Box className="lnai-bussiness-innerBox1-inner">
+              <Typography variant="h3" component={"h3"}>
                 Revenue
               </Typography>
               <TextField
@@ -114,7 +104,7 @@ const BussinessSetup = () => {
               />
             </Box>
           </Box>
-          <Box className="output-box-BussinessSetup">
+          <Box className="output-box-BussinessSetup-insideBox">
             <Typography
               variant="h2"
               style={{
@@ -123,10 +113,8 @@ const BussinessSetup = () => {
             >
               Profit
             </Typography>
-            <Box className="output-box-BussinessSetup-insideBox">
-              <FaRupeeSign />
-              {profit}
-            </Box>
+            <FaRupeeSign />
+            {profit}
           </Box>
         </Box>
       </Box>
