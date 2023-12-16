@@ -6,7 +6,7 @@ import "./BussinessSetup.css";
 export const startruppeComponent = () => {
   return (
     <Box display="flex" alignItems="center">
-      <FaRupeeSign style={{ fontSize: "24px", color: "#8D04C1" }} />
+      <FaRupeeSign style={{ fontSize: "18px", color: "#8D04C1" }} />
       <Divider
         orientation="vertical"
         flexItem
@@ -33,7 +33,7 @@ export const endtextComponent = (text: any) => {
           marginRight: "8px",
         }}
       />
-      {text}
+      <Typography>{text}</Typography>
     </Box>
   );
 };

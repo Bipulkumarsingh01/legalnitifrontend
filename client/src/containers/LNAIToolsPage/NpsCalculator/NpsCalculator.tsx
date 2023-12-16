@@ -123,7 +123,7 @@ const NpsCalculator = () => {
             </Box>
           </Box>
           <Box className="rightbox-npscalculator">
-            <Box className="output-box-npscalculator">
+            <Box className="output-box-npscalculator ">
               <Box component={"div"}>
                 <Typography variant="h2" component={"h2"}>
                   Total Investment

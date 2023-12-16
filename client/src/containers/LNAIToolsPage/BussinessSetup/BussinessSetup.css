@@ -51,7 +51,6 @@
   align-items: start;
   justify-content: end;
   gap: 50px;
-  background: cadetblue;
 }
 .lnai-BussinessSetup-leftbox p {
   font-size: var(--lnai-secondary-heading-font-size);
