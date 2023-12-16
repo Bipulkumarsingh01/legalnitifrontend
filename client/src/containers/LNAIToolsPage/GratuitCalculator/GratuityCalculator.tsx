@@ -5,6 +5,7 @@ import {
   endtextComponent,
 } from "../BussinessSetup/BussinessSetup";
 import { useState, useEffect } from "react";
+import "./Gratuitycalculator.css";
 
 const GratuityCalculator = () => {
   const [monthlyService, setMonthlyService] = useState<number>(0);
@@ -91,13 +92,12 @@ const GratuityCalculator = () => {
           <Box className="output-box-BussinessSetup">
             <Typography
               variant="h2"
-              style={{
-                fontSize: "40px",
-              }}
+              component={"h2"}
+              className="output-box-gratuity"
             >
               Gratuity Amount
             </Typography>
-            <Box className="output-box-BussinessSetup-insideBox">
+            <Box className="">
               <FaRupeeSign />
               {gratuityAmount}
             </Box>

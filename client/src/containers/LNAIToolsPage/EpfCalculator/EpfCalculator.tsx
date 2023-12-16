@@ -108,7 +108,7 @@ const EpfCalculator = () => {
             </Box>
           </Box>
           <Box className="rightbox-npscalculator">
-            <Box className="output-box-npscalculator">
+            <Box className="output-box-epfcalculator">
               <Box component={"div"}>
                 <Typography variant="h2" component={"h2"}>
                   Total Maturity Amount
