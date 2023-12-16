@@ -126,7 +126,7 @@ const LNAIWhyLegalniti = () => {
             />
           </div>
           <h2 className="lnai-landing-view-why-legalniti-grid-item-text">
-            Quick & Reliable <br /> System
+            Quick & <br /> Reliable System
           </h2>
         </div>
       </div>

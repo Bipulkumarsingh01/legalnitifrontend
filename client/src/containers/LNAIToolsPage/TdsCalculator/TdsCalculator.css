@@ -13,6 +13,9 @@
   justify-content: center;
   align-items: flex-start;
   height: 100%;
+
+  width: 75%;
+  margin: auto;
 }
 .lnai-tdsCalcualtor-leftbox h2 {
   font-style: normal;
@@ -48,6 +51,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-left: auto;
 }
 .output-box-tdscalculator {
   font-size: var(--lnai-primary-heading-font-size);

@@ -6,6 +6,7 @@ import {
   TrustedClients3,
   TrustedClients4,
   TrustedClients5,
+  TrustedClients6,
 } from "../../../assets";
 
 import "./LNAITrustedClients.css";
@@ -17,7 +18,12 @@ const LNAITrustedClients = () => {
         Trusted Clients
       </h1>
       <div className="lnai-landing-view-trusted-clients-details-container">
-        <img src={TrustedClients} alt="TrustedClients" height={300} width={400} />
+        <img
+          src={TrustedClients}
+          alt="TrustedClients"
+          height={300}
+          width={400}
+        />
         <p>
           We leverage the power of digital to simplify the <br /> things and not
           make them complex for you. Our <br /> clear, concise and transparent
@@ -36,10 +42,10 @@ const LNAITrustedClients = () => {
         <div className="lnai-landing-view-trusted-clients-logo-container">
           <div className="lnai-landing-view-trusted-clients-logo-item">
             <img
-              src={TrustedClients1}
-              alt="TrustedClients1"
-              height={75}
-              width={75}
+              src={TrustedClients6}
+              alt="TrustedClients6"
+              height={50}
+              width={50}
             />
           </div>
 
@@ -49,6 +55,15 @@ const LNAITrustedClients = () => {
               alt="TrustedClients2"
               height={50}
               width={50}
+            />
+          </div>
+
+          <div className="lnai-landing-view-trusted-clients-logo-item">
+            <img
+              src={TrustedClients1}
+              alt="TrustedClients1"
+              height={75}
+              width={75}
             />
           </div>
 

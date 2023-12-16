@@ -2,6 +2,7 @@ import { Button, TextField, ThemeProvider } from "@mui/material";
 import { LNAIThemeConfig } from "../../ThemeConfig";
 import {
   FooterAiImage,
+  Frame,
   GetStarted,
   Gmail,
   Instagram,
@@ -61,7 +62,7 @@ const LNAIFooter = ({ getStarted }: { getStarted: boolean }) => {
               </div>
             </div>
             <img
-              src={GetStarted}
+              src={Frame}
               alt="GetStarted"
               height={250}
               width={175}
@@ -72,7 +73,7 @@ const LNAIFooter = ({ getStarted }: { getStarted: boolean }) => {
 
         <div
           className="lnai-landing-view-about-us-container"
-          style={{ padding: getStarted ? "120px 20px 20px 20px" : "10px" }}
+          style={{ padding: getStarted ? "120px 20px 20px 20px" : "2rem" }}
         >
           <div className="lnai-landing-view-about-us-content-container">
             <div className="lnai-landing-view-about-us-content-address-item">

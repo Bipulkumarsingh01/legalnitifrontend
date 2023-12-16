@@ -70,7 +70,10 @@ const PPFcalculator = () => {
                 Provident Fund (PPF) investment with our PPF Calculator.
               </Typography>
             </Box>
-            <Box className="left-ppfcalculator-inputpart">
+            <Box
+              className="left-ppfcalculator-inputpart"
+              style={{ marginBottom: "1rem" }}
+            >
               <Box className="left-ppfcalculator-inputs">
                 <Typography component={"h3"} variant="h5">
                   Monthly Investment

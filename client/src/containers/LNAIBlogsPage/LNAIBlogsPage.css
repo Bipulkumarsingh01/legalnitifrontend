@@ -134,12 +134,16 @@
 }
 
 .lnai-blogs-page-blog-item-banner-image {
-  height: 10rem;
+  /* height: 10rem;
   background-color: var(--lnai-light-purple);
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 600; */
+
+  width: 100%;
+  height: 12rem;
+  cursor: pointer;
 }

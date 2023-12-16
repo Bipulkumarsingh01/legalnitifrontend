@@ -3,6 +3,7 @@ import TrustedClients2 from "./TrustedClients2.png";
 import TrustedClients3 from "./TrustedClients3.png";
 import TrustedClients4 from "./TrustedClients4.png";
 import TrustedClients5 from "./TrustedClients5.png";
+import TrustedClients6 from "./TrustedClients6.jpeg";
 import FacebookLogo from "./FacebookLogo.png";
 import GoogleLogo from "./GoogleLogo.png";
 import LinkedinLogo from "./LinkedinLogo.png";
@@ -36,4 +37,5 @@ export {
   Twitter,
   LNAILogo,
   LNAILogoTp,
+  TrustedClients6,
 };

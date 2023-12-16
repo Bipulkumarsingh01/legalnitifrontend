@@ -140,7 +140,10 @@ const GSTcalculator = () => {
                 </Box>
               </Box>
               {investmentType === "exclusive" ? (
-                <Box className="left-gstcalculator-inputs">
+                <Box
+                  className="left-gstcalculator-inputs"
+                  style={{ marginBottom: "1rem" }}
+                >
                   <Typography component={"h3"} variant="h3">
                     Profit Ratio
                   </Typography>
