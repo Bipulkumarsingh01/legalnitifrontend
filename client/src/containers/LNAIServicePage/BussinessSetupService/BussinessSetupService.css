@@ -238,3 +238,5 @@
   font-size: var(--lnai-secondary-heading-font-size);
   font-weight: var(--lnai-primary-heading-font-weight);
 }
+
+/* remove wrapper class to have previous border */
