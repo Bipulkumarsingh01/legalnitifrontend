@@ -3,6 +3,7 @@ import {
   Collage,
   KashviJain,
   Koushik,
+  Srikanth,
   VinitaLohani,
 } from "../../assets";
 import { LNAIFooter, LNAINavBar } from "../../components";
@@ -59,7 +60,7 @@ const LNAIAboutPage = () => {
             <h3>Legal Head</h3>
           </div>
           <div className="lnai-about-team-member-card">
-            <img src={BipulKumar} alt="Bipul Kumar" height={250} width={250} />
+            <img src={Srikanth} alt="Bipul Kumar" height={250} width={250} />
             <h2 style={{ fontWeight: "700" }} className="lnai-primary-heading">
               CA. Srikanth Reddy
             </h2>

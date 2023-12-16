@@ -176,7 +176,10 @@ const SIPcalculator = () => {
               </Box>
             </Box>
           </Box>
-          <Box className="rightbox-sipcalculator">
+          <Box
+            className="rightbox-sipcalculator"
+            // style={{ paddingBottom: "-1rem" }}
+          >
             <Box className="output-box-sipcalculator">
               <Box component={"div"}>
                 <Typography variant="h2" component={"h2"}>

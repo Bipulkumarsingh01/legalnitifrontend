@@ -52,8 +52,14 @@ const HRAcalculator = () => {
 
         <Box className="leftrightbox-hracalculator">
           <Box className="leftbox-hracalculator">
-            <Box className="leftbox-hracalculator-textpart">
-              <Typography component={"p"}>
+            <Box
+              className="leftbox-hracalculator-textpart"
+              style={{ width: "100%", marginLeft: "20%" }}
+            >
+              <Typography
+                component={"p"}
+                // style={{ fontSize: "1rem" }}
+              >
                 Are you aware of how to calculate your House Rent Allowance
                 exemption?
               </Typography>
@@ -61,6 +67,7 @@ const HRAcalculator = () => {
                 component={"h5"}
                 variant="h6"
                 className="innertext-salaryCalculator"
+                // style={{ fontSize: "0.9rem" }}
               >
                 The HRA calculator online is your best choice to do <br />
                 the job in mere seconds!

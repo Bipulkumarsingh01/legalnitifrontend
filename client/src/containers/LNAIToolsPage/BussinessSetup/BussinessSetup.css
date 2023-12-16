@@ -8,10 +8,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100%;
 }
 .lnai-BussinessSetup-innerBox1 {
   width: 97vw;
-  height: calc(100vh - 107px);
+  /* height: calc(100vh - 107px); */
   border-radius: 28px;
   border: 0.641px solid #000;
   background: #fff;
@@ -21,6 +22,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  height: 100%;
 }
 .lnai-BussinessSetup-subheading {
   align-self: self-start;
@@ -47,6 +49,8 @@
   align-items: center;
   justify-content: center;
   height: 100%;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
   gap: 220px;
 }
 
