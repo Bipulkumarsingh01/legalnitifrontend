@@ -49,6 +49,7 @@ const HRAcalculator = () => {
         <Typography variant="h2" className="tools-main-heading">
           House Rent Allowance Calculator
         </Typography>
+
         <Box className="leftrightbox-hracalculator">
           <Box className="leftbox-hracalculator">
             <Box className="leftbox-hracalculator-textpart">
@@ -65,7 +66,10 @@ const HRAcalculator = () => {
                 the job in mere seconds!
               </Typography>
             </Box>
-            <Box className="left-hracalculator-inputpart">
+            <Box
+              className="left-hracalculator-inputpart"
+              style={{ width: "60%", margin: "auto" }}
+            >
               <Box className="left-hracalculator-inputs">
                 <Typography component={"h3"} variant="h5">
                   Basic Salary
@@ -114,7 +118,10 @@ const HRAcalculator = () => {
             </Box>
           </Box>
           <Box className="rightbox-hracalculator">
-            <Box className="output-box-hracalculator">
+            <Box
+              className="output-box-hracalculator"
+              style={{ marginBottom: "-1rem" }}
+            >
               <Box component={"div"}>
                 <Typography variant="h2" component={"h2"}>
                   Exempted HRA

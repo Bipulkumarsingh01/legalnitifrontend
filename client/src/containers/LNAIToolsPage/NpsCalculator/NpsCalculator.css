@@ -1,8 +1,14 @@
 .lnai-npsCalculator-mainBox {
-  width: 100vw;
+  /* width: 100vw;
   height: calc(100vh - 64px);
   box-sizing: border-box;
-  padding: 1.5rem;
+  padding: 1.5rem; */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem 0rem 4rem 0rem;
+  height: 100%;
 }
 .lnai-npsCalculator-innerBox1 {
   width: 97vw;
@@ -15,6 +21,7 @@
   justify-content: start;
   align-items: center;
   gap: 20px;
+  height: 100%;
 }
 .leftrightbox-npscalculator {
   margin-top: 20px;
@@ -25,6 +32,7 @@
   align-items: center;
   gap: 120px;
   height: 96.5rem;
+  height: 100%;
 }
 
 .leftbox-npscalculator {
@@ -77,6 +85,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  margin-top: auto;
+  margin-bottom: -1rem;
 }
 .output-box-npscalculator {
   display: flex;
@@ -88,6 +99,8 @@
   height: 300px;
   border: 0.641px solid #000;
   border-radius: 28px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
   box-shadow: 0px -1.28103px 5.37232px 0px rgba(61, 5, 94, 0.63);
 }
 .output-box-npscalculator h2 {

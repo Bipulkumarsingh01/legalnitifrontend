@@ -1,8 +1,12 @@
 .lnai-sipcalculator-mainBox {
-  width: 100vw;
-  height: calc(100vh - 64px);
-  box-sizing: border-box;
-  padding: 1.5rem;
+  /* width: 100vw; */
+  /* height: calc(100vh - 64px); */
+  /* box-sizing: border-box; */
+
+  padding: 2.5rem 0rem 4rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .lnai-sipcalculator-innerBox1 {
   width: 97vw;
@@ -16,8 +20,10 @@
   box-sizing: border-box;
   flex-direction: column;
   justify-content: start;
-  align-items: center;
   gap: 20px;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
 }
 .leftrightbox-sipcalculator {
   display: flex;
@@ -26,7 +32,7 @@
   margin-left: 20px;
   width: 100%;
   height: 100%;
-  gap: 420px;
+  /* gap: 420px; */
   align-items: flex-start;
 }
 .rightbox-sipcalculator {

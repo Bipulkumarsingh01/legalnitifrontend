@@ -73,7 +73,7 @@ const LNAIFooter = ({ getStarted }: { getStarted: boolean }) => {
 
         <div
           className="lnai-landing-view-about-us-container"
-          style={{ padding: getStarted ? "120px 20px 20px 20px" : "10px" }}
+          style={{ padding: getStarted ? "120px 20px 20px 20px" : "2rem" }}
         >
           <div className="lnai-landing-view-about-us-content-container">
             <div className="lnai-landing-view-about-us-content-address-item">

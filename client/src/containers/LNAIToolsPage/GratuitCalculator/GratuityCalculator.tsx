@@ -92,7 +92,7 @@ const GratuityCalculator = () => {
           <Box className="output-box-BussinessSetup">
             <Typography
               variant="h2"
-              component={"h2"}
+              component={"p"}
               className="output-box-gratuity"
             >
               Gratuity Amount

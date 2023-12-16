@@ -156,7 +156,10 @@ const SIPcalculator = () => {
                   }}
                 />
               </Box>
-              <Box className="left-sipcalculator-inputs">
+              <Box
+                className="left-sipcalculator-inputs"
+                style={{ marginBottom: "1rem" }}
+              >
                 <Typography component={"h2"} variant="h2">
                   Time period
                 </Typography>

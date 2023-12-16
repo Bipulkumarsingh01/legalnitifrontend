@@ -1,8 +1,13 @@
 .lnai-BussinessSetup-mainBox {
-  width: 100vw;
-  height: calc(100vh - 64px);
-  box-sizing: border-box;
-  padding: 1.5rem;
+  /* width: 100vw; */
+  /* height: calc(100vh - 64px); */
+  /* box-sizing: border-box; */
+  /* padding: 1.5rem; */
+
+  padding: 2.5rem 0rem 4rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .lnai-BussinessSetup-innerBox1 {
   width: 97vw;

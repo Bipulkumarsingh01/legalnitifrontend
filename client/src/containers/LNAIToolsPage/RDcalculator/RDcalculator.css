@@ -1,8 +1,14 @@
 .lnai-RDcalculator-mainBox {
-  width: 100vw;
+  /* width: 100vw;
   height: calc(100vh - 64px);
   box-sizing: border-box;
-  padding: 1.5rem 2rem 0 1.5rem;
+  padding: 1.5rem 2rem 0 1.5rem; */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem 0rem 4rem 0rem;
+  height: 100%;
 }
 .lnai-RDcalculator-innerBox1 {
   width: 97vw;
@@ -17,13 +23,14 @@
   justify-content: start;
   align-items: center;
   gap: 20px;
+  height: 100%;
 }
 .leftrightbox-RDcalculator {
   display: flex;
   flex-direction: row;
   justify-content: end;
   /* align-items: center; */
-  gap: 170px;
+  /* gap: 170px; */
 }
 
 .leftbox-RDcalculator {
