@@ -53,8 +53,14 @@ import Business_taxAndCompilance from "./Business_taxAndCompilance.png";
 import MandatoryAnnualFilling from "./MandatoryAnnualFilling.png";
 import Clock from "./Clock.png";
 export * from "./SideBar";
+import Lawyer from "./Lawyer.png";
+import ManOfficeWorker from "./ManOfficeWorker.png";
+import WomanOfficeWorker from "./WomanOfficeWorker.png";
 
 export {
+  Lawyer,
+  ManOfficeWorker,
+  WomanOfficeWorker,
   Handshake_taxandCompilance,
   Accounting,
   Document_taxandCompilation,

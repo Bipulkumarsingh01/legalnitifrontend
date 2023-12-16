@@ -124,7 +124,7 @@ const TrademarkandIp = () => {
             <Box
               className="more-services"
               sx={{
-                display: ismoreservices ? "" : "none",
+                display: ismoreservices && moreService.length ? "" : "none",
               }}
             >
               <Typography

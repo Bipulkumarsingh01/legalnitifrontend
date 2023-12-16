@@ -24,8 +24,10 @@ import BlogPostSub from "./BlogPostSub.png";
 import PawanKumarSingh from "./PawanKumarSingh.jpg";
 import AayushiSingh from "./AayushiSingh.jpg";
 import YashSengde from "./YashSengde.jpg";
+import consultationMainImage from "./consultationMainImage.png";
 export {
   LawDigitalTechniques,
+  consultationMainImage,
   SignupOverlayLogo,
   LoginOverlayLogo,
   FooterAiImage,
