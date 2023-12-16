@@ -135,7 +135,7 @@ const RetirementPlanning = () => {
               <Typography component={"h2"} variant="h2">
                 Retirement Savings
               </Typography>
-              <Box className="output-box-BussinessSetup-insideBox">
+              <Box>
                 <FaRupeeSign />
                 {retirementSavings}
               </Box>

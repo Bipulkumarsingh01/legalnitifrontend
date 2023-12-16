@@ -6,7 +6,7 @@ import "./BussinessSetup.css";
 export const startruppeComponent = () => {
   return (
     <Box display="flex" alignItems="center">
-      <FaRupeeSign style={{ fontSize: "24px", color: "#8D04C1" }} />
+      <FaRupeeSign style={{ fontSize: "18px", color: "#8D04C1" }} />
       <Divider
         orientation="vertical"
         flexItem
@@ -33,7 +33,7 @@ export const endtextComponent = (text: any) => {
           marginRight: "8px",
         }}
       />
-      {text}
+      <Typography>{text}</Typography>
     </Box>
   );
 };
@@ -68,53 +68,56 @@ const BussinessSetup = () => {
         <Typography variant="h2" className="tools-main-heading">
           Business Setup Calculator
         </Typography>
-        <Box className="lnai-BussinessSetup-subheading">
-          <Typography component={"p"}>Calculate Startup/Setup Costs</Typography>
-        </Box>
+
         <Box className="leftright-box-BussinessSetup">
-          <Box className="lnai-bussiness-innerBox1-inner">
-            <Typography variant="h3" component={"h3"}>
-              Investment
-            </Typography>
-            <TextField
-              placeholder="Enter your income"
-              type="number"
-              value={investment}
-              onChange={handleInvestmentChange}
-              fullWidth
-              className="lnai-tools-text-field"
-              InputProps={{
-                startAdornment: startruppeComponent(),
-              }}
-            />
-            <Box className="lnai-bussiness-innerBox1-inner">
-              <Typography variant="h3" component={"h3"}>
-                Revenue
-              </Typography>
-              <TextField
-                placeholder="Enter your Revenue"
-                type="number"
-                fullWidth
-                onChange={handleRevenueChange}
-                value={revenue}
-                className="lnai-tools-text-field"
-                InputProps={{
-                  startAdornment: startruppeComponent(),
-                }}
-              />
+          <Box className="leftbox-bussiness">
+            <Box>
+              <Box className="lnai-BussinessSetup-subheading">
+                <Typography component={"p"}>
+                  Calculate Startup/Setup Costs
+                </Typography>
+              </Box>
+            </Box>
+            <Box className="lnai-BussinessSetup-subheading">
+              <Box className="lnai-bussiness-innerBox1-inner">
+                <Typography variant="h3" component={"h3"}>
+                  Investment
+                </Typography>
+                <TextField
+                  placeholder="Enter your income"
+                  type="number"
+                  value={investment}
+                  onChange={handleInvestmentChange}
+                  fullWidth
+                  className="lnai-tools-text-field"
+                  InputProps={{
+                    startAdornment: startruppeComponent(),
+                  }}
+                />
+              </Box>
+              <Box className="lnai-bussiness-innerBox1-inner">
+                <Typography variant="h3" component={"h3"}>
+                  Revenue
+                </Typography>
+                <TextField
+                  placeholder="Enter your Revenue"
+                  type="number"
+                  fullWidth
+                  onChange={handleRevenueChange}
+                  value={revenue}
+                  className="lnai-tools-text-field"
+                  InputProps={{
+                    startAdornment: startruppeComponent(),
+                  }}
+                />
+              </Box>
             </Box>
           </Box>
-          <Box className="output-box-BussinessSetup-insideBox">
-            <Typography
-              variant="h2"
-              style={{
-                fontSize: "64px",
-              }}
-            >
-              Profit
-            </Typography>
-            <FaRupeeSign />
-            {profit}
+          <Box className="rightbox-bussiness">
+            <Box className="output-box-BussinessSetup-insideBox">
+              <Typography variant="h2">Profit</Typography>
+              <Box component={"div"}>₹ {profit}</Box>
+            </Box>
           </Box>
         </Box>
       </Box>

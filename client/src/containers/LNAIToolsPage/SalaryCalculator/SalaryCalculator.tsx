@@ -88,8 +88,8 @@ const SalaryCalculator = () => {
             </Box>
           </Box>
           <Box className="output-box-salaryCalculator">
-            <Typography component="h2">Salary</Typography>
-            <Box className="output-box-BussinessSetup-insideBox">
+            <Typography component="h3">Salary</Typography>
+            <Box>
               <Typography component="h2">
                 <FaRupeeSign />
                 {salary}
