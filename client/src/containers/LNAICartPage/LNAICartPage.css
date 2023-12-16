@@ -17,3 +17,17 @@
 
 .lnai-cart-page-heading {
 }
+
+.lnai-cart-page-more-queries-container {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.lnai-cart-page-more-queries-container > h1 {
+  font-size: var(--lnai-primary-heading-font-size);
+  font-weight: var(--lnai-primary-heading-font-weight);
+}
+
+.lnai-cart-page-more-queries-container span {
+  cursor: pointer;
+}

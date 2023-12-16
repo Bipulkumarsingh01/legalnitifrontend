@@ -27,6 +27,7 @@
   /* font-size: 3.125rem; */
   font-size: var(--lnai-primary-heading-font-size);
   font-weight: var(--lnai-primary-heading-font-weight);
+  letter-spacing: var(--lnai-primary-heading-letter-spacing);
   text-transform: capitalize;
 }
 .lnai-service-info-container-heading-highlight-text {

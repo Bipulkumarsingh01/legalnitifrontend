@@ -18,7 +18,7 @@ const LNAIFooter = ({ getStarted }: { getStarted: boolean }) => {
   return (
     <div
       className="lnai-landing-view-footer-container"
-      style={{ marginTop: getStarted ? "10rem" : "10rem" }}
+      style={{ marginTop: getStarted ? "5%" : "5%" }}
     >
       <div className="lnai-landing-view-get-started-container">
         {getStarted && (
@@ -76,7 +76,7 @@ const LNAIFooter = ({ getStarted }: { getStarted: boolean }) => {
         >
           <div className="lnai-landing-view-about-us-content-container">
             <div className="lnai-landing-view-about-us-content-address-item">
-              <img src={LNAILogoTp} alt="LNAI LOGO" height={75} width={100} />
+              <img src={LNAILogoTp} alt="LNAI LOGO" height={45} width={80} />
               <p>
                 Address : <br /> Legalniti workspace,5th floor PG block
                 BMSCE,Bull temple road,Basavanagudi Bangalore - 560019.
@@ -133,10 +133,12 @@ const LNAIFooter = ({ getStarted }: { getStarted: boolean }) => {
               <h2>Privacy</h2>
               <h2>Security</h2>
               <h2>Terms</h2>
+              <h2>More</h2>
             </div>
           </div>
         </div>
       </div>
+
       <img
         src={FooterAiImage}
         alt="FooterAiImage"

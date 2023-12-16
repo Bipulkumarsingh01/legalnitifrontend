@@ -11,6 +11,7 @@
 .lnai-landing-page-ai-solutions-heading-2 {
   font-size: var(--lnai-primary-heading-font-size);
   font-weight: var(--lnai-primary-heading-font-weight);
+  letter-spacing: var(--lnai-primary-heading-letter-spacing);
   background: var(--lnai-purple-gradient-background);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

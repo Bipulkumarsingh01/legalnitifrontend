@@ -19,8 +19,8 @@
   border-radius: var(--lnai-primary-border-radius);
   background: white;
   border: 2px solid var(--lnai-dark-purple);
-  height: 11rem;
-  width: 80%;
+  height: auto;
+  width: 70%;
 }
 
 .lnai-landing-view-about-us-container {
@@ -43,6 +43,9 @@
 
 .lnai-landing-view-get-started-content-text-items {
   display: flex;
+  width: 75%;
+  justify-content: center;
+  align-items: center;
 }
 
 .lnai-landing-view-get-started-content-input-fields {
@@ -53,23 +56,32 @@
 }
 
 .lnai-landing-view-get-started-content-text {
-  width: 25rem;
-  margin: 2rem 2.5rem;
+  width: auto;
 }
 
 .lnai-landing-view-get-started-content-text > h3 {
-  font-size: 2rem;
-  padding-bottom: 10px;
+  font-size: var(--lnai-secondary-heading-font-size);
+  font-weight: var(--lnai-primary-heading-font-weight);
+  letter-spacing: var(--lnai-primary-heading-letter-spacing);
+  padding-bottom: 0.8rem;
+  padding-left: 10%;
+}
+.lnai-landing-view-get-started-content-text > p {
+  font-size: var(--lnai-primary-paragraph-font-size);
+  font-weight: var(--lnai-primary-paragraph-font-weight);
+  width: 80%;
+  padding-left: 10%;
 }
 
 .lnai-landing-view-get-started-content-input-fields > button {
   margin: 0.3rem auto;
+  padding: var(--lnai-button-padding-01);
 }
 
 .lnai-landing-view-about-us-content-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: 100%;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
@@ -80,7 +92,7 @@
 
 .lnai-landing-view-about-us-content-address-item > p {
   margin-top: 1rem;
-  width: 17rem;
+  width: 90%;
   text-align: justify;
 }
 
@@ -88,6 +100,8 @@
   display: flex;
   margin-top: 1rem;
   gap: 0.8rem;
+
+  cursor: pointer;
 }
 
 .lnai-landing-view-about-us-content-web-services-item {
@@ -108,6 +122,17 @@
   background-repeat: no-repeat;
   background-size: 75% 0.11em;
   background-position: 0 100%;
+  font-size: var(--lnai-secondary-heading-font-size);
+  font-weight: var(--lnai-primary-heading-font-weight);
+  letter-spacing: var(--lnai-primary-heading-letter-spacing);
+}
+
+.lnai-landing-view-about-us-content-web-services-item > h2 {
+  font-size: var(--lnai-primary-paragraph-font-size);
+  font-weight: var(--lnai-primary-paragraph-font-weight);
+  letter-spacing: var(--lnai-primary-heading-letter-spacing);
+
+  cursor: pointer;
 }
 
 .lnai-landing-view-about-us-content-social-links-item {
@@ -115,6 +140,7 @@
   display: flex;
   flex-direction: column;
   gap: 0.7rem;
+  align-items: center;
 }
 
 .lnai-landing-view-about-us-content-social-links-item > h1 {
@@ -128,6 +154,12 @@
   background-repeat: no-repeat;
   background-size: 75% 0.1em;
   background-position: 0 100%;
+  font-size: var(--lnai-secondary-heading-font-size);
+  font-weight: var(--lnai-primary-heading-font-weight);
+  letter-spacing: var(--lnai-primary-heading-letter-spacing);
+}
+.lnai-landing-view-about-us-content-social-links-item > h2 {
+  cursor: pointer;
 }
 
 .lnai-landing-view-about-us-ai-logo {
@@ -157,4 +189,16 @@
   background-repeat: no-repeat;
   background-size: 75% 0.1em;
   background-position: 0 100%;
+
+  font-size: var(--lnai-secondary-heading-font-size);
+  font-weight: var(--lnai-primary-heading-font-weight);
+  letter-spacing: var(--lnai-primary-heading-letter-spacing);
+}
+
+.lnai-landing-view-about-us-content-learn-more-item > h2 {
+  font-size: var(--lnai-primary-paragraph-font-size);
+  font-weight: var(--lnai-primary-paragraph-font-weight);
+  letter-spacing: var(--lnai-primary-heading-letter-spacing);
+
+  cursor: pointer;
 }

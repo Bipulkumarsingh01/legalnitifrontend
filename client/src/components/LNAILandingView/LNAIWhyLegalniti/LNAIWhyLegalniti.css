@@ -2,7 +2,7 @@
   text-align: center;
   position: relative;
   width: 100%;
-  margin-top: 8rem;
+  margin-top: 5%;
 }
 
 .lnai-landing-view-why-legalniti-ai-animation-gif {
@@ -15,6 +15,7 @@
 .lnai-landing-view-why-legalniti-heading {
   font-size: var(--lnai-primary-heading-font-size);
   font-weight: var(--lnai-primary-heading-font-weight);
+  letter-spacing: var(--lnai-primary-heading-letter-spacing);
 }
 
 .lnai-landing-view-why-legalniti-heading-highlight {

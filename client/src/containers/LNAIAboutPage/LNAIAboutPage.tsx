@@ -10,7 +10,7 @@ const LNAIAboutPage = () => {
       <div>
         <h1 className="lnai-about-us-primary-heading">About Us</h1>
         <div style={{ textAlign: "center" }}>
-          <img src={Collage} alt="collage" height={"750px"} width={"95%"} />
+          <img src={Collage} alt="collage" height={"500px"} width={"80%"} />
         </div>
         <div>
           <LNAIAiSolutions />
@@ -20,35 +20,35 @@ const LNAIAboutPage = () => {
         </div>
         <div className="lnai-about-team-member-parent-container">
           <div className="lnai-about-team-member-card">
-            <img src={BipulKumar} alt="Bipul Kumar" height={325} width={325} />
+            <img src={BipulKumar} alt="Bipul Kumar" height={250} width={250} />
             <h2 style={{ fontWeight: "700" }} className="lnai-primary-heading">
               Bipul Kumar Singh
             </h2>
             <h3>CEO</h3>
           </div>
           <div className="lnai-about-team-member-card">
-            <img src={KashviJain} alt="Kashvi Jain" height={325} width={325} />
+            <img src={KashviJain} alt="Kashvi Jain" height={250} width={250} />
             <h2 style={{ fontWeight: "700" }} className="lnai-primary-heading">
               Kashvi Jain
             </h2>
             <h3>COO</h3>
           </div>
           <div className="lnai-about-team-member-card">
-            <img src={Koushik} alt="Koushik H R" height={325} width={325} />
+            <img src={Koushik} alt="Koushik H R" height={250} width={250} />
             <h2 style={{ fontWeight: "700" }} className="lnai-primary-heading">
               Koushik H R
             </h2>
             <h3>Full Stack Developer</h3>
           </div>
           <div className="lnai-about-team-member-card">
-            <img src={BipulKumar} alt="Bipul Kumar" height={325} width={325} />
+            <img src={BipulKumar} alt="Bipul Kumar" height={250} width={250} />
             <h2 style={{ fontWeight: "700" }} className="lnai-primary-heading">
               Bipul Kumar Singh
             </h2>
             <h3>CEO</h3>
           </div>
           <div className="lnai-about-team-member-card">
-            <img src={BipulKumar} alt="Bipul Kumar" height={325} width={325} />
+            <img src={BipulKumar} alt="Bipul Kumar" height={250} width={250} />
             <h2 style={{ fontWeight: "700" }} className="lnai-primary-heading">
               Bipul Kumar Singh
             </h2>

@@ -1,9 +1,11 @@
+import { useNavigate } from "react-router-dom";
 import { CartBag } from "../../assets";
 import { LNAICartTable, LNAIFooter, LNAINavBar } from "../../components";
 
 import "./LNAICartPage.css";
 
 const LNAICartPage = () => {
+  const navigate = useNavigate();
   return (
     <div className="lnai-cart-page-main-container">
       <LNAINavBar />
@@ -17,8 +19,13 @@ const LNAICartPage = () => {
         <div>
           <LNAICartTable />
         </div>
+        <div className="lnai-cart-page-more-queries-container" onClick={() => {
+          navigate('/contact')
+        }}>
+          <h1>For more queries <span className="lnai-primary-heading">Contact Us</span></h1>
+        </div>
       </div>
-      <div style={{ width: "100%" }}>
+      <div style={{ width: "100%", paddingTop: "5%" }}>
         <LNAIFooter getStarted={false} />
       </div>
     </div>

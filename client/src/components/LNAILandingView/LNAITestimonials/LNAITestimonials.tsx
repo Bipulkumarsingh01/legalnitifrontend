@@ -28,13 +28,13 @@ const LNAITestimonials = () => {
         <img
           src={Testimonials}
           alt="Testimonials"
-          height={325}
-          width={450}
+          height={225}
+          width={300}
           className="lnai-landing-view-testimonial-image"
         />
       </div>
 
-      <div style={{ marginTop: "5rem" }}>
+      <div style={{ marginTop: "2.5rem" }}>
         <CarouselComponent />
       </div>
     </div>

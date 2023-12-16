@@ -1,5 +1,5 @@
 .lnai-landing-view-trusted-clients-container {
-  margin-top: 7rem;
+  margin-top: 5%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -7,42 +7,40 @@
 }
 
 .lnai-landing-view-trusted-clients-heading-highlight {
-  text-align: center;
-  font-size: 3rem;
-  margin-top: 5rem;
-  background: linear-gradient(
-    180deg,
-    #341958 0%,
-    #8840e5 20.83%,
-    #a23ffa 44.79%,
-    #9c21bf 67.71%,
-    #a70ba0 100%
+  background: -webkit-linear-gradient(
+    rgba(147, 64, 238, 1) 0%,
+    rgba(163, 19, 171, 1) 63%
   );
+  font-size: var(--lnai-primary-heading-font-size);
+  font-weight: var(--lnai-primary-heading-font-weight);
+  letter-spacing: var(--lnai-primary-heading-letter-spacing);
+  text-align: justify;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: capitalize;
+  text-align: center;
 }
 
 .lnai-landing-view-trusted-clients-details-container {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 5rem;
-  width: 90%;
-  margin-top: 3rem;
+  /* gap: 20%; */
+  justify-content: space-around;
+  width: 75%;
+  margin-top: 1rem;
 }
 
 .lnai-landing-view-trusted-clients-details-container > p {
-  font-size: 1.25rem; /* 24px / 16 = 1.5rem assuming a base font size of 16px */
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.0225rem; /* 0.36px / 16 = 0.0225rem */
+  
+  font-size: var(--lnai-primary-paragraph-font-size);
+  font-weight: var(--lnai-primary-paragraph-font-weight);
   text-transform: capitalize;
+  letter-spacing: 0.0225rem; /* 0.36px / 16 = 0.0225rem */
 }
 .lnai-landing-view-trusted-clients-details-container img {
-  width: 500.327px;
-  height: 388px;
+  /* width: 500.327px; */
+  /* height: 388px; */
 }
 
 .lnai-landing-view-trusted-clients-logo-container {
@@ -50,8 +48,6 @@
   display: flex;
   gap: 5rem;
   justify-content: center;
-
-
 }
 
 .lnai-landing-view-trusted-clients-logo-item {

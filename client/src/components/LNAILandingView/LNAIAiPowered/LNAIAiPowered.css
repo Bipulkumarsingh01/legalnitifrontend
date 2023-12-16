@@ -12,18 +12,9 @@
 
 .lnai-landing-view-about-ai-heading {
   /* Replacing Heading styles to primary variable */
-  font-size: var(--lnai-heading-01-font-size);
   font-size: var(--lnai-primary-heading-font-size);
   font-weight: var(--lnai-heading-01-font-weight);
-
-  /* font-weight: 600; */
-  /* font-size: 5.625rem; */
-  /*  */
-
-  letter-spacing: 0.188rem;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
+  letter-spacing: var(--lnai-primary-heading-letter-spacing);
 }
 
 .lnai-landing-view-about-ai-details {

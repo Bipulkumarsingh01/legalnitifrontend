@@ -2,6 +2,7 @@
   text-align: center;
   font-size: var(--lnai-primary-heading-font-size);
   font-weight: var(--lnai-primary-heading-font-weight);
+  letter-spacing: var(--lnai-primary-heading-letter-spacing);
   margin-top: 5%;
   text-transform: capitalize;
 }

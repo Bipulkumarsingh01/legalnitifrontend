@@ -8,16 +8,11 @@ const CarouselComponent = () => {
     {
       id: 1,
       content1: (
-        <div style={{ justifyContent: "center" }}>
+        <div
+          className="lnai-testimonial-card-component-parent-container"
+        >
           <div
-            style={{
-              display: "flex",
-              gap: "4rem",
-              width: "100%",
-              height: "100%",
-              paddingTop: "2rem",
-              justifyContent: "center",
-            }}
+            className="lnai-testimonial-card-component-child-container"
           >
             <div className="lnai-landing-view-testimonial-items-main-container">
               <div className="lnai-landing-view-testimonial-item-container-outer">
@@ -38,8 +33,8 @@ const CarouselComponent = () => {
                   <img
                     src={YashSengde}
                     alt="YashSengde"
-                    height={125}
-                    width={125}
+                    height={100}
+                    width={100}
                     style={{
                       borderRadius: "50%",
                       float: "right",
@@ -53,6 +48,7 @@ const CarouselComponent = () => {
                 </div>
               </div>
             </div>
+
             <div className="lnai-landing-view-testimonial-items-main-container">
               <div className="lnai-landing-view-testimonial-item-container-outer">
                 <div className="lnai-landing-view-testimonial-item-container-inner">
@@ -71,8 +67,8 @@ const CarouselComponent = () => {
                   <img
                     src={PawanKumarSingh}
                     alt="PawanKumarSingh"
-                    height={125}
-                    width={125}
+                    height={100}
+                    width={100}
                     style={{
                       borderRadius: "50%",
                       float: "right",
@@ -94,16 +90,12 @@ const CarouselComponent = () => {
     {
       id: 2,
       content1: (
-        <div>
+        <div
+          className="lnai-testimonial-card-component-parent-container"
+          style={{ justifyContent: "center", display: "flex" }}
+        >
           <div
-            style={{
-              display: "flex",
-              gap: "4rem",
-              width: "100%",
-              height: "100%",
-              paddingTop: "2rem",
-              justifyContent: "center",
-            }}
+            className="lnai-testimonial-card-component-child-container"
           >
             <div className="lnai-landing-view-testimonial-items-main-container">
               <div className="lnai-landing-view-testimonial-item-container-outer">
@@ -124,8 +116,8 @@ const CarouselComponent = () => {
                   <img
                     src={AayushiSingh}
                     alt="AayushiSingh"
-                    height={125}
-                    width={125}
+                    height={100}
+                    width={100}
                     style={{
                       borderRadius: "50%",
                       float: "right",
@@ -139,6 +131,7 @@ const CarouselComponent = () => {
                 </div>
               </div>
             </div>
+
             <div className="lnai-landing-view-testimonial-items-main-container">
               <div className="lnai-landing-view-testimonial-item-container-outer">
                 <div className="lnai-landing-view-testimonial-item-container-inner">
@@ -158,8 +151,8 @@ const CarouselComponent = () => {
                   <img
                     src={YashSengde}
                     alt="YashSengde"
-                    height={125}
-                    width={125}
+                    height={100}
+                    width={100}
                     style={{
                       borderRadius: "50%",
                       float: "right",
@@ -185,8 +178,7 @@ const CarouselComponent = () => {
     //       <div
     //         style={{
     //           display: "flex",
-    //           gap: "4rem",
-    //           width: "100%",
+    //           width: "75%",
     //           height: "100%",
     //           paddingTop: "2rem",
     //           justifyContent: "center",
@@ -243,6 +235,7 @@ const CarouselComponent = () => {
       className="lnai-carosel-component"
       navButtonsAlwaysInvisible={true}
       indicators={true}
+      autoPlay={true}
       indicatorIconButtonProps={{ className: "lnai-carousel-indicator" }}
       activeIndicatorIconButtonProps={{ className: "lnai-active-indicator" }}
       animation={"slide"}
