@@ -1,3 +1,4 @@
+import "./TdsCalculator.css";
 import { Box, Typography, TextField } from "@mui/material";
 import { FaRupeeSign } from "react-icons/fa";
 import {
@@ -35,10 +36,10 @@ const TdsCalculator = () => {
         <Typography variant="h2" className="tools-main-heading">
           TDS Calculator
         </Typography>
-        <Box className="lnai-salaryCalculator-leftrightbox">
-          <Box className="lnai-salaryCalculator-leftbox">
-            <Box>
-              <Typography className="tools-main-subheading">
+        <Box className="lnai-tdsCalcualtor-leftrightbox">
+          <Box className="lnai-tdsCalcualtor-leftbox">
+            <Box sx={{ height: "50%" }}>
+              <Typography className="tools-main-subheading " component={"h2"}>
                 Can't figure out how to calculate your taxes?
               </Typography>
               <Typography
@@ -49,10 +50,9 @@ const TdsCalculator = () => {
                 You don't need to worry. We are here to help.
               </Typography>
             </Box>
-
             <Box className="salaryCalculator-input-boxes">
               <Box>
-                <Typography component={"h3"} variant="h5">
+                <Typography component={"h3"} variant="h3">
                   Income
                 </Typography>
                 <TextField
@@ -67,7 +67,7 @@ const TdsCalculator = () => {
                 />
               </Box>
               <Box>
-                <Typography component={"h3"} variant="h5">
+                <Typography component={"h3"} variant="h3">
                   TDS Rate
                 </Typography>
 
@@ -85,18 +85,14 @@ const TdsCalculator = () => {
               </Box>
             </Box>
           </Box>
-          <Box className="output-box-BussinessSetup">
-            <Typography
-              variant="h2"
-              style={{
-                fontSize: "60px",
-              }}
-            >
-              TDS Amount
-            </Typography>
-            <Box className="output-box-BussinessSetup-insideBox">
-              <FaRupeeSign />
-              {tdsAmount}
+          <Box className="lnai-tdsCalcualtor-rightbox">
+            <Box className="output-box-tdscalculator">
+              <Typography variant="h2" component={"h2"}>
+                TDS Amount
+              </Typography>
+              <Box className="output-box-sipcalculator-insideBox">
+                ₹ {tdsAmount}
+              </Box>
             </Box>
           </Box>
         </Box>

@@ -44,12 +44,8 @@ const IncomeTaxCalculator = () => {
         <Typography component={"p"}>
           Plan your retirement in seconds with the retirement plan calculator
         </Typography>
-        <Box className="lnai-incomeTaxCalculator-innerBox1-inner">
-          <Typography
-            variant="h5"
-            className="lnai-incometaxcalculator-inputheading"
-            component={"h5"}
-          >
+        <Box className="lnai-incomeTaxCalculator-main-innerBox1-inner">
+          <Typography variant="h5" component={"h5"}>
             Income
           </Typography>
           <TextField
@@ -65,27 +61,11 @@ const IncomeTaxCalculator = () => {
           />
         </Box>
         <Box>
-          <Box className="output-box">
-            <Typography
-              variant="h2"
-              style={{
-                fontSize: "64px",
-              }}
-            >
-              Tax
+          <Box className="output-box-incomeTaxCalculator">
+            <Typography component={"h2"}>Tax</Typography>
+            <Typography component={"h6"}>
+              <FaRupeeSign /> {tax}
             </Typography>
-            <Box
-              sx={{
-                color: "#8D04C1",
-                fontSize: "54px",
-                display: "flex",
-                alignItems: "center",
-                justifyItems: "center",
-              }}
-            >
-              <FaRupeeSign />
-              {tax}
-            </Box>
           </Box>
         </Box>
       </Box>

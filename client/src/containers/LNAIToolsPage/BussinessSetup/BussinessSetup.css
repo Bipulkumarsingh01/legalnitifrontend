@@ -2,7 +2,7 @@
   width: 100vw;
   height: calc(100vh - 64px);
   box-sizing: border-box;
-  padding: 1.5rem 2rem 0 1.5rem;
+  padding: 1.5rem;
 }
 .lnai-BussinessSetup-innerBox1 {
   width: 97vw;
@@ -18,25 +18,14 @@
   align-items: center;
   gap: 40px;
 }
-.lnai-BussinessSetup-innerBox1 h1 {
-  font-family: Poppins;
-  font-size: 64px;
-  font-weight: 500;
-  line-height: normal;
-  background: var(
-    --Gradient,
-    linear-gradient(90deg, #3d055e 23.07%, #8d04c1 81%)
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.lnai-BussinessSetup-subheading {
+  align-self: self-start;
 }
-.lnai-BussinessSetup-innerBox1 p {
-  color: #000;
-  font-family: Poppins;
-  font-size: 30px;
+.lnai-BussinessSetup-subheading p {
+  font-size: var(--lnai-secondary-heading-font-size);
+  font-weight: var(--lnai-secondary-heading-font-weight);
+
   font-style: normal;
-  font-weight: 300;
   line-height: normal;
   padding-bottom: 0.5rem;
   background-image: linear-gradient(
@@ -48,9 +37,8 @@
   background-size: 43% 0.1em;
   background-position: 0 100%;
 }
-.lnai-BussinessSetup-leftrightbox {
+.leftright-box-BussinessSetup {
   display: flex;
-  width: 100%;
   flex-direction: row;
   align-items: center;
   justify-content: center;
@@ -63,8 +51,12 @@
   align-items: start;
   justify-content: end;
   gap: 50px;
+  background: cadetblue;
 }
-
+.lnai-BussinessSetup-leftbox p {
+  font-size: var(--lnai-secondary-heading-font-size);
+  font-weight: var(--lnai-secondary-heading-font-weight);
+}
 .output-box-BussinessSetup {
   display: flex;
   flex-direction: column;
@@ -79,17 +71,23 @@
 }
 .output-box-BussinessSetup-insideBox {
   color: #8d04c1;
-  font-size: 54px;
+  font-size: var(--lnai-primary-heading-font-size);
+  font-size: var(--lnai-primary-heading-font-weight);
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.lnai-incomeTaxCalculator-innerBox1-inner{
+.lnai-bussiness-innerBox1-inner {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: start;
 }
+.lnai-bussiness-innerBox1-inner h3 {
+  font-size: var(--lnai-secondary-heading-font-size);
+  font-weight: var(--lnai-secondary-heading-font-weight);
+}
+
 .endComponentof-textfield {
   display: flex;
   align-items: center;

@@ -45,11 +45,7 @@ const SalaryCalculator = () => {
               <Typography component={"p"}>
                 Calculate Your Monthly Salary On the Go
               </Typography>
-              <Typography
-                component={"h5"}
-                variant="h6"
-                className="innertext-salaryCalculator"
-              >
+              <Typography component={"h5"} variant="h6">
                 Quickly calculate your take-home salary and other deductions in
                 seconds <br /> using the Salary calculator online. Enjoy easy
                 and accurate results!
@@ -91,18 +87,13 @@ const SalaryCalculator = () => {
               </Box>
             </Box>
           </Box>
-          <Box className="output-box-BussinessSetup">
-            <Typography
-              variant="h2"
-              style={{
-                fontSize: "64px",
-              }}
-            >
-              Salary
-            </Typography>
+          <Box className="output-box-salaryCalculator">
+            <Typography component="h2">Salary</Typography>
             <Box className="output-box-BussinessSetup-insideBox">
-              <FaRupeeSign />
-              {salary}
+              <Typography component="h2">
+                <FaRupeeSign />
+                {salary}
+              </Typography>
             </Box>
           </Box>
         </Box>

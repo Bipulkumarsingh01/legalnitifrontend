@@ -1,119 +1,127 @@
 .lnai-sipcalculator-mainBox {
-    width: 100vw;
-    height: calc(100vh - 64px);
-    box-sizing: border-box;
-    padding: 1.5rem 2rem 0 1.5rem;
-  }
-  .lnai-sipcalculator-innerBox1 {
-    width: 97vw;
-    height: calc(100vh - 107px);
-    border-radius: 28px;
-    border: 0.641px solid #000;
-    background: #fff;
-    box-shadow: 0px -1.28103px 10.37232px 0px rgba(61, 5, 94, 0.63);
-    padding: 1rem 1rem 0 1rem;
-    display: flex;
-    box-sizing: border-box;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    gap: 20px;
-  }
-  .leftrightbox-sipcalculator {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-left: 20px;
-    width: 100%;
-    gap: 480px;
-    align-items: flex-start;
-  }
-  
-  .leftbox-sipcalculator {
-    display: flex;
-    flex-direction: column;
-  }
-  .leftbox-sipcalculator-textpart {
-    align-self: flex-start;
-    margin-left: 70px;
-  }
-  .leftbox-sipcalculator-textpart p {
-    color: #000;
-    font-family: Poppins;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    padding-bottom: 0.5rem;
-    background-image: linear-gradient(
-      120deg,
-      var(--lnai-purple-03),
-      var(--lnai-purple-03) 100%
-    );
-    background-repeat: no-repeat;
-    background-size: 26% 0.1em;
-    background-position: 0 100%;
-  }
-  .leftbox-sipcalculator-textpart h5 {
-    color: #000;
-    font-family: Poppins;
-    font-size: 19px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    margin-top: 4px;
-  }
-  .left-sipcalculator-inputpart{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  width: 100vw;
+  height: calc(100vh - 64px);
+  box-sizing: border-box;
+  padding: 1.5rem;
 }
-  .left-sipcalculator-inputs {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-    gap: 5px;
-  }
+.lnai-sipcalculator-innerBox1 {
+  width: 97vw;
+  height: calc(100vh - 107px);
+  border-radius: 28px;
+  border: 0.641px solid #000;
+  background: #fff;
+  box-shadow: 0px -1.28103px 10.37232px 0px rgba(61, 5, 94, 0.63);
+  padding: 1rem 1rem 0 1rem;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+}
+.leftrightbox-sipcalculator {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-left: 20px;
+  width: 100%;
+  height: 100%;
+  gap: 420px;
+  align-items: flex-start;
+}
+.rightbox-sipcalculator {
+  height: 100%;
+}
+.leftbox-sipcalculator {
+  display: flex;
+  flex-direction: column;
+}
+.leftbox-sipcalculator-textpart {
+  align-self: flex-start;
+  margin-left: 70px;
+}
+.leftbox-sipcalculator-textpart p {
+  color: #000;
+  font-size: var(--lnai-secondary-heading-font-size);
+  font-weight: var(--lnai-secondary-heading-font-weight);
+  font-style: normal;
+  line-height: normal;
+  padding-bottom: 0.5rem;
+  background-image: linear-gradient(
+    120deg,
+    var(--lnai-purple-03),
+    var(--lnai-purple-03) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 26% 0.1em;
+  background-position: 0 100%;
+}
+.leftbox-sipcalculator-textpart h5 {
+  color: #000;
+  font-size: var(--lnai-primary-paragraph-font-size);
+  font-weight: var(--lnai-primary-paragraph-font-weight);
+  font-style: normal;
+  line-height: normal;
+  margin-top: 4px;
+}
+.left-sipcalculator-inputpart {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.left-sipcalculator-inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 5px;
+}
+.left-sipcalculator-inputs h2 {
+  font-size: var(--lnai-secondary-heading-font-size);
+  font-weight: var(--lnai-secondary-heading-font-weight);
+}
+.output-box-sipcalculator {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 40px;
+  width: 400px;
+  height: 100%;
+  border: 0.641px 0.641px 0.641px 0 solid #000;
+  border-radius: 28px 28px 0 0;
+  box-shadow: 0px -1.28103px 5.37232px 0px rgba(61, 5, 94, 0.63);
+}
+.output-box-sipcalculator div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
 
-  .output-box-sipcalculator {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 8px;
-    padding: 40px;
-    width: 380px;
-    height: 320px;
-    border: 0.641px 0.641px 0.641px 0 solid #000;
-    border-radius: 28px 28px 0 0;
-    box-shadow: 0px -1.28103px 5.37232px 0px rgba(61, 5, 94, 0.63);
-  }
-  .output-box-sipcalculator div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .output-box-sipcalculator h2 {
-    color: #000;
-    font-family: Poppins;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-  }
-  .output-box-sipcalculator-insideBox {
-    color: #8d04c1;
-    font-family: Poppins;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  }
-  
-  .sipcalculator-button-switch{
-    display: flex;
-    width: 50vw;
-    justify-content: space-between;
-  }
+.output-box-sipcalculator h2 {
+  font-size: var(--lnai-secondary-heading-font-size);
+  font-style: normal;
+  font-weight: var(--lnai-secondary-heading-font-weight);
+  line-height: normal;
+}
+.output-box-sipcalculator-insideBox {
+  color: #8d04c1;
+  font-style: normal;
+  text-align: center;
+  font-size: var(--lnai-secondary-heading-font-size);
+  font-weight: var(--lnai-secondary-heading-font-weight);
+  line-height: normal;
+}
+
+.sipcalculator-button-switch {
+  display: flex;
+  width: 50vw;
+  justify-content: center;
+  gap: 120px;
+}
+.sipcalculator-button-switch button {
+  font-size: var(--lnai-secondary-paragraph-font-size);
+  padding: 0.4rem;
+  font-weight: var(--lnai-secondary-heading-font-weight);
+}
