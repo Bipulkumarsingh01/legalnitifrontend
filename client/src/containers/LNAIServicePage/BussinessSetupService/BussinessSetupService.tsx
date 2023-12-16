@@ -16,7 +16,7 @@ interface ItemListProps {
 }
 export const ItemList: React.FC<ItemListProps> = ({ items }) => {
   return (
-    <Box className="more-services-text">
+    <Box className="more-services-text ">
       {items.map((item, index) => (
         <Box key={index}>{item}</Box>
       ))}
@@ -65,55 +65,63 @@ const BussinessSetupService = () => {
           </Typography>
           <Box className="about-page-busines-setup-more-services">
             <Box className="about-service-innerbox-more-related-services ">
-              <Button
-                onClick={() =>
-                  onclickHandler(itemListdata.bussinessRegistration)
-                }
-              >
-                <img
-                  src={Registration} // Replace with the actual path to your image
-                  alt="Trademark icon"
-                />
-                <Typography component={"p"}>
-                  Bussiness <br /> Registration
-                </Typography>
-              </Button>
-              <Button
-                onClick={() => onclickHandler(itemListdata.companynamesearch)}
-              >
-                <img
-                  src={Company} // Replace with the actual path to your image
-                  alt="Trademark icon"
-                />
-                <Typography component={"p"}>
-                  Company Name <br />
-                  Search
-                </Typography>
-              </Button>
-              <Button
-                onClick={() =>
-                  onclickHandler(itemListdata.licenseandregistration)
-                }
-              >
-                <img
-                  src={Business} // Replace with the actual path to your image
-                  alt="Trademark icon"
-                />
-                <Typography component={"p"}>
-                  License & <br /> Registration
-                </Typography>
-              </Button>
-              <Button
-                onClick={() => onclickHandler(itemListdata.changecompanyname)}
-              >
-                <img
-                  src={EditProperty} // Replace with the actual path to your image
-                  alt="Trademark icon"
-                />
-                <Typography component={"p"} variant="subtitle1">
-                  Change <br /> Company Name
-                </Typography>
-              </Button>
+              <Box className="buttonwrapper">
+                <Button
+                  onClick={() =>
+                    onclickHandler(itemListdata.bussinessRegistration)
+                  }
+                >
+                  <img
+                    src={Registration} // Replace with the actual path to your image
+                    alt="Trademark icon"
+                  />
+                  <Typography component={"p"}>
+                    Bussiness <br /> Registration
+                  </Typography>
+                </Button>
+              </Box>
+              <Box className="buttonwrapper">
+                <Button
+                  onClick={() => onclickHandler(itemListdata.companynamesearch)}
+                >
+                  <img
+                    src={Company} // Replace with the actual path to your image
+                    alt="Trademark icon"
+                  />
+                  <Typography component={"p"}>
+                    Company Name <br />
+                    Search
+                  </Typography>
+                </Button>
+              </Box>
+              <Box className="buttonwrapper">
+                <Button
+                  onClick={() =>
+                    onclickHandler(itemListdata.licenseandregistration)
+                  }
+                >
+                  <img
+                    src={Business} // Replace with the actual path to your image
+                    alt="Trademark icon"
+                  />
+                  <Typography component={"p"}>
+                    License & <br /> Registration
+                  </Typography>
+                </Button>
+              </Box>
+              <Box className="buttonwrapper">
+                <Button
+                  onClick={() => onclickHandler(itemListdata.changecompanyname)}
+                >
+                  <img
+                    src={EditProperty} // Replace with the actual path to your image
+                    alt="Trademark icon"
+                  />
+                  <Typography component={"p"} variant="subtitle1">
+                    Change <br /> Company Name
+                  </Typography>
+                </Button>
+              </Box>
             </Box>
             <Box
               className="more-services"
@@ -135,29 +143,35 @@ const BussinessSetupService = () => {
             </span>
           </Typography>
           <Box className="innerbox-more-related-services ">
-            <Button>
-              <img
-                src={TrademarkandIp_service} // Replace with the actual path to your image
-                alt="Trademark icon"
-              />
-              <Typography component={"p"}>Trademark & IP</Typography>
-            </Button>
-            <Button>
-              <img
-                src={taxcompilation_icon} // Replace with the actual path to your image
-                alt="Trademark icon"
-              />
-              <Typography component={"p"}>Tax & Compliance</Typography>
-            </Button>
-            <Button>
-              <img
-                src={documentation_icon} // Replace with the actual path to your image
-                alt="Trademark icon"
-              />
-              <Typography component={"p"} variant="subtitle1">
-                Documentation
-              </Typography>
-            </Button>
+            <Box className="buttonwrapper">
+              <Button>
+                <img
+                  src={TrademarkandIp_service} // Replace with the actual path to your image
+                  alt="Trademark icon"
+                />
+                <Typography component={"p"}>Trademark & IP</Typography>
+              </Button>
+            </Box>
+            <Box className="buttonwrapper">
+              <Button>
+                <img
+                  src={taxcompilation_icon} // Replace with the actual path to your image
+                  alt="Trademark icon"
+                />
+                <Typography component={"p"}>Tax & Compliance</Typography>
+              </Button>
+            </Box>
+            <Box className="buttonwrapper">
+              <Button>
+                <img
+                  src={documentation_icon} // Replace with the actual path to your image
+                  alt="Trademark icon"
+                />
+                <Typography component={"p"} variant="subtitle1">
+                  Documentation
+                </Typography>
+              </Button>
+            </Box>
           </Box>
         </Box>
       </Box>
