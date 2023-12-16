@@ -28,6 +28,7 @@
 }
 .rightbox-gstcalculator {
   height: 100%;
+  margin-top: auto;
 }
 .leftrightbox-gstcalculator {
   display: flex;
