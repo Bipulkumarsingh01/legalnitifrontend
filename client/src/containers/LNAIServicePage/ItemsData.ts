@@ -138,4 +138,10 @@ export const itemListdata = {
   ],
   hrpolicies: ["Employment Agreement", "ESOP"],
   realestate: ["Rental Agreement", "Sole Deed", "Gift Deed"],
+
+  //consulation
+  talktolawer: [],
+  talktoca: [],
+  talktocs: [],
+  talktoidtrademark: [],
 };

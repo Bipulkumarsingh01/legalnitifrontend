@@ -66,11 +66,11 @@ const TaxandCompilance = () => {
           </Typography>
           <Typography component={"p"} variant="h6" sx={{ textAlign: "center" }}>
             Discover a world of efficiency with our comprehensive range of
-            services. From hassle-free GST <br /> Registration, Filing, and
-            Advisory to expertly managing Directors, Capital, and Company <br />{" "}
-            Changes, we have got you covered.Maximize your business's potential
-            while we take care of <br /> your tax and compliance needs. Unlock
-            new horizons of success with our exceptional services.
+            services. From hassle-free GST Registration, Filing, and Advisory to
+            expertly managing Directors, Capital, and Company Changes, we have
+            got you covered.Maximize your business's potential while we take
+            care of your tax and compliance needs. Unlock new horizons of
+            success with our exceptional services.
           </Typography>
           <Box className="about-page-trademarkandIp-setup-more-services">
             <Box className="about-service-innerbox-more-related-services wrapper-box-taxandcompilance">
@@ -155,7 +155,7 @@ const TaxandCompilance = () => {
             <Box
               className="more-services more-services-taxandcompilance"
               sx={{
-                display: ismoreservices ? "" : "none",
+                display: ismoreservices && moreService.length ? "" : "none",
               }}
             >
               <Typography
