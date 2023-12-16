@@ -20,6 +20,7 @@ export const LNAIAiPowered = () => {
             <br />
             acquisition, GST filing, and compliance management.
           </p>
+
           <div className="lnai-landing-view-about-ai-buttons-container">
             {/* <Button variant="LNAIPurpleGradientDark">Explore Services</Button> */}
             <Button variant="LNAIPurpleGradientLight">Explore Services</Button>
@@ -27,9 +28,14 @@ export const LNAIAiPowered = () => {
           </div>
         </div>
 
-        <div className="lnai-landing-view-about-ai-image">
-          <img src={LNAILandingAboutAI} alt="ai" />
-        </div>
+        <img
+          src={LNAILandingAboutAI}
+          alt="ai"
+          className="lnai-landing-view-about-ai-image"
+          width={425}
+          height={275}
+        />
+        {/* <div className="lnai-landing-view-about-ai-image"></div> */}
       </div>
     </div>
   );

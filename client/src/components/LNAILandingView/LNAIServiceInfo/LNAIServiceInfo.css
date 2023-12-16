@@ -24,7 +24,9 @@
 
 .lnai-service-info-container-heading {
   text-align: center;
-  font-size: 3.125rem;
+  /* font-size: 3.125rem; */
+  font-size: var(--lnai-primary-heading-font-size);
+  font-weight: var(--lnai-primary-heading-font-weight);
   text-transform: capitalize;
 }
 .lnai-service-info-container-heading-highlight-text {
@@ -42,8 +44,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 150px;
-  height: 200px;
+  width: 9rem;
+  height: 10.5rem;
   background: white;
   border-radius: var(--lnai-primary-border-radius);
   border: 1px solid var(--lnai-light-purple);
@@ -52,8 +54,9 @@
 }
 
 .lnai-service-info-card p {
-  font-size: 0.95rem;
   text-align: center;
+  font-size: var(--lnai-secondary-paragraph-font-size);
+  font-weight: var(--lnai-secondary-paragraph-font-weight);
 }
 
 /* for crousel */

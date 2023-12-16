@@ -3,64 +3,69 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 85%;
+  width: 75%;
   margin: 5rem auto;
 }
-.heading-span-1 {
-  text-align: center;
-  font-size: 50px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
+
+.lnai-landing-page-ai-solutions-heading-1,
+.lnai-landing-page-ai-solutions-heading-2 {
+  font-size: var(--lnai-primary-heading-font-size);
+  font-weight: var(--lnai-primary-heading-font-weight);
   background: var(--lnai-purple-gradient-background);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
+
 .lnai-landing-page-ai-solutions-details-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 4rem;
-  margin-top: 2rem;
+  gap: 2.5rem;
+  margin-top: 1rem;
 }
 
 .lnai-landing-page-ai-solutions-details-text-container {
   width: 100%;
 }
 .lnai-landing-page-ai-solutions-details-text-container p {
-  color: #000;
-  text-align: justify;
+  /* color: #000;
   font-size: 22px;
   font-style: normal;
   font-weight: 300;
-  line-height: normal;
+  line-height: normal; */
+  font-size: var(--lnai-primary-paragraph-font-size);
+  font-weight: var(--lnai-primary-paragraph-font-weight);
+  text-align: justify;
 }
 
 .lnai-landing-page-ai-solutions-details-heading {
   position: relative;
-  font-size: 28px;
+  font-size: var(--lnai-secondary-heading-font-size);
+  font-weight: var(--lnai-secondary-heading-font-weight);
+  /* font-size: 28px; */
 }
 
 .lnai-landing-page-ai-solutions-details-heading::after {
   content: "  ";
-  height: 2px;
-  width: 100px;
-  background: rgba(0, 0, 0, 0.767);
-  display: block;
   position: absolute;
+  height: 0.15rem;
+  width: 20%;
+  background: rgba(0, 0, 0, 0.767);
+  /* display: block; */
   top: 50%;
-  left: 22%;
+  margin-left: 1rem;
 }
 
 .lnai-landing-page-ai-solutions-details-know-more-button {
   margin-top: 2rem;
 }
 .lnai-landing-page-ai-solutions-details-know-more-button button {
-  height: 61px;
+  /* height: 61px;
   width: 194px;
   font-size: 25px;
   font-weight: 500;
-  line-height: normal;
+  line-height: normal; */
+  padding: var(--lnai-button-padding-01);
 }

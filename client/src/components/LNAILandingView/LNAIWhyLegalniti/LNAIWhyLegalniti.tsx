@@ -15,8 +15,8 @@ const LNAIWhyLegalniti = () => {
     <div className="lnai-landing-view-why-legalniti-container">
       <iframe
         className="lnai-landing-view-why-legalniti-ai-animation-gif"
-        height={400}
-        width={400}
+        height={375}
+        width={375}
         src="https://lottie.host/?file=463cc4e0-8f39-4b51-9743-13a654c02430/MxmUD7365K.json"
       ></iframe>
 
@@ -33,8 +33,8 @@ const LNAIWhyLegalniti = () => {
             <img
               src={TrustedAdvisors}
               alt="TrustedAdvisors"
-              height={60}
-              width={60}
+              height={55}
+              width={55}
             />
           </div>
           <h2 className="lnai-landing-view-why-legalniti-grid-item-text">
@@ -47,8 +47,8 @@ const LNAIWhyLegalniti = () => {
             <img
               src={FastTeamSupport}
               alt="FastTeamSupport"
-              height={60}
-              width={60}
+              height={55}
+              width={55}
             />
           </div>
           <h2 className="lnai-landing-view-why-legalniti-grid-item-text">
@@ -61,8 +61,8 @@ const LNAIWhyLegalniti = () => {
             <img
               src={YearsOfExperience}
               alt="YearsOfExperience"
-              height={60}
-              width={60}
+              height={55}
+              width={55}
             />
           </div>
           <h2 className="lnai-landing-view-why-legalniti-grid-item-text">
@@ -74,8 +74,8 @@ const LNAIWhyLegalniti = () => {
             <img
               src={RoundClockSupport}
               alt="RoundClockSupport"
-              height={60}
-              width={60}
+              height={55}
+              width={55}
             />
           </div>
           <h2 className="lnai-landing-view-why-legalniti-grid-item-text">
@@ -87,8 +87,8 @@ const LNAIWhyLegalniti = () => {
             <img
               src={DedicatedLawyers}
               alt="DedicatedLawyers"
-              height={60}
-              width={60}
+              height={55}
+              width={55}
             />
           </div>
           <h2 className="lnai-landing-view-why-legalniti-grid-item-text">
@@ -97,7 +97,7 @@ const LNAIWhyLegalniti = () => {
         </div>
         <div className="lnai-landing-view-why-legalniti-grid-item chat-support">
           <div className="lnai-landing-view-why-legalniti-image-item">
-            <img src={ChatSupport} alt="ChatSupport" height={60} width={60} />
+            <img src={ChatSupport} alt="ChatSupport" height={55} width={55} />
           </div>
           <h2 className="lnai-landing-view-why-legalniti-grid-item-text">
             Chat <br /> Support
@@ -108,8 +108,8 @@ const LNAIWhyLegalniti = () => {
             <img
               src={SafeAndSecure}
               alt="SafeAndSecure"
-              height={60}
-              width={60}
+              height={55}
+              width={55}
             />
           </div>
           <h2 className="lnai-landing-view-why-legalniti-grid-item-text">
@@ -121,8 +121,8 @@ const LNAIWhyLegalniti = () => {
             <img
               src={ReliableSystem}
               alt="ReliableSystem"
-              height={60}
-              width={60}
+              height={55}
+              width={55}
             />
           </div>
           <h2 className="lnai-landing-view-why-legalniti-grid-item-text">

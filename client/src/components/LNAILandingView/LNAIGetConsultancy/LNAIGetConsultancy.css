@@ -1,10 +1,8 @@
 .lnai-landing-view-get-consultancy-heading {
-  margin-top: 5rem;
   text-align: center;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  font-size: 3.125rem;
+  font-size: var(--lnai-primary-heading-font-size);
+  font-weight: var(--lnai-primary-heading-font-weight);
+  margin-top: 5%;
   text-transform: capitalize;
 }
 .lnai-landing-view-get-consultancy-heading-highlight {
@@ -17,13 +15,16 @@
 .lnai-landing-view-get-consultancy-steps-main-container {
   display: flex;
   margin-top: 5rem;
+  gap: 10%;
+  justify-content: center;
+  position: relative;
 }
 
 .lnai-landing-view-get-consultancy-steps-item {
-  margin: auto;
+  /* margin: auto; */
   text-align: center;
-  width: 14rem;
-  height: 14rem;
+  width: 12rem;
+  height: 12rem;
   border-radius: 50%;
   border: 1px solid var(--lnai-dark-purple);
   box-shadow: 3.51999px 3.51999px 37.2415px rgba(0, 0, 0, 0.25);
@@ -35,7 +36,7 @@
 }
 
 .lnai-landing-view-get-consultancy-steps-item > img {
-  margin-top: 0.1rem;
+  /* margin-top: 0.1rem; */
 }
 
 .lnai-landing-view-get-consultancy-steps-item > h3 {
@@ -44,7 +45,12 @@
 }
 
 .lnai-landing-view-get-consultancy-dashed-gradient-line {
-  height: 4px;
+  position: absolute;
+  border: none;
+  z-index: -1;
+  top: 50%;
+  width: 100%;
+  height: 0.3rem;
   background-image: linear-gradient(
       90deg,
       transparent,
@@ -53,10 +59,5 @@
       #fff 100%
     ),
     var(--lnai-purple-gradient-background);
-  background-size: 2rem 1rem, 100% 1rem;
-  border: none;
-  position: relative;
-  left: 0px;
-  top: -6rem;
-  z-index: -1;
+  background-size: 2.8rem 1rem, 100% 1rem;
 }

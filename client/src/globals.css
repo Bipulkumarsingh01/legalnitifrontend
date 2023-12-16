@@ -47,15 +47,18 @@ body {
 
   /* Secondary/Sub-headings Heading Settings */
   --lnai-secondary-heading-font-size: 1.4rem;
-  --lnai-secondary-heading-font-weigth: 500;
+  --lnai-secondary-heading-font-weight: 500;
 
   /* Primary Paragraph Settings */
   --lnai-primary-paragraph-font-size: 1rem;
-  --lnai-primary-paragraph-font-weight: 400;
+  --lnai-primary-paragraph-font-weight: 500;
 
   /* Primary Paragraph Settings */
   --lnai-secondary-paragraph-font-size: 0.8rem;
   --lnai-secondary-paragraph-font-weight: 400;
+
+  /* Button Settings */
+  --lnai-button-padding-01: 0.25rem 0.5rem;
 }
 
 .lnai-primary-button {
