@@ -101,15 +101,25 @@
   gap: 30px;
   width: 100%;
 }
+.buttonwrapper {
+  width: 221px;
+  height: 220px;
+  border-radius: 6px;
+  overflow: hidden;
+}
 .about-service-innerbox-more-related-services button {
   width: 221px;
   height: 220px;
   display: flex;
   flex-direction: column;
   gap: 30px;
-  border-radius: 6.636px;
-  border: 2.83px solid var(--Gradient, #3d055e);
+  border: 4.09px solid transparent; /* Set a base solid border width */
+  border-image: var(--lnai-purple-gradient-background);
+  border-image-slice: 2;
+  /* border-image-width: 4.09px; */
+  border-radius: 10px;
 }
+
 .about-service-bussiness-setupservice button img {
   width: 3.9rem;
   height: 3.9rem;
@@ -123,8 +133,8 @@
 .more-services {
   margin-top: 2rem;
   width: fit-content;
-  height: auto;
-  padding: 1rem;
+  height: max-content;
+  padding: 1.5rem;
   display: flex;
   flex-shrink: 0;
   flex-direction: column;
@@ -201,7 +211,11 @@
   flex-direction: column;
   gap: 30px;
   border-radius: 6.636px;
-  border: 2.83px solid var(--Gradient, #3d055e);
+  border: 5.09px solid; /* Set a base solid border width */
+  border-image: var(--lnai-purple-gradient-background);
+  /* Define the gradient colors and direction */
+  border-image-slice: 1; /* Ensure the entire border is covered by the gradient */
+  border-image-width: 5.09px;
 }
 .innerbox-more-related-services button img {
   width: 4.9rem;

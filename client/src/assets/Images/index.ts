@@ -25,7 +25,6 @@ import PawanKumarSingh from "./PawanKumarSingh.jpg";
 import AayushiSingh from "./AayushiSingh.jpg";
 import YashSengde from "./YashSengde.jpg";
 import consultationMainImage from "./consultationMainImage.png";
-=======
 import Banner1 from "./Banner1.png";
 import Banner2 from "./Banner2.png";
 import Frame from "./Frame.png";
