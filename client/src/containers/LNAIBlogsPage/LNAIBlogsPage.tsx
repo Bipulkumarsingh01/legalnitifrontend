@@ -1,5 +1,11 @@
 import { Button } from "@mui/material";
-import { BlogPostMain, BlogPostSub, Clock } from "../../assets";
+import {
+  Banner1,
+  Banner2,
+  BlogPostMain,
+  BlogPostSub,
+  Clock,
+} from "../../assets";
 import { LNAIFooter, LNAINavBar } from "../../components";
 
 import "./LNAIBlogsPage.css";
@@ -210,7 +216,12 @@ const LNAIBlogsPage = () => {
             </div>
           </div>
 
-          <div className="lnai-blogs-page-blog-item-banner-image">Banner</div>
+          {/* <div className="lnai-blogs-page-blog-item-banner-image">Banner</div> */}
+          <img
+            src={Banner1}
+            alt="Banner1"
+            className="lnai-blogs-page-blog-item-banner-image"
+          />
 
           <div className="lnai-blogs-page-blog-item">
             <div className="lnai-blogs-page-blog-item-heading">
@@ -311,7 +322,12 @@ const LNAIBlogsPage = () => {
             </div>
           </div>
 
-          <div className="lnai-blogs-page-blog-item-banner-image">Banner</div>
+          {/* <div className="lnai-blogs-page-blog-item-banner-image">Banner</div> */}
+          <img
+            src={Banner2}
+            alt="Banner2"
+            className="lnai-blogs-page-blog-item-banner-image"
+          />
 
           <div className="lnai-blogs-page-blog-item">
             <div className="lnai-blogs-page-blog-item-heading">

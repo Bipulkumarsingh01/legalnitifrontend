@@ -24,6 +24,10 @@ import BlogPostSub from "./BlogPostSub.png";
 import PawanKumarSingh from "./PawanKumarSingh.jpg";
 import AayushiSingh from "./AayushiSingh.jpg";
 import YashSengde from "./YashSengde.jpg";
+import Banner1 from "./Banner1.png";
+import Banner2 from "./Banner2.png";
+import Frame from "./Frame.png";
+import VinitaLohani from "./VinitaLohani.png";
 export {
   LawDigitalTechniques,
   SignupOverlayLogo,
@@ -51,4 +55,8 @@ export {
   PawanKumarSingh,
   AayushiSingh,
   YashSengde,
+  Banner1,
+  Banner2,
+  Frame,
+  VinitaLohani,
 };
